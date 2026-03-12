@@ -1,0 +1,42 @@
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#0f0f0f;
+  color:white;
+}
+
+/* HEADER */
+header{
+  background:#181818;
+  padding:20px 30px;
+  font-size:22px;
+  font-weight:bold;
+}
+
+/* GALERÍA */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+  gap:20px;
+  padding:25px;
+}
+
+/* TARJETA */
+.img-card{
+  overflow:hidden;
+  border-radius:12px;
+  background:#181818;
+  box-shadow:0 4px 15px rgba(0,0,0,0.4);
+  transition:0.3s;
+}
+
+.img-card:hover{
+  transform:scale(1.05);
+}
+
+.img-card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CATEGORÍAS</title>
+    <link rel="stylesheet" href="categorias style.css">
+</head>
+
+<body>
+<!-- HEADER escritorio -->
+ <header class="header-desktop">
+    <div class="left">
+      <img src="IMAGENES/Logotipo/Logo N transparente.png" class="logo desktop-logo" alt="Logo Nexata">
+      <span class="title">NEXATA INSIGHT MEDIA STUDIO</span>
+    </div>
+
+    <nav class="center-list">
+      <ul>
+        <li><a href="index.html">📰feed</a></li>
+      </ul>
+    </nav>
+    
+    <div class="center-icons">
+      <!-- WHATSAPP -->
+      <a class="icon-btn" href="https://wa.me/?text=Mira%20este%20contenido%20👉%20https://nexata-insight-media-studio.github.io/CATEGORIAS/" target="_blank">
+        <img src="IMAGENES/Red social/Whatsapp.png" alt="WhatsApp">
+      </a>
+
+      <!-- FACEBOOK -->
+      <a class="icon-btn" href="https://www.facebook.com/sharer/sharer.php?u=https://nexata-insight-media-studio.github.io/CATEGORIAS/" target="_blank">
+        <img src="IMAGENES/Red social/facebook.png" alt="Facebook">
+      </a>
+
+      <!-- COPIAR ENLACE -->
+      <button class="icon-btn" id="copyLinkBtn">
+        <img src="IMAGENES/Imagenes variadas/copiar.png" alt="Copiar enlace">
+      </button>
+    </div>
+
+    <div class="right"><span class="short">NIMS</span></div>
+</header>
+
+
+
+
+<!-- HEADER móvil -->
+<header class="header-mobile">
+  <div class="mobile-row">
+    <img src="IMAGENES/Logotipo/Logo N transparente.png" class="hero-logo" alt="Logo">
+
+    <nav class="center-mobile">
+     <ul>
+      <li><a href="index.html">📰feed</a></li>
+     </ul>
+    </nav>
+
+    <div class="hero-icons">
+      <a class="icon-btn" href="https://wa.me/?text=Mira%20este%20contenido%20👉%20https://nexata-insight-media-studio.github.io/CATEGORIAS/" target="_blank">
+        <img src="IMAGENES/Red social/Whatsapp.png" alt="WhatsApp">
+      </a>
+
+      <a class="icon-btn" href="https://www.facebook.com/sharer/sharer.php?u=https://nexata-insight-media-studio.github.io/CATEGORIAS/" target="_blank">
+        <img src="IMAGENES/Red social/facebook.png" alt="Facebook">
+      </a>
+
+      <button class="icon-btn" id="copyLinkBtnMobile">
+        <img src="IMAGENES/Imagenes variadas/copiar.png" alt="Copiar enlace">
+      </button>
+    </div>
+  </div>
+  </header>
+
+  <!-- SCRIPT copiar enlace -->
+  <script>
+    async function copiarEnlace(btn) {
+      try {
+        await navigator.clipboard.writeText(window.location.href);
+        btn.classList.add('show');
+        setTimeout(() => btn.classList.remove('show'), 1200);
+      } catch (e) {
+        alert("No se pudo copiar automáticamente.");
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const btn = document.getElementById("copyLinkBtn");
+      const btnMob = document.getElementById("copyLinkBtnMobile");
+
+      if (btn) btn.addEventListener("click", () => copiarEnlace(btn));
+      if (btnMob) btnMob.addEventListener("click", () => copiarEnlace(btnMob));
+    });
+  </script>
+
+   <!-- inputs (ocultos) necesariospara el filtro CSS. Importante: deben estar antes de .filters y .gallery para que los selectores ~ funcionen -->
+    <input class="filter-input" type="radio" name="filter" id="filter-all" checked>
+    <input class="filter-input" type="radio" name="filter" id="filter-1">
+    <input class="filter-input" type="radio" name="filter" id="filter-2">
+    <input class="filter-input" type="radio" name="filter" id="filter-3">
+    <input class="filter-input" type="radio" name="filter" id="filter-4">
+    <input class="filter-input" type="radio" name="filter" id="filter-5">
+    <input class="filter-input" type="radio" name="filter" id="filter-6">
+    <input class="filter-input" type="radio" name="filter" id="filter-7">
+    <!-- Menú visible: labels que controlan los radio inputs-->
+    <nav class="filter" aria-label="filtrar por categoría">
+        <label for="filter-all" class="chip">CONTENIDOS</label>
+        <label for="filter-1" class="chip">TECNOLOGÍA</label>
+        <label for="filter-2" class="chip">JUEGOS</label>
+        <label for="filter-3" class="chip">MARKETING Y MOTIVACIÓN</label>
+        <label for="filter-4" class="chip">FINANZAS PERSONALES Y CRIPTOMONEDAS</label>
+        <label for="filter-5" class="chip">SALUD</label>
+        <label for="filter-6" class="chip">MOTIVACIÓN</label>
+        <label for="filter-7" class="chip">CURIOSIDADES DEL MUNDO</label>
+    </nav>
+     <!-- galeria: añade la clase de categoria en cada card (ej:guias)-->
+    <main class="gallery" aria-live="polite">
+        <!--card 1 (Guias)-->
+        <article class="card cat-5">
+            <img src="IMAGENES/Portada de blog/1.png" alt="Trastorno de ansiedad">
+            <div class="card-content">
+                <h3>Trastorno de ansiedad</h3>
+                <p>La realidad es cuando sucede algo inpactante, 
+                emocional y psicológico. La ansiedad es solo un indicador de 
+                una enfermedad subyacente cuando los sentimientos se vuelven excesivos, 
+                en todo momento<br><br><a href="BLOGS/1.html">👉 Mas del contenido</a></p>
+            </div>
+        </article>
+                <!--card 2 (Guias)-->
+        <article class="card cat-4">
+            <img src="IMAGENES/Portada de blog/4.avif" alt="Salud financiera y mental">
+            <div class="card-content">
+                <h3>Salud financiera y mental</h3>
+                <p>La realidad es cuando sucede algo inpactante, 
+                emocional y psicológico. La ansiedad es solo un indicador de 
+                una enfermedad subyacente cuando los sentimientos se vuelven excesivos, 
+                en todo momento<br><br><a href="BLOGS/4.html">👉 Mas del contenido</a></p>
+            </div>
+        </article>
+                <!--card 3 (Guias)-->
+        <article class="card cat-6">
+            <img src="IMAGENES/Portada de blog/2.jpg" alt="Trabajos nocturnos">
+            <div class="card-content">
+                <h3>¿Trabajos nocturnos?</h3>
+                <p>La realidad es cuando sucede algo inpactante, 
+                emocional y psicológico. La ansiedad es solo un indicador de 
+                una enfermedad subyacente cuando los sentimientos se vuelven excesivos, 
+                en todo momento<br><br><a href="BLOGS/2.html">👉 Mas del contenido</a></p>
+            </div>
+        </article>
+                <!--card 4 (Guias)-->
+        <article class="card cat-4">
+            <img src="IMAGENES/Portada de blog/10.jpg" alt="Criptomonedas y sus avances">
+            <div class="card-content">
+                <h3>Criptomonedas y sus avances</h3>
+                <p>La realidad es cuando sucede algo inpactante, 
+                emocional y psicológico. La ansiedad es solo un indicador de 
+                una enfermedad subyacente cuando los sentimientos se vuelven excesivos, 
+                en todo momento<br><br><a href="BLOGS/10.html">👉 Mas del contenido</a></p>
+            </div>
+        </article>
+        <!--card 5 (Guias)-->
+        <article class="card cat-6">
+            <img src="IMAGENES/Portada de blog/7.png" alt="Deja la procrastinacion">
+            <div class="card-content">
+                <h3>¡Deja la procrastinacion!</h3>
+                <p>La realidad es cuando sucede algo inpactante, 
+                emocional y psicológico. La ansiedad es solo un indicador de 
+                una enfermedad subyacente cuando los sentimientos se vuelven excesivos, 
+                en todo momento<br><br><a href="BLOGS/7.html">👉 Mas del contenido</a></p>
+            </div>
+        </article>
+        <!--card 6 (Guias)-->
+        <article class="card cat-3">
+            <img src="IMAGENES/Portada de blog/3.jpg" alt="Que es el marketing">
+            <div class="card-content">
+                <h3>¿Que es el marketing?</h3>
+                <p>La realidad es cuando sucede algo inpactante, 
+                emocional y psicológico. La ansiedad es solo un indicador de 
+                una enfermedad subyacente cuando los sentimientos se vuelven excesivos, 
+                en todo momento<br><br><a href="BLOGS/7.html">👉 Mas del contenido</a></p>
+            </div>
+        </article>
+        <!--card 7 (Guias)-->
+        <article class="card cat-1">
+            <img src="IMAGENES/Portada de blog/9.jpg" alt="Zorin OS 18 Beta: similar a Windows">
+            <div class="card-content">
+                <h3>Zorin OS 18 Beta: similar a Windows</h3>
+                <p>Zorin OS 18 Beta es una nueva versión basada 
+                en Ubuntu 24.04 LTS que ofrece una experiencia moderna, 
+                fluida y similar a Windows 11. Incluye integración con 
+                Microsoft 365, OneDrive, Web Apps y un diseño elegante, 
+                ideal para quienes migran de Windows
+                a Linux.<br><br><a href="BLOGS/9.html">👉 Mas del contenido</a></p>
+            </div>
+        </article>
+        <!--card 8 (Guias)-->
+        <article class="card cat-2">
+            <img src="IMAGENES/Portada de blog/5.jpg" alt="Sony publica el primer tráiler de MLB The Show 26 para Nintendo Switch">
+            <div class="card-content">
+                <h3>Sony publica el primer tráiler de MLB The Show 26 para Nintendo Switch</h3>
+                <p>El día de hoy, Sony ha compartido el primer tráiler oficial enfocado 
+                específicamente en la versión para Nintendo Switch, ofreciendo un primer
+                vistazo a cómo se verá y se jugará esta nueva entrega en la consola de 
+                Nintendo.<br><br><a href="BLOGS/5.html">👉 Mas del contenido</a></p>
+            </div>
+        </article>
+        <!--card 9 (Guias)-->
+        <article class="card cat-7">
+            <img src="IMAGENES/Portada de blog/8.png" alt="¿Qué son los Therian? Una mirada curiosa a identidad, naturaleza y comunidad">
+            <div class="card-content">
+                <h3>¿Qué son los Therian? Una mirada curiosa a identidad, naturaleza y comunidad</h3>
+                <p>En un mundo donde la identidad se explora cada vez con mayor profundidad, existe una 
+                comunidad que ha despertado curiosidad, debate y también admiración: los Therian. Como 
+                persona curiosa y siempre dispuesto a aprender algo nuevo, decidí investigar este 
+                fenómeno cultural que mezcla identidad, psicología y conexión con la naturaleza.
+                Hoy te cuento todo lo que 
+                descubrí.<br><br><a href="BLOGS/8.html">👉 Mas del contenido</a></p>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p><a href="Politica de privacidad/Politica de privacidad.html">Política de Privacidad</a> | <a href="Informacion/Informacion.html">Información</a> | © 2025 NEXATA INSIGHT MEDIA STUDIO. Todos los derechos reservados.</p>
+    </footer>
+    <div class="bg-credit">
+     Fondo de la pagina: Imagen de <a href="https://pixabay.com/es/users/edar-609103/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=568968">Edar</a> en <a href="https://pixabay.com/es//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=568968">Pixabay</a>
+    </div>
+</body>
+</html>

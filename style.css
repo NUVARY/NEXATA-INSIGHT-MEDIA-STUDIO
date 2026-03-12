@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f0f2f5;
+}
+
+/* HEADER */
+.header {
+  background: #1877f2;
+  color: white;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.menu a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* CONTENEDOR */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 15px;
+  padding: 15px;
+}
+
+/* PERFIL */
+.perfil {
+  background: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.perfil img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* FEED */
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.publicacion {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.publicacion img {
+  width: 100%;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+
+/* ACCIONES */
+.acciones {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.acciones button {
+  border: none;
+  background: #e4e6eb;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+/* CATEGORÍAS */
+.categorias {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.categorias ul {
+  list-style: none;
+}
+
+.categorias li {
+  margin: 8px 0;
+}
+.categorias a{
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 6px 0;
+}
+
+.categorias a:hover{
+  opacity: 0.8;
+}
+
+
+/* MEDIA */
+.media {
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+}
+
+.media div {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  flex: 1;
+  text-align: center;
+}
+
+/* BUZÓN */
+.buzon {
+  background: white;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 8px;
+}
+
+.buzon textarea {
+  width: 100%;
+  height: 80px;
+  margin: 10px 0;
+}
+
+.buzon button {
+  padding: 8px 15px;
+  border: none;
+  background: #1877f2;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* WHATSAPP */
+.whatsapp {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background: #25d366;
+  color: white;
+  font-size: 24px;
+  padding: 14px;
+  border-radius: 50%;
+  text-decoration: none;
+  z-index: 100;
+}
+
+/* ===================== */
+/* 📱 RESPONSIVE MÓVIL */
+/* ===================== */
+@media (max-width: 768px) {
+
+  .menu {
+    display: none;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .perfil {
+    order: 1;
+  }
+
+  .feed {
+    order: 2;
+  }
+
+  .categorias {
+    order: 3;
+  }
+
+  .media {
+    flex-direction: column;
+  }
+
+  .acciones button {
+    flex: 1;
+    margin: 0 3px;
+    font-size: 12px;
+  }
+}

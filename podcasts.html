@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis Podcasts</title>
+  <link rel="stylesheet" href="podcasts.css">
+</head>
+
+<body>
+
+<header>
+  🎧 MIS PODCASTS
+</header>
+
+<a href="index.html" class="back-btn">⬅ Volver</a>
+
+<section class="podcast-section">
+  <div class="podcast-box">
+    <h2>Últimos episodios</h2>
+    <div id="rss-feed">Cargando episodios...</div>
+  </div>
+</section>
+
+<script>
+const RSS_URL = "https://anchor.fm/s/108d4548c/podcast/rss";
+const PROXY = "https://api.allorigins.win/raw?url=";
+
+// imagen por defecto (por si todo falla)
+const DEFAULT_IMAGE = "https://via.placeholder.com/300x300?text=Podcast";
+
+fetch(PROXY + encodeURIComponent(RSS_URL))
+  .then(res => res.text())
+  .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+  .then(data => {
+
+    const items = data.querySelectorAll("item");
+
+    // ✅ obtener imagen del canal una sola vez
+    let channelImage = "";
+    const chImgTag =
+      data.querySelector("channel > itunes\\:image") ||
+      data.querySelector("channel > image > url");
+
+    if (chImgTag) {
+      channelImage = chImgTag.getAttribute("href") || chImgTag.textContent;
+    }
+
+    let html = "";
+
+    items.forEach((el, index) => {
+      if (index < 12) {
+
+        const title = el.querySelector("title")?.textContent || "";
+        const link = el.querySelector("link")?.textContent || "";
+        const date = el.querySelector("pubDate")?.textContent || "";
+        const enclosure = el.querySelector("enclosure")?.getAttribute("url") || "";
+
+        // ✅ intentar imagen del episodio
+        let image = "";
+
+        const epImgTag =
+          el.querySelector("itunes\\:image") ||
+          el.querySelector("image");
+
+        if (epImgTag) {
+          image = epImgTag.getAttribute("href") || epImgTag.textContent;
+        }
+
+        // ✅ fallback al canal
+        if (!image) image = channelImage;
+
+        // ✅ fallback final
+        if (!image) image = DEFAULT_IMAGE;
+
+        html += `
+          <div class="episode">
+
+            <div class="episode-top">
+              <img src="${image}" alt="cover"
+                   onerror="this.src='${DEFAULT_IMAGE}'">
+              
+              <div class="episode-info">
+                <a href="${link}" target="_blank" class="episode-title">
+                  ${title}
+                </a>
+                <span class="episode-date">
+                  ${new Date(date).toLocaleDateString()}
+                </span>
+              </div>
+            </div>
+
+            <audio controls preload="none" src="${enclosure}"></audio>
+
+          </div>
+        `;
+      }
+    });
+
+    document.getElementById("rss-feed").innerHTML = html;
+  })
+  .catch(() => {
+    document.getElementById("rss-feed").innerHTML =
+      "❌ No se pudieron cargar los episodios";
+  });
+</script>
+
+</body>
+</html>
