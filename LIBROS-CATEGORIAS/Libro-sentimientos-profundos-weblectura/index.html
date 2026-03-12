@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>SENTIMIENTOS PROFUNDOS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<audio id="flipSound" src="sfx-paperflip1.mp3"></audio>
+
+<body>
+
+<div class="book-wrapper" id="wrapper">
+
+    <!-- LIBRO -->
+    <div class="book" id="book">
+
+        <div class="page active" id="page0">
+            <div class="page-content">
+                <img src="Portada Libro Novela Suspenso Oscuro Negro.png" alt="portada">
+            </div>
+        </div>
+
+        <div class="page" id="page1">
+            <div class="page-content">
+                <h2 style="text-align: center"><strong>INDICE</strong></h2>
+                <p style="text-align: center;"><strong>Primera parte: El inicio del dolor</strong><br>El lector se identifica con la tristeza, la ansiedad y la sensacion de perdida. Aqui se reconoce el vacio, sin juzgarlo.</p>
+                <br><p style="text-align: center;"><strong>Prologo -</strong> &nbsp;&nbsp;Introduccion poetica y empatica. invita al lector a iniciar un viaje de sanacion.</p>
+                <br><p style="text-align: center;"><strong>Capitulo 1 -</strong>&nbsp;&nbsp;<strong>cuando todo parece perder sentido</strong>&nbsp;&nbsp;El punto de partida: el dolor, la confunsion, y la busqueda de sentido.</p>
+                <br><p style="text-align: center;"><strong>Capitulo 2 -</strong>&nbsp;&nbsp;<strong>La caida invicible</strong>&nbsp;&nbsp;Describe la depresion y la ansiedad con sensibilidad, mostrando que no estas solo.</p>
+                <br><p style="text-align: center;"><strong>Capitulo 3 -</strong>&nbsp;&nbsp;<strong>Abrazar la oscuridad</strong>&nbsp;&nbsp;Enseña a aceptar el dolor como parte del proceso, no como enemigo.</p>
+            </div>
+        </div>
+
+        <div class="page" id="page2">
+            <div class="page-content">
+                <p style="text-align: center;"><strong>Segunda parte: El proceso de renacer</strong><br>El lector empieza a comprender, sanar y reconstuirse lentamente. Aqui el mensaje es esperanza, paciencia y amor propio.</p>
+                <br><p style="text-align: center;"><strong>Capitulo 4 -</strong>&nbsp;&nbsp;<strong>El valor de seguir</strong>&nbsp;&nbsp;Como montener la fe incluso cuando parece que no hay salida.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- CONTROLES FLOTANTES ************************************************************************ -->
+    <div class="controls">
+        <button onclick="prev()">⟵</button>
+        <button onclick="next()">⟶</button>
+        <button onclick="zoomIn()">➕</button>
+        <button onclick="zoomOut()">➖</button>
+        <button onclick="toggleLupa()">🔍 Lupa</button>
+        <button onclick="goToLink()">📥 Descargar</button>
+        <button type="button" class="btn danger" onclick="goHome()">↩️ Regresar</button>
+    </div>
+
+</div>
+
+<!-- LUPA -->
+<div class="lupa" id="lupa">
+    <div class="lupa-inner" id="lupaInner"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
