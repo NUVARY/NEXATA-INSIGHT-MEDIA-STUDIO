@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CATEGORÍAS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- HEADER escritorio -->
+ <header class="header-desktop">
+    <div class="left">
+      <img src="N..png" class="logo desktop-logo" alt="Logo Nexata">
+      <span class="title">NEXATA INSIGHT MEDIA STUDIO</span>
+    </div>
+
+    <nav class="center-list">
+      <ul>
+        <li><a href="https://nexata-insight-media-studio.github.io/NIMS/">🏠 INICIO</a></li>
+      </ul>
+    </nav>
+    
+    <div class="center-icons">
+      <!-- WHATSAPP -->
+      <a class="icon-btn" href="https://wa.me/?text=Mira%20este%20contenido%20👉%20https://nexata-insight-media-studio.github.io/CATEGORIA-JUEGOS-/" target="_blank">
+        <img src="Whatsapp.png" alt="WhatsApp">
+      </a>
+
+      <!-- FACEBOOK -->
+      <a class="icon-btn" href="https://www.facebook.com/sharer/sharer.php?u=https://nexata-insight-media-studio.github.io/CATEGORIA-JUEGOS-/" target="_blank">
+        <img src="facebook.png" alt="Facebook">
+      </a>
+
+      <!-- COPIAR ENLACE -->
+      <button class="icon-btn" id="copyLinkBtn">
+        <img src="copiar.png" alt="Copiar enlace">
+      </button>
+    </div>
+
+    <div class="right"><span class="short">NIMS</span></div>
+</header>
+
+
+
+
+<!-- HEADER móvil -->
+<header class="header-mobile">
+  <div class="mobile-row">
+    <img src="N..png" class="hero-logo" alt="Logo">
+
+    <nav class="center-mobile">
+     <ul>
+      <li><a href="https://nexata-insight-media-studio.github.io/NIMS/">🏠 INICIO</a></li>
+     </ul>
+    </nav>
+
+    <div class="hero-icons">
+      <a class="icon-btn" href="https://wa.me/?text=Mira%20este%20contenido%20👉%20https://nexata-insight-media-studio.github.io/CATEGORIA-JUEGOS-/" target="_blank">
+        <img src="Whatsapp.png" alt="WhatsApp">
+      </a>
+
+      <a class="icon-btn" href="https://www.facebook.com/sharer/sharer.php?u=https://nexata-insight-media-studio.github.io/CATEGORIA-JUEGOS-/" target="_blank">
+        <img src="facebook.png" alt="Facebook">
+      </a>
+
+      <button class="icon-btn" id="copyLinkBtnMobile">
+        <img src="copiar.png" alt="Copiar enlace">
+      </button>
+    </div>
+  </div>
+  </header>
+
+  <!-- SCRIPT copiar enlace -->
+  <script>
+    async function copiarEnlace(btn) {
+      try {
+        await navigator.clipboard.writeText(window.location.href);
+        btn.classList.add('show');
+        setTimeout(() => btn.classList.remove('show'), 1200);
+      } catch (e) {
+        alert("No se pudo copiar automáticamente.");
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const btn = document.getElementById("copyLinkBtn");
+      const btnMob = document.getElementById("copyLinkBtnMobile");
+
+      if (btn) btn.addEventListener("click", () => copiarEnlace(btn));
+      if (btnMob) btnMob.addEventListener("click", () => copiarEnlace(btnMob));
+    });
+  </script>
+
+   <!-- inputs (ocultos) necesariospara el filtro CSS. Importante: deben estar antes de .filters y .gallery para que los selectores ~ funcionen -->
+    <input class="filter-input" type="radio" name="filter" id="filter-all" checked>
+    <input class="filter-input" type="radio" name="filter" id="filter-1">
+    <input class="filter-input" type="radio" name="filter" id="filter-2">
+    <input class="filter-input" type="radio" name="filter" id="filter-3">
+    <input class="filter-input" type="radio" name="filter" id="filter-4">
+    <input class="filter-input" type="radio" name="filter" id="filter-5">
+    <input class="filter-input" type="radio" name="filter" id="filter-6">
+
+    <!-- Menú visible: labels que controlan los radio inputs-->
+    <nav class="filter" aria-label="filtrar por categoría">
+        <label for="filter-all" class="chip">CONTENIDOS</label>
+        <label for="filter-1" class="chip"></label>
+        <label for="filter-2" class="chip"></label>
+        <label for="filter-3" class="chip"></label>
+        <label for="filter-4" class="chip"></label>
+        <label for="filter-5" class="chip"></label>
+        <label for="filter-6" class="chip"></label>
+    </nav>
+     <!-- galeria: añade la clase de categoria en cada card (ej:guias)-->
+    <main class="gallery" aria-live="polite">
+        <!--card 1 (Guias)-->
+        <article class="card cat-6">
+            <img src="snake pro.png" alt="Snake pro">
+            <div class="card-content">
+                <h3>SNAKE PRO 🐍</h3>
+                <p>Snake Pro es un juego clásico reinventado para 
+                  navegador, donde controlas una serpiente que 
+                  crece al comer alimentos y aumenta su velocidad 
+                  con cada punto. Incluye controles para teclado y 
+                  pantalla táctil, sonidos arcade, récord guardado y 
+                  un botón de inicio para una experiencia fluida y 
+                  moderna. Simple, rápido
+                   y adictivo.<br><br><a href="SNAKE PRO/index.html">👉 Mas del contenido</a></p>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p><a href="Politica de privacidad.html">Política de Privacidad</a> | <a href="Informacion.html">Información</a> | © 2025 NEXATA INSIGHT MEDIA STUDIO. Todos los derechos reservados.</p>
+    </footer>
+    <div class="bg-credit">
+     Fondo de la pagina: Imagen de <a href="https://pixabay.com/es/users/alexantropov86-2691829/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3501200">Alexander Antropov</a> en <a href="https://pixabay.com/es//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3501200">Pixabay</a>
+    </div>
+</body>
+</html>
