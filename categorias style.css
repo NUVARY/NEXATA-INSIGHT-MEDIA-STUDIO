@@ -90,7 +90,8 @@ body{
 #filter-4:checked ~ .filter label[for="filter-4"],
 #filter-5:checked ~ .filter label[for="filter-5"],
 #filter-6:checked ~ .filter label[for="filter-6"],
-#filter-7:checked ~ .filter label[for="filter-7"] {
+#filter-7:checked ~ .filter label[for="filter-7"],
+#filter-8:checked ~ .filter label[for="filter-8"] {
   background: var(--chip-active-bg);
   box-shadow: 0 8px 22px rgba(2,6,23,0.6);
   border-color: rgba(139,92,246,0.9);
@@ -152,6 +153,9 @@ body{
 
 #filter-7:checked ~ .gallery .card { display:none; }
 #filter-7:checked ~ .gallery .card.cat-7 { display:block; }
+
+#filter-8:checked ~ .gallery .card { display:none; }
+#filter-8:checked ~ .gallery .card.cat-8 { display:block; }
 /* nota: #filter-all está por defecto checked -> muestra todo */
 
 
