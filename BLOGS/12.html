@@ -163,6 +163,163 @@
   <a href="https://pixabay.com/es/users/edar-609103/">Edar</a> en
   <a href="https://pixabay.com/es/">Pixabay</a>
 </div>
+<!-- ========================= -->
+<!-- COMENTARIOS FIREBASE NIMS -->
+<!-- ========================= -->
 
+<div class="comentarios-box">
+
+<h2>💬 Comentarios</h2>
+
+<input
+type="text"
+id="nombre"
+placeholder="Nombre (opcional)"
+>
+
+<textarea
+id="comentario"
+placeholder="Escribe tu comentario..."
+></textarea>
+
+<button onclick="enviarComentario()">
+Publicar comentario
+</button>
+
+<div id="listaComentarios"></div>
+
+</div>
+
+<style>
+.comentarios-box{
+max-width:800px;
+margin:30px auto;
+padding:15px;
+background:#fff;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.comentarios-box input,
+.comentarios-box textarea{
+width:100%;
+padding:10px;
+margin:8px 0;
+box-sizing:border-box;
+}
+
+.comentarios-box textarea{
+min-height:120px;
+resize:vertical;
+}
+
+.comentarios-box button{
+padding:10px 15px;
+cursor:pointer;
+}
+
+.comentario{
+padding:10px;
+margin-top:10px;
+border-bottom:1px solid #ddd;
+}
+
+.fecha{
+font-size:12px;
+color:gray;
+margin-top:5px;
+}
+</style>
+
+<script type="module">
+
+import { initializeApp }
+from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
+
+import {
+getFirestore,
+collection,
+addDoc,
+getDocs,
+query,
+orderBy
+}
+from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
+
+const firebaseConfig = {
+apiKey: "AIzaSyCsucEr-t1QVVIdG6YnWLm-5p5Kzp6nwUk",
+authDomain: "comentarios-nims.firebaseapp.com",
+projectId: "comentarios-nims",
+storageBucket: "comentarios-nims.firebasestorage.app",
+messagingSenderId: "529237253093",
+appId: "1:529237253093:web:1cb81ffe914c89be172d0c"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+window.enviarComentario = async () => {
+
+const nombre =
+document.getElementById("nombre").value.trim() ||
+"Anónimo";
+
+const comentario =
+document.getElementById("comentario").value.trim();
+
+if(!comentario){
+alert("Escribe un comentario");
+return;
+}
+
+await addDoc(collection(db,"comentarios"),{
+nombre,
+comentario,
+fecha:new Date().toISOString()
+});
+
+document.getElementById("comentario").value="";
+
+cargarComentarios();
+};
+
+async function cargarComentarios(){
+
+const lista =
+document.getElementById("listaComentarios");
+
+lista.innerHTML = "Cargando comentarios...";
+
+const q = query(
+collection(db,"comentarios"),
+orderBy("fecha","desc")
+);
+
+const datos = await getDocs(q);
+
+lista.innerHTML = "";
+
+datos.forEach((doc)=>{
+
+const c = doc.data();
+
+const fecha =
+new Date(c.fecha).toLocaleString();
+
+lista.innerHTML += `
+<div class="comentario">
+<strong>${c.nombre}</strong>
+<p>${c.comentario}</p>
+<div class="fecha">${fecha}</div>
+</div>
+`;
+
+});
+
+}
+
+cargarComentarios();
+
+</script>
 </body>
 </html>
