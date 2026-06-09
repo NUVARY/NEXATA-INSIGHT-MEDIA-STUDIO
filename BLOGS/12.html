@@ -294,8 +294,10 @@ await addDoc(collection(db,"comentarios"),{
 articulo,
 nombre,
 comentario,
+likes: 0,
 fecha:new Date().toISOString()
 });
+
 localStorage.setItem(
 "ultimoComentario",
 Date.now()
