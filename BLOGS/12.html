@@ -243,7 +243,10 @@ addDoc,
 getDocs,
 query,
 orderBy,
-where
+where,
+doc,
+updateDoc,
+increment
 }
 from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
 
@@ -330,15 +333,24 @@ datos.forEach((doc)=>{
 total++;
 
 const c = doc.data();
+const id = doc.id;
 
 const fecha =
 new Date(c.fecha).toLocaleString();
 
 lista.innerHTML += `
 <div class="comentario">
+
 <strong>${c.nombre}</strong>
+
 <p>${c.comentario}</p>
+
 <div class="fecha">${fecha}</div>
+
+<button onclick="darLike('${id}')">
+👍 ${c.likes || 0}
+</button>
+
 </div>
 `;
 
@@ -349,6 +361,27 @@ document.getElementById(
 ).textContent =
 `💬 Comentarios (${total})`;
 }
+window.darLike = async (id) => {
+
+const clave = "like_" + id;
+
+if(localStorage.getItem(clave)){
+alert("Ya diste like a este comentario.");
+return;
+}
+
+await updateDoc(
+doc(db,"comentarios",id),
+{
+likes: increment(1)
+}
+);
+
+localStorage.setItem(clave,"1");
+
+cargarComentarios();
+
+};
 
 cargarComentarios();
 
