@@ -168,7 +168,11 @@
 <!-- ========================= -->
 
 <div class="comentarios-box">
+<button id="loginGoogle">
+🔑 Iniciar sesión con Google
+</button>
 
+<div id="usuarioActual"></div>
 <h2 id="contadorComentarios">💬 Comentarios (0)</h2>
 
 <input
@@ -249,6 +253,13 @@ updateDoc,
 increment
 }
 from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
+import {
+getAuth,
+GoogleAuthProvider,
+signInWithPopup,
+onAuthStateChanged
+}
+from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
 
 const firebaseConfig = {
 apiKey: "AIzaSyCsucEr-t1QVVIdG6YnWLm-5p5Kzp6nwUk",
@@ -261,9 +272,51 @@ appId: "1:529237253093:web:1cb81ffe914c89be172d0c"
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
+const auth = getAuth(app);
+const provider = new GoogleAuthProvider();
+
+let usuario = null;
 
 const articulo = "12";
+onAuthStateChanged(auth,(user)=>{
 
+usuario = user;
+
+const info =
+document.getElementById("usuarioActual");
+
+if(user){
+
+info.innerHTML =
+`✅ ${user.displayName}`;
+
+}else{
+
+info.innerHTML =
+"Invitado";
+
+}
+
+});
+
+document
+.getElementById("loginGoogle")
+.onclick = async ()=>{
+
+try{
+
+await signInWithPopup(
+auth,
+provider
+);
+
+}catch(error){
+
+alert(error.message);
+
+}
+
+};
 window.enviarComentario = async () => {
 
 const nombre =
