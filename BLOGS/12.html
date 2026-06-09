@@ -172,6 +172,10 @@
 🔑 Iniciar sesión con Google
 </button>
 
+<button id="logoutGoogle">
+🚪 Cerrar sesión
+</button>
+
 <div id="usuarioActual"></div>
 <h2 id="contadorComentarios">💬 Comentarios (0)</h2>
 
@@ -258,7 +262,8 @@ import {
 getAuth,
 GoogleAuthProvider,
 signInWithPopup,
-onAuthStateChanged
+onAuthStateChanged,
+signOut
 }
 from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
 
@@ -316,6 +321,14 @@ provider
 alert(error.message);
 
 }
+
+};
+
+document
+.getElementById("logoutGoogle")
+.onclick = async ()=>{
+
+await signOut(auth);
 
 };
 window.enviarComentario = async () => {
