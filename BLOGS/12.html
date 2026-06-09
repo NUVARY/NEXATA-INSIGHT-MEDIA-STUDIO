@@ -169,7 +169,7 @@
 
 <div class="comentarios-box">
 
-<h2>💬 Comentarios</h2>
+<h2 id="contadorComentarios">💬 Comentarios (0)</h2>
 
 <input
 type="text"
@@ -275,12 +275,31 @@ alert("Escribe un comentario");
 return;
 }
 
+const ultimaPublicacion =
+localStorage.getItem("ultimoComentario");
+
+const ahora = Date.now();
+
+if(
+ultimaPublicacion &&
+ahora - Number(ultimaPublicacion) < 30000
+){
+alert(
+"Espera 30 segundos antes de comentar nuevamente."
+);
+return;
+}
+
 await addDoc(collection(db,"comentarios"),{
 articulo,
 nombre,
 comentario,
 fecha:new Date().toISOString()
 });
+localStorage.setItem(
+"ultimoComentario",
+Date.now()
+);
 
 document.getElementById("comentario").value="";
 
@@ -288,6 +307,7 @@ cargarComentarios();
 };
 
 async function cargarComentarios(){
+let total = 0;
 
 const lista =
 document.getElementById("listaComentarios");
@@ -305,6 +325,7 @@ const datos = await getDocs(q);
 lista.innerHTML = "";
 
 datos.forEach((doc)=>{
+total++;
 
 const c = doc.data();
 
@@ -321,6 +342,10 @@ lista.innerHTML += `
 
 });
 
+document.getElementById(
+"contadorComentarios"
+).textContent =
+`💬 Comentarios (${total})`;
 }
 
 cargarComentarios();
