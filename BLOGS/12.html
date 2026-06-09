@@ -242,7 +242,8 @@ collection,
 addDoc,
 getDocs,
 query,
-orderBy
+orderBy,
+where
 }
 from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
 
@@ -257,6 +258,8 @@ appId: "1:529237253093:web:1cb81ffe914c89be172d0c"
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
+
+const articulo = "12";
 
 window.enviarComentario = async () => {
 
@@ -273,6 +276,7 @@ return;
 }
 
 await addDoc(collection(db,"comentarios"),{
+articulo,
 nombre,
 comentario,
 fecha:new Date().toISOString()
@@ -292,6 +296,7 @@ lista.innerHTML = "Cargando comentarios...";
 
 const q = query(
 collection(db,"comentarios"),
+where("articulo","==",articulo),
 orderBy("fecha","desc")
 );
 
