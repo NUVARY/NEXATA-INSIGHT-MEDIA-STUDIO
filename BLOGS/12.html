@@ -250,7 +250,8 @@ orderBy,
 where,
 doc,
 updateDoc,
-increment
+increment,
+deleteDoc
 }
 from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
 import {
@@ -351,6 +352,7 @@ articulo,
 nombre,
 comentario,
 likes: 0,
+uid: usuario ? usuario.uid : null,
 fecha:new Date().toISOString()
 });
 
@@ -387,6 +389,18 @@ total++;
 
 const c = doc.data();
 const id = doc.id;
+let botonEliminar = "";
+
+const ADMIN_EMAIL =
+"diamantesdmpj@gmail.com";
+
+if(
+(usuario && usuario.email === ADMIN_EMAIL) ||
+(usuario && usuario.uid === c.uid)
+){
+botonEliminar =
+`<button onclick="eliminarComentario('${id}')">🗑 Eliminar</button>`;
+}
 
 const fecha =
 new Date(c.fecha).toLocaleString();
@@ -403,6 +417,7 @@ lista.innerHTML += `
 <button onclick="darLike('${id}')">
 👍 ${c.likes || 0}
 </button>
+${botonEliminar}
 
 </div>
 `;
@@ -431,6 +446,19 @@ likes: increment(1)
 );
 
 localStorage.setItem(clave,"1");
+
+cargarComentarios();
+
+};
+window.eliminarComentario = async (id) => {
+
+if(!confirm("¿Eliminar comentario?")){
+return;
+}
+
+await deleteDoc(
+doc(db,"comentarios",id)
+);
 
 cargarComentarios();
 
