@@ -179,10 +179,8 @@
 <div id="usuarioActual"></div>
 
 <h2 id="contadorComentarios">💬 Comentarios (0)</h2>
-<span
-title="Los usuarios que inician sesión con Google pueden eliminar sus propios comentarios. Los invitados pueden comentar libremente, pero no pueden eliminar comentarios después de publicarlos. Comunicate a soporte"
-style="cursor:help;color:#007bff;"
->
+
+<span id="ayudaComentarios" style="cursor:pointer;color:#007bff;">
 ❓
 </span>
 
@@ -443,7 +441,15 @@ ${botonEliminar}
 `;
 
 });
+document
+.getElementById("ayudaComentarios")
+.onclick = ()=>{
 
+alert(
+"Los usuarios que inician sesión con Google pueden eliminar sus propios comentarios.\n\nLos invitados pueden comentar libremente, pero no pueden eliminar comentarios después de publicarlos.\n\nEl administrador puede eliminar cualquier comentario."
+);
+
+};
 document.getElementById(
 "contadorComentarios"
 ).textContent =
