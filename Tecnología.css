@@ -52,7 +52,7 @@ body{
 /* galeria (grid) */
 .gallery{
     width:90%;
-    margin:0 auto 40px;
+    margin:30 auto 40px;
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
     gap:22px
