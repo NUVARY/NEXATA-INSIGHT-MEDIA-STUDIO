@@ -1,11 +1,8 @@
 /* variables */
 :root {
- 
  --card-bg: rgba(11,18,32,0.8);
  --accent: #ffffff;
  --muted: #94a3b8;
- 
- 
  --radius: 14px;
  --black-45: rgba(0, 0, 0, 0.45);
  --white-75: rgba(255, 255, 255, 0.75);
@@ -16,7 +13,6 @@
  --color-primary: #031a3d;
  --shadow-dark: rgba(0,0,0,0.35);
  --radius-xl: 50px;
- 
  --icon-size:32px;
 }
 /* =========================
@@ -53,12 +49,6 @@ body{
  z-index: var(--z-max);
  font-style: italic;
 }
-
-
-
-
-
-
 /* galeria (grid) */
 .gallery{
     width:90%;
@@ -91,8 +81,6 @@ body{
 .card-content{padding:14px;}
 .card-content h3{color:var(--accent);margin-bottom:6px}
 .card-content p{color:var(--muted);font-size:14px;}
-
-
 /* =========================
           ENCABEZADO
 ========================= */
