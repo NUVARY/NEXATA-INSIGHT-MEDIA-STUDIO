@@ -111,19 +111,15 @@ body{
     align-items: center;
     gap: 10px;
 }
-.logo{
-    width: 30px;
-    height: 30px;
-    object-fit: contain;
-}
+
 .title{
     font-size: 14px;
     font-weight: 700;
     color: #fff;
-    letter-spacing: 1px; /*sospecha 1*/
+    letter-spacing: 1px; 
 }
 /* DERECHA */
-.header-desktop .right .short{ /*sospecha 2*/
+.header-desktop .right .short{ 
     color: white;
     font-weight: 700;
     font-size: 14px;
