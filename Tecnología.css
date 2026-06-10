@@ -4,7 +4,7 @@
  --card-bg: rgba(11,18,32,0.8);
  --accent: #ffffff;
  --muted: #94a3b8;
- --chip-bg: #rgba(255, 255, 255, 0.03);
+ --chip-bg: rgba(255, 255, 255, 0.03);
  --chip-active-bg: linear-gradient(90deg, rgba(0,163,255,1), rgba(6,182,212,0.06));
  --radius: 14px;
  --black-45: rgba(0, 0, 0, 0.45);
@@ -53,49 +53,12 @@ body{
  z-index: var(--z-max);
  font-style: italic;
 }
-/* ocultar inputs (pero mantenerlos en DOM) */
-.filter-input{
-    position: absolute;
-    left:-9999px;
-    width:1px;height:1px;
-    overflow:rect(0 0 0 0);
-    clip:rect(0 0 0 0);
-}
 
-/* filtro visibles (labels) */
-.filter{
-    display:flex;
-    gap:10px;
-    flex-wrap:wrap;
-    justify-content:center;
-    padding:12px 20px;
-    margin-top: 20px;
-    margin-bottom:10px;
-}
-.chip{
-    padding:8px 14px;
-    border-radius:999px;
-    background:var(--chip-bg);
-    cursor:pointer;
-    font-size:14px;
-    color:#fff;
-    transition:all .18s ease;
-}
-/* estilo del label cuando su input esta seleccionado */
-/* nota: usamos selectores del tipo #id:checked ~ .filters label[for="id"] */
-#filter-all:checked ~ .filter label[for="filter-all"],
-#filter-1:checked ~ .filter label[for="filter-1"],
-#filter-2:checked ~ .filter label[for="filter-2"],
-#filter-3:checked ~ .filter label[for="filter-3"],
-#filter-4:checked ~ .filter label[for="filter-4"],
-#filter-5:checked ~ .filter label[for="filter-5"],
-#filter-6:checked ~ .filter label[for="filter-6"],
-#filter-7:checked ~ .filter label[for="filter-7"],
-#filter-8:checked ~ .filter label[for="filter-8"] {
-  background: var(--chip-active-bg);
-  box-shadow: 0 8px 22px rgba(2,6,23,0.6);
-  border-color: rgba(139,92,246,0.9);
-}
+
+
+
+
+
 /* galeria (grid) */
 .gallery{
     width:90%;
@@ -128,37 +91,6 @@ body{
 .card-content{padding:14px;}
 .card-content h3{color:var(--accent);margin-bottom:6px}
 .card-content p{color:var(--muted);font-size:14px;}
-
-/* FILTRADO CSS (mostrar/ocultar según radio seleccionado) */
-/* Por defecto (Todas): no hacemos nada (todos visibles) */
-
-/* Cuando se selecciona una categoría: esconder todas y mostrar solo las que coinciden */
-#filter-1:checked ~ .gallery .card { display:none; }
-#filter-1:checked ~ .gallery .card.cat-1 { display:block; }
-
-#filter-2:checked ~ .gallery .card { display:none; }
-#filter-2:checked ~ .gallery .card.cat-2 { display:block; }
-
-#filter-3:checked ~ .gallery .card { display:none; }
-#filter-3:checked ~ .gallery .card.cat-3 { display:block; }
-
-#filter-4:checked ~ .gallery .card { display:none; }
-#filter-4:checked ~ .gallery .card.cat-4 { display:block; }
-
-#filter-5:checked ~ .gallery .card { display:none; }
-#filter-5:checked ~ .gallery .card.cat-5 { display:block; }
-
-#filter-6:checked ~ .gallery .card { display:none; }
-#filter-6:checked ~ .gallery .card.cat-6 { display:block; }
-
-#filter-7:checked ~ .gallery .card { display:none; }
-#filter-7:checked ~ .gallery .card.cat-7 { display:block; }
-
-#filter-8:checked ~ .gallery .card { display:none; }
-#filter-8:checked ~ .gallery .card.cat-8 { display:block; }
-/* nota: #filter-all está por defecto checked -> muestra todo */
-
-
 
 
 /* =========================
