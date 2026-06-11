@@ -85,14 +85,14 @@ body{
           ENCABEZADO
 ========================= */
 .header-desktop{
-    width: 100%;
-    background: var(--color-primary);
-    display: flex;
-    align-items: center;
-    padding: 10px 25px;
-    justify-content: space-between;
-    border-radius: 50px;
-    margin-bottom: 30px;
+ width: 100%;
+ background: var(--color-primary);
+ display: flex;
+ align-items: center;
+ padding: 10px 25px;
+ justify-content: space-between;
+ border-radius: 50px;
+ margin-bottom: 30px;
 }
 /* IZQUIERDA */
 .left{
