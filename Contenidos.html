@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CATEGORÍAS</title>
-    <link rel="stylesheet" href="categorias style.css">
+    <link rel="stylesheet" href="Contenidos style.css">
 </head>
 
 <body>
@@ -20,23 +20,6 @@
         <li><a href="index.html">📰feed</a></li>
       </ul>
     </nav>
-    
-    <div class="center-icons">
-      <!-- WHATSAPP -->
-      <a class="icon-btn" href="https://wa.me/?text=Mira%20este%20contenido%20👉%20https://nexata-insight-media-studio.github.io/CATEGORIAS/" target="_blank">
-        <img src="IMAGENES/Red social/Whatsapp.png" alt="WhatsApp">
-      </a>
-
-      <!-- FACEBOOK -->
-      <a class="icon-btn" href="https://www.facebook.com/sharer/sharer.php?u=https://nexata-insight-media-studio.github.io/CATEGORIAS/" target="_blank">
-        <img src="IMAGENES/Red social/facebook.png" alt="Facebook">
-      </a>
-
-      <!-- COPIAR ENLACE -->
-      <button class="icon-btn" id="copyLinkBtn">
-        <img src="IMAGENES/Imagenes variadas/copiar.png" alt="Copiar enlace">
-      </button>
-    </div>
 
     <div class="right"><span class="short">NIMS</span></div>
 </header>
@@ -55,69 +38,12 @@
      </ul>
     </nav>
 
-    <div class="hero-icons">
-      <a class="icon-btn" href="https://wa.me/?text=Mira%20este%20contenido%20👉%20https://nexata-insight-media-studio.github.io/CATEGORIAS/" target="_blank">
-        <img src="IMAGENES/Red social/Whatsapp.png" alt="WhatsApp">
-      </a>
 
-      <a class="icon-btn" href="https://www.facebook.com/sharer/sharer.php?u=https://nexata-insight-media-studio.github.io/CATEGORIAS/" target="_blank">
-        <img src="IMAGENES/Red social/facebook.png" alt="Facebook">
-      </a>
 
-      <button class="icon-btn" id="copyLinkBtnMobile">
-        <img src="IMAGENES/Imagenes variadas/copiar.png" alt="Copiar enlace">
-      </button>
-    </div>
-  </div>
-  </header>
-
-  <!-- SCRIPT copiar enlace -->
-  <script>
-    async function copiarEnlace(btn) {
-      try {
-        await navigator.clipboard.writeText(window.location.href);
-        btn.classList.add('show');
-        setTimeout(() => btn.classList.remove('show'), 1200);
-      } catch (e) {
-        alert("No se pudo copiar automáticamente.");
-      }
-    }
-
-    document.addEventListener("DOMContentLoaded", () => {
-      const btn = document.getElementById("copyLinkBtn");
-      const btnMob = document.getElementById("copyLinkBtnMobile");
-
-      if (btn) btn.addEventListener("click", () => copiarEnlace(btn));
-      if (btnMob) btnMob.addEventListener("click", () => copiarEnlace(btnMob));
-    });
-  </script>
-
-   <!-- inputs (ocultos) necesariospara el filtro CSS. Importante: deben estar antes de .filters y .gallery para que los selectores ~ funcionen -->
-    <input class="filter-input" type="radio" name="filter" id="filter-all" checked>
-    <input class="filter-input" type="radio" name="filter" id="filter-1">
-    <input class="filter-input" type="radio" name="filter" id="filter-2">
-    <input class="filter-input" type="radio" name="filter" id="filter-3">
-    <input class="filter-input" type="radio" name="filter" id="filter-4">
-    <input class="filter-input" type="radio" name="filter" id="filter-5">
-    <input class="filter-input" type="radio" name="filter" id="filter-6">
-    <input class="filter-input" type="radio" name="filter" id="filter-7">
-    <input class="filter-input" type="radio" name="filter" id="filter-8">
-    <!-- Menú visible: labels que controlan los radio inputs-->
-    <nav class="filter" aria-label="filtrar por categoría">
-        <label for="filter-all" class="chip">CONTENIDOS</label>
-        <label for="filter-1" class="chip">TECNOLOGÍA</label>
-        <label for="filter-2" class="chip">JUEGOS</label>
-        <label for="filter-3" class="chip">MARKETING Y MOTIVACIÓN</label>
-        <label for="filter-4" class="chip">FINANZAS PERSONALES Y CRIPTOMONEDAS</label>
-        <label for="filter-5" class="chip">SALUD</label>
-        <label for="filter-6" class="chip">MOTIVACIÓN</label>
-        <label for="filter-7" class="chip">CURIOSIDADES DEL MUNDO</label>
-        <label for="filter-8" class="chip">EVERYTHING & MORE</label>
-    </nav>
-     <!-- galeria: añade la clase de categoria en cada card (ej:guias)-->
-    <main class="gallery" aria-live="polite">
-        <!--card 1 (Guias)-->
-        <article class="card cat-5">
+    
+    <main class="gallery">
+        <!------------>
+        <article class="card">
             <img src="IMAGENES/Portada de blog/1.png" alt="Trastorno de ansiedad">
             <div class="card-content">
                 <h3>Trastorno de ansiedad</h3>
@@ -246,8 +172,6 @@
     <footer>
         <p><a href="Politica de privacidad/Politica de privacidad.html">Política de Privacidad</a> | <a href="Informacion/Informacion.html">Información</a> | © 2025 NEXATA INSIGHT MEDIA STUDIO. Todos los derechos reservados.</p>
     </footer>
-    <div class="bg-credit">
-     Fondo de la pagina: Imagen de <a href="https://pixabay.com/es/users/edar-609103/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=568968">Edar</a> en <a href="https://pixabay.com/es//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=568968">Pixabay</a>
-    </div>
+
 </body>
 </html>
