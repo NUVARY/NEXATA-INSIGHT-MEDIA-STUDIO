@@ -162,6 +162,56 @@ body {
   text-decoration: none;
   z-index: 100;
 }
+/* BUZÓN DESPLEGABLE */
+
+.buzon-desplegable{
+    background:white;
+    border-radius:10px;
+    padding:10px;
+    margin:15px;
+}
+
+.buzon-desplegable summary{
+    cursor:pointer;
+    list-style:none;
+    background:#0b1220;
+    color:white;
+    padding:12px;
+    border-radius:10px;
+    font-weight:bold;
+    user-select:none;
+}
+
+.buzon-desplegable summary:hover{
+    opacity:.9;
+}
+
+.buzon-desplegable form{
+    margin-top:12px;
+}
+
+.buzon-desplegable textarea{
+    width:100%;
+    min-height:120px;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    resize:vertical;
+}
+
+.buzon-desplegable button{
+    margin-top:10px;
+    background:#1877f2;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.buzon-desplegable button:hover{
+    opacity:.9;
+}
 
 /* ===================== */
 /* 📱 RESPONSIVE MÓVIL */
