@@ -254,10 +254,6 @@ RESPONSIVE
 ========================= */
 @media (max-width:768px){
 
-```
-.header-desktop{
-    display:none !important;
-}
 
 .header-mobile{
     display:flex;
@@ -318,6 +314,5 @@ RESPONSIVE
 .gallery{
     width:95%;
 }
-```
 
 }
