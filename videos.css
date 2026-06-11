@@ -8,10 +8,10 @@ body{
 /* HEADER */
 header{
   background:#181818;
-  padding:20px 30px;
-  font-size:22px;
+  padding:15px;
+  font-size:24px;
   font-weight:bold;
-  letter-spacing:1px;
+  text-align:center;
 }
 
 /* SECCIONES */
