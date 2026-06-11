@@ -5,14 +5,6 @@ body{
   color:white;
 }
 
-header{
-  background:#181818;
-  
-
- 
-
-}
-
 .podcast-section{
   padding:40px 20px;
   max-width:900px;
@@ -78,6 +70,11 @@ header{
 audio{
   width:100%;
   margin-top:8px;
+}
+
+
+header{
+    background:#181818;
 }
 
 .top-bar{
