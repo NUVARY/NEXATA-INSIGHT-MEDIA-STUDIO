@@ -88,29 +88,6 @@ body {
 }
 
 /* CATEGORÍAS */
-.categorias {
-  background: white;
-  padding: 15px;
-  border-radius: 8px;
-}
-
-.categorias ul {
-  list-style: none;
-}
-
-.categorias li {
-  margin: 8px 0;
-}
-.categorias a{
-  text-decoration: none;
-  color: inherit;
-  display: block;
-  padding: 6px 0;
-}
-
-.categorias a:hover{
-  opacity: 0.8;
-}
 .menu-categorias{
     width:100%;
     max-width:250px;
