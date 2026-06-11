@@ -7,13 +7,13 @@
  --chip-bg: rgba(255, 255, 255, 0.03);
  
  --radius: 14px;
- --black-45: rgba(0, 0, 0, 0.45);
+ --black-45: black;
  --white-75: rgba(255, 255, 255, 0.75);
  --pd-xs: 4px 10px; 
  --radius-md: 8px;
  --z-max: 9999;
  --pd-15: 15px;
- --color-primary: #031a3d;
+ 
  --shadow-dark: rgba(0,0,0,0.35);
  --radius-xl: 50px;
  --radius-lg: 30px;
@@ -35,59 +35,16 @@ body{
  color: black;
  line-height: 1.6;
  margin: 20px;
- background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)),
-             url(IMAGENES/Fondo\ de\ la\ pagina/0.2.jpg) center center / cover no-repeat;
-}
-/* =========================
-            CREDITO
-========================= */
-.bg-credit {
- position: fixed;
- bottom: 8px;
- right: 12px;
- font-size: 12px;
- color: var(--white-75);
- background: var(--black-45);
- padding: var(--pd-xs);
- border-radius: var(--radius-md);
- z-index: var(--z-max);
- font-style: italic;
-}
-/* ocultar inputs (pero mantenerlos en DOM) */
-.filter-input{
-    position: absolute;
-    left:-9999px;
-    width:1px;height:1px;
-    overflow:rect(0 0 0 0);
-    clip:rect(0 0 0 0);
 }
 
-/* filtro visibles (labels) */
-.filter{
-    display:flex;
-    gap:10px;
-    flex-wrap:wrap;
-    justify-content:center;
-    padding:12px 20px;
-    margin-top: 20px;
-    margin-bottom:10px;
-}
-.chip{
-    padding:8px 14px;
-    border-radius:999px;
-    background:var(--chip-bg);
-    cursor:pointer;
-    font-size:14px;
-    color:#fff;
-    transition:all .18s ease;
-}
+
 
 
 
 /* galeria (grid) */
 .gallery{
     width:90%;
-    margin:0 auto 40px;
+    margin:30px auto 40px;
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
     gap:22px
@@ -126,12 +83,11 @@ body{
 ========================= */
 .header-desktop{
     width: 100%;
-    background: var(--color-primary);
     display: flex;
     align-items: center;
     padding: 10px 25px;
     justify-content: space-between;
-    border-radius: 50px;
+    
 }
 /* IZQUIERDA */
 .left{
@@ -147,8 +103,8 @@ body{
 .title{
     font-size: 14px;
     font-weight: 700;
-    color: #fff;
-    letter-spacing: 1px; /*sospecha 1*/
+    color: var(--black-45)
+   
 }
 /* DERECHA */
 .header-desktop .right .short{ /*sospecha 2*/
@@ -231,13 +187,9 @@ body{
         PIE DE PÁGINA
 ========================= */
 footer{
- background: var(--color-primary);
- color:var(--accent);
+ color: var(--black-45);
  text-align:center;
  padding: var(--pd-15);
- margin-top: 40px;
- border-radius: var(--radius-xl);
- box-shadow: 0 4px 15px var(--shadow-dark);
  text-decoration: none; /* este quita lo interlineado cuando tiene un enlace */
 }
 /* adicional */
