@@ -66,24 +66,26 @@ body{
 }
 
 .top-bar{
+    position:relative;
     display:flex;
+    justify-content:center;
     align-items:center;
-    gap:20px; /* separación entre botón y título */
     padding:15px 20px;
     background:#181818;
+}
+
+.back-btn{
+    position:absolute;
+    left:20px;
+    padding:10px 20px;
+    background:#fff;
+    color:#000;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
 }
 
 .top-bar h3{
     margin:0;
     font-size:24px;
-}
-
-.back-btn{
-    display:inline-block;
-    padding:10px 20px;
-    background:#ffffff;
-    color:#000;
-    text-decoration:none;
-    border-radius:8px;
-    font-weight:bold;
 }
