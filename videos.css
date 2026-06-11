@@ -71,3 +71,14 @@ header{
   font-size:14px;
   font-weight:normal;
 }
+
+.back-btn{
+  display:inline-block;
+  margin:20px;
+  padding:40px 20px;
+  background:#ffffff;
+  color:#000;
+  text-decoration:none;
+  border-radius:8px;
+  font-weight:bold;
+}
