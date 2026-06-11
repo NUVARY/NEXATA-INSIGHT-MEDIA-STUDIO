@@ -80,13 +80,24 @@ audio{
   margin-top:8px;
 }
 
+.top-bar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin:20px;
+}
+
+.top-bar h3{
+    margin:0;
+    font-size:24px;
+}
+
 .back-btn{
-  display:inline-block;
-  margin:20px;
-  padding:40px 20px;
-  background:#ffffff;
-  color:#000;
-  text-decoration:none;
-  border-radius:8px;
-  font-weight:bold;
+    display:inline-block;
+    padding:10px 20px;
+    background:#ffffff;
+    color:#000;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
 }
