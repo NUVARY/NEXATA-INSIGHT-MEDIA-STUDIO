@@ -5,15 +5,7 @@
  --muted: #94a3b8;
  --radius: 14px;
  --black-45: black;
- --white-75: rgba(255, 255, 255, 0.75);
- --pd-xs: 4px 10px; 
- --radius-md: 8px;
- --z-max: 9999;
  --pd-15: 15px;
- --shadow-dark: rgba(0,0,0,0.35);
- --radius-xl: 50px;
- --radius-lg: 30px;
- --icon-size:32px;
 }
 /* =========================
         RESET GENERAL
@@ -163,7 +155,7 @@ a:hover {
         justify-content: space-between;
         width: 100%;
         
-        background: var(--color-primary);
+        
         padding: 12px 18px;
         border-radius: 20px;
         gap:12px;
@@ -185,16 +177,8 @@ a:hover {
       height: auto;
       display: block;
     }
-    /* Iconos debajo */
-    .hero-icons{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 12px;
-    }
-    :root {
-    --icon-size: 44px;
-    }
+
+
 /* BOTÓN REGRESAR / INICIO EN MÓVIL (mismo estilo que escritorio) */
     .center-mobile ul {
         list-style: none;
