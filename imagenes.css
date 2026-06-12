@@ -6,11 +6,29 @@ body{
 }
 
 /* HEADER */
-header{
-  background:#181818;
-  padding:20px 30px;
-  font-size:22px;
-  font-weight:bold;
+.top-bar{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:15px 20px;
+    background:#181818;
+}
+
+.back-btn{
+    position:absolute;
+    left:20px;
+    padding:10px 20px;
+    background:#fff;
+    color:#000;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.top-bar h3{
+    margin:0;
+    font-size:24px;
 }
 
 /* GALERÍA */
