@@ -29,8 +29,6 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 20px;
-  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
-              url("../IMAGENES/Fondo\ de\ la\ pagina/0.2.jpg") center center / cover no-repeat;
 }
 /* =========================
             CREDITO
