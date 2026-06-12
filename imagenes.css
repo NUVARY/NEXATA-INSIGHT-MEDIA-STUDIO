@@ -26,6 +26,11 @@ body{
     font-weight:bold;
 }
 
+.top-bar h3{
+    margin:0;
+    font-size:24px;
+}
+
 /* GALERÍA */
 .gallery{
   display:grid;
