@@ -50,12 +50,12 @@ body {
 ========================= */
 .header-desktop {
  width: 100%;
- background: #031a3d;
+
  display: flex;
  align-items: center; 
  padding: 15px;
  justify-content: space-between;
- border-radius: 50px;
+
 }
 /* IZQUIERDA */
 .header-desktop .left{
