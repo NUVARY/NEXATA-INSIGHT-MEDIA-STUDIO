@@ -111,12 +111,10 @@ body {
 ========================= */
 footer {
  background: var(--color-primary);
- color: var(--accent);
+ color: black;
  text-align: center;
  padding: var(--pd-15);
  margin-top: 40px;
- border-radius: var(--radius-xl);
- box-shadow: 0 4px 15px var(--shadow-dark);
 }
 /* adicional */
 /* Quitar subrayado y color azul a TODOS los enlaces */
