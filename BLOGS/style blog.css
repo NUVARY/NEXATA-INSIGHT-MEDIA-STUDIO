@@ -36,12 +36,10 @@ body {
 ========================= */
 .header-desktop {
  width: 100%;
-
  display: flex;
  align-items: center; 
  padding: 15px;
  justify-content: space-between;
-
 }
 /* IZQUIERDA */
 .header-desktop .left{
@@ -62,7 +60,7 @@ body {
 }
 /* DERECHA */
 .header-desktop .right .short{
-    color: white;
+    color: black;
     font-weight: 700;
     font-size: 14px;
 }
@@ -91,16 +89,6 @@ body {
 .center-list li a:hover {
   background: rgba(255, 255, 255, 0.25);
   transform: scale(1.05);
-}
-/* =========================
-        PIE DE PÁGINA
-========================= */
-footer {
- background: var(--color-primary);
- color: black;
- text-align: center;
- padding: var(--pd-15);
- margin-top: 40px;
 }
 /* adicional */
 /* Quitar subrayado y color azul a TODOS los enlaces */
