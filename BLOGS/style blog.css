@@ -30,21 +30,7 @@ body {
   margin: 0;
   padding: 20px;
 }
-/* =========================
-            CREDITO
-========================= */
-.bg-credit {
-  position: fixed;
-  bottom: 8px;
-  right: 12px;
-  font-size: 12px;
-  color: var(--white-75);
-  background: var(--black-45);
-  padding: var(--pd-xs);
-  border-radius: var(--radius-md);
-  z-index: var(--z-max);
-  font-style: italic;
-}
+
 /* =========================
           ENCABEZADO
 ========================= */
