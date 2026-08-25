@@ -160,7 +160,7 @@
         antes de que los usuarios sean engañados.
       </p>
 
-       <div class="contenido-extra">
+      <div class="contenido-extra">
 
          <p>
           La nueva herramienta busca detectar posibles intentos
@@ -178,9 +178,10 @@
           voces con sorprendente precisión utilizando grabaciones 
           obtenidas de redes sociales, videos o mensajes de audio publicados en internet.
         </p>
-        <!-- BOTÓN PARA DESPLEGAR -->
-        <button class="boton-leer" onclick="leerMas(this)">Leer más</button>
+        <p><a href="BLOGS/8.html" class="btn-leer">📖 Link de la Publicación</a></p>
       </div>
+              <!-- BOTÓN PARA DESPLEGAR -->
+        <button class="boton-leer" onclick="leerMas(this)">Leer más</button>
     </div>
 
     <!-- <div class="publicacion">
@@ -224,18 +225,16 @@
 <!-- BOTÓN WHATSAPP -->
 <a href="https://wa.me/639121088486?text=Hello%20I%20contact%20you%20from%20the%20website" class="whatsapp">💬</a>
 <script>
-function leerMas(boton) {
-  const publicacion = boton.closest(".publicacion");
-  const contenido = publicacion.querySelector(".contenido-extra");
-
-  if (contenido.style.display === "block") {
-    contenido.style.display = "none";
-    boton.textContent = "Leer más";
-  } else {
-    contenido.style.display = "block";
-    boton.textContent = "Leer menos";
-  }
-}
+    function leerMas(boton){
+        const contenido = boton.previousElementSibling;
+        if (contenido.style.display === "block"){
+            contenido.style.display = "none";
+            boton.textContent = "leer más";
+        } else{
+            contenido.style.display = "block";
+            boton.textContent = "leer menos";
+        }
+    }
 </script>
 </body>
 </html>
