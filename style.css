@@ -99,6 +99,25 @@ body {
   border-radius: 6px;
   margin: 10px 0;
 }
+.contenido-extra{
+    display: none;
+}
+.boton-leer{
+    margin-top: 10px;
+    border-radius: 15px;
+    background: white;
+    font-weight: bold;
+    cursor: pointer;
+    color: #1877f2;
+    font-size: 13px;
+    padding: 6px 12px;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+}
+.boton-leer:hover{
+    background: #f0f2f5;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.12);
+}
 
 /* ACCIONES */
 .acciones {

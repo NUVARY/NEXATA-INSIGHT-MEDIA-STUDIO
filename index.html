@@ -227,5 +227,17 @@
 
 <!-- BOTÓN WHATSAPP -->
 <a href="https://wa.me/639121088486?text=Hello%20I%20contact%20you%20from%20the%20website" class="whatsapp">💬</a>
+<script>
+  function leerMas(boton){
+    const contenido = boton.previousElementSibling;
+    if (contenido.style.display === "block"){
+      contenido.style.display = "none";
+      boton.textContent = "leer más";
+    } else{
+      contenido.style.display = "block";
+      boton.textContent = "leer menos"
+    }
+  }
+</script>
 </body>
 </html>
