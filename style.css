@@ -11,8 +11,8 @@ body {
 
 /* HEADER */
 .header {
-  background: #1877f2;
-  color: white;
+  background: white;
+  color: black;
   padding: 10px 150px;
   display: flex;
   justify-content: space-between;
@@ -22,13 +22,30 @@ body {
 .logo {
   font-size: 18px;
   font-weight: bold;
+  padding: 8PX 12PX;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.logo:hover{
+  background: #f0f2f5;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.20);
 }
 
 .menu a {
-  color: white;
+  color: black;
+  font-weight: bold;
   margin-left: 15px;
   text-decoration: none;
-  font-size: 14px;
+  padding: 8px 12px;
+  font-size: 18px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.menu a:hover{
+  background: #f0f2f5;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.20);
 }
 
 /* CONTENEDOR */
