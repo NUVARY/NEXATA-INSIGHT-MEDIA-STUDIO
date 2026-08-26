@@ -312,7 +312,17 @@ body {
 @media (max-width: 768px) {
 
   .menu {
-    display: none;
+    font-size: 10px;
+    margin-left: 5px;
+  }
+
+  .logo{
+    font-size: 14px;
+  }
+  
+  .menu a{
+    font-size: 10px;
+    margin-left: 5px;
   }
 
   .container {
