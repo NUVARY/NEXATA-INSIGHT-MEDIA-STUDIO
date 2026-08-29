@@ -12,6 +12,9 @@ body {
 .btn-feed{
   display: none;
 }
+.btn-contenidos{
+  display: none
+}
 
 /* CONTENEDOR */
 .container {
