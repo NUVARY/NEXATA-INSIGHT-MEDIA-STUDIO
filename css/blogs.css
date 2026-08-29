@@ -1,0 +1,190 @@
+/* ===================================
+            BLOGS.CSS
+       NEXATA INSIGHT MEDIA STUDIO
+=================================== */
+
+
+/* ===================================
+              AUTOR
+=================================== */
+
+.autor-box {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.autor-box table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.autor-foto {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.autor-info {
+  padding-left: 15px;
+  vertical-align: middle;
+}
+
+.autor-info h2 {
+  margin: 0;
+}
+
+.autor-info p {
+  margin: 5px 0;
+}
+
+.autor-fecha {
+  color: gray;
+}
+
+
+/* ===================================
+        BOTONES PARA COMPARTIR
+=================================== */
+
+.social {
+  margin: 10px 0;
+  display: flex;
+  gap: 12px;
+}
+
+.social a {
+  margin-right: 10px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  color: #fff;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.social a:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+
+/* FACEBOOK */
+
+.social a.facebook {
+  background: #3b5998;
+}
+
+
+/* X / TWITTER */
+
+.social a.twitter {
+  background: #000000;
+}
+
+
+/* WHATSAPP */
+
+.social a.whatsapp {
+  background: #25d366;
+}
+
+
+/* ICONOS */
+
+.social a svg {
+  width: 18px;
+  height: 18px;
+  fill: white;
+}
+
+
+/* ===================================
+             COMENTARIOS
+=================================== */
+
+.comentarios-box {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 15px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* INPUT Y TEXTAREA */
+
+.comentarios-box input,
+.comentarios-box textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+
+/* ÁREA DEL COMENTARIO */
+
+.comentarios-box textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+
+/* BOTONES */
+
+.comentarios-box button {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+
+/* COMENTARIO INDIVIDUAL */
+
+.comentario {
+  padding: 10px;
+  margin-top: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+
+/* FECHA DEL COMENTARIO */
+
+.fecha {
+  font-size: 12px;
+  color: gray;
+}
+
+
+/* ===================================
+             RESPONSIVE
+=================================== */
+
+@media (max-width: 768px) {
+
+  /* COMPARTIR */
+
+  .social {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .social a {
+    width: 100%;
+    justify-content: center;
+    margin-right: 0;
+  }
+
+
+  /* COMENTARIOS */
+
+  .comentarios-box {
+    width: 100%;
+    margin: 20px auto;
+  }
+
+}
