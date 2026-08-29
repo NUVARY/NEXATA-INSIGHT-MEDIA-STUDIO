@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // CARGAR HTML DEL HEADER
   // ======================================
 
-  fetch("../componentes/header-global.html")
+  fetch("componentes/header-global.html")
 
     .then(response => {
 
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
         css.rel = "stylesheet";
 
         css.href =
-          "../css/header-global.css";
+          "header-global.css";
 
         css.dataset.headerCss = "true";
 
