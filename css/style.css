@@ -8,6 +8,11 @@
 body {
   background: #f0f2f5;
 }
+
+.btn-feed{
+  display: none;
+}
+
 /* CONTENEDOR */
 .container {
   display: grid;
