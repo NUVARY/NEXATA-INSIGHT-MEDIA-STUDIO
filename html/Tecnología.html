@@ -4,59 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tecnología</title>
-    <link rel="stylesheet" href="/css/Tecnología.css">
+    <link rel="stylesheet" href="../css/Tecnología.css">
 </head>
 
 <body>
-<!-- HEADER escritorio -->
- <header class="header-desktop">
-    <div class="left">
-      <img src="IMAGENES/Logotipo/Logo N transparente.png" class="logo desktop-logo" alt="Logo Nexata">
-      <span class="title">NEXATA INSIGHT MEDIA STUDIO</span>
-    </div>
 
-    <nav class="center-list">
-      <ul>
-        <li><a href="index.html">📰feed</a></li>
-      </ul>
-    </nav>
-</header>
-<!-- HEADER móvil -->
-<header class="header-mobile">
-  <div class="mobile-row">
-    <img src="IMAGENES/Logotipo/Logo N transparente.png" class="hero-logo" alt="Logo">
+  <div id="header-global"></div>
 
-    <nav class="center-mobile">
-     <ul>
-      <li><a href="index.html">📰feed</a></li>
-     </ul>
-    </nav>
-    
-  </div>
-  </header>
-
-  <!-- SCRIPT copiar enlace -->
-  <script>
-    async function copiarEnlace(btn) {
-      try {
-        await navigator.clipboard.writeText(window.location.href);
-        btn.classList.add('show');
-        setTimeout(() => btn.classList.remove('show'), 1200);
-      } catch (e) {
-        alert("No se pudo copiar automáticamente.");
-      }
-    }
-
-    document.addEventListener("DOMContentLoaded", () => {
-      const btn = document.getElementById("copyLinkBtn");
-      const btnMob = document.getElementById("copyLinkBtnMobile");
-
-      if (btn) btn.addEventListener("click", () => copiarEnlace(btn));
-      if (btnMob) btnMob.addEventListener("click", () => copiarEnlace(btnMob));
-    });
-  </script>
-
-    
     <main class="gallery">
 
         <!------------>
@@ -77,8 +31,6 @@
 
 
     </main>
-    <footer>
-        <p><a href="Politica de privacidad/Politica de privacidad.html">Política de Privacidad</a> | <a href="Información/Informacion.html">Información</a> | © 2025 NEXATA INSIGHT MEDIA STUDIO. Todos los derechos reservados.</p>
-    </footer>
+    <script src="../JS/header.js"></script>
 </body>
 </html>

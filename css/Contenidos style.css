@@ -6,6 +6,7 @@
  --radius: 14px;
  --black-45: black;
  --pd-15: 15px;
+ --color-bg:  #f0f2f5;
 }
 /* =========================
         RESET GENERAL
@@ -20,9 +21,9 @@
 ========================= */
 body{
  font-family: arial, sans-serif;
- color: black;
  line-height: 1.6;
  margin: 20px;
+ background:var(--color-bg);
 }
 /* galeria (grid) */
 .gallery{
@@ -57,60 +58,6 @@ body{
 .card-content h3{color:var(--accent);margin-bottom:6px}
 .card-content p{color:var(--muted);font-size:14px;}
 
-
-
-
-
-/* =========================
-          ENCABEZADO
-========================= */
-.header-desktop{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding: 10px 25px;
-    justify-content: space-between;
-    
-}
-/* IZQUIERDA */
-.left{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.logo{
-    width: 30px;
-    height: 30px;
-    object-fit: contain;
-}
-.title{
-    font-size: 14px;
-    font-weight: 700;
-    color: var(--black-45)
-   
-}
-/* DERECHA */
-.header-desktop .right .short{
-    color: black;
-    font-weight: 700;
-    font-size: 14px;
-}
-
-
-/* lista */
-.center-list ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin: 0;
-}
-.center-list li a {
- display: inline-block;
- color:var(--black-45);
-}
-
 /* =========================
         PIE DE PÁGINA
 ========================= */
@@ -120,75 +67,7 @@ footer{
  padding: var(--pd-15);
  text-decoration: none; /* este quita lo interlineado cuando tiene un enlace */
 }
-/* adicional */
-/* Quitar subrayado y color azul a TODOS los enlaces */
-a {
-    text-decoration: none;
-    color: inherit;
-}
-/* Mantener sin subrayado incluso al pasar el mouse */
-a:hover {
-    text-decoration: none;
-}
-/* =================================== */
-/* MOSTRAR HEADERS SEGÚN DISPOSITIVO  */
-/* =================================== */
-
-/* Por defecto: mostrar escritorio, ocultar móvil */
-.header-mobile{
-    display: none;
-}
 /* =================================== */
 /*           VISTA MÓVIL               */
 /* =================================== */
-@media (max-width: 768px){
-    /* Ocultar el header de escritorio */
-    .header-desktop{
-        display: none !important;
-    }
-
-    /* Mostrar el header móvil */
-    .header-mobile{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        
-        
-        padding: 12px 18px;
-        border-radius: 20px;
-        gap:12px;
-    }
-    /*LOGO*/
-    /* CENTRADO EN MOVIL */
-    .mobile-row {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        gap: 14px;
-        text-align: center;
-    }
-    /* dimension de logo */
-    .hero-logo{
-      width: 50px;      /* Ajustado para que no se desalineé */
-      height: auto;
-      display: block;
-    }
-
-
-/* BOTÓN REGRESAR / INICIO EN MÓVIL (mismo estilo que escritorio) */
-    .center-mobile ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    .center-mobile li a {
-        display: inline-block;
-        color: var(--black-45);
-    }
-
-}
+@media (max-width: 768px){ }
