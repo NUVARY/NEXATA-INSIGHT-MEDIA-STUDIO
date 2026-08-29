@@ -139,6 +139,16 @@ if (!contenedorHeader) {
 
       contenedorHeader.innerHTML = data;
 
+      const cssHeader =
+      document.createElement("link");
+
+      cssHeader.rel = "stylesheet";
+
+      cssHeader.href =
+      rutaBase + "css/header-global.css";
+
+      document.head.appendChild(cssHeader);
+
 
       /* =================================================
          9. CORREGIR AUTOMÁTICAMENTE LAS IMÁGENES
