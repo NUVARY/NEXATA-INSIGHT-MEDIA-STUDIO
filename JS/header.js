@@ -138,6 +138,25 @@ if (!contenedorHeader) {
     .then(data => {
 
       contenedorHeader.innerHTML = data;
+      
+
+       /* =================================================
+     8.1 CARGAR CSS DEL HEADER
+     -------------------------------------------------
+     ¿Qué hace?
+
+     Carga automáticamente:
+
+     css/header-global.css
+
+     desde la raíz del proyecto.
+
+     Así las páginas NO necesitan poner:
+
+     <link rel="stylesheet"
+           href="../css/header-global.css">
+  ================================================= */
+
 
       const cssHeader =
       document.createElement("link");
