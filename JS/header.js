@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
         css.rel = "stylesheet";
 
         css.href =
-          "header-global.css";
+          "css/header-global.css";
 
         css.dataset.headerCss = "true";
 
