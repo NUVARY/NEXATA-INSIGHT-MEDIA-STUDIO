@@ -1,29 +1,120 @@
-// ========================================
-// HEADER GLOBAL
-// ========================================
+/* =========================================================
+   1. IDENTIFICAR LA RAÍZ DEL PROYECTO
+   ---------------------------------------------------------
+   ¿Qué hace?
 
-document.addEventListener("DOMContentLoaded", function () {
+   Detecta automáticamente dónde comienza
+   NEXATA-INSIGHT-MEDIA-STUDIO.
 
-  const contenedor = document.getElementById("header-global");
+   Esto permite que el sistema funcione
+   desde la raíz, BLOGS, u otras carpetas.
+========================================================= */
 
-  if (!contenedor) {
-    console.error("No existe #header-global");
-    return;
-  }
+const nombreProyecto = "/NEXATA-INSIGHT-MEDIA-STUDIO/";
+
+const posicionProyecto =
+  window.location.pathname.indexOf(nombreProyecto);
 
 
-  // ======================================
-  // CARGAR HTML DEL HEADER
-  // ======================================
+/* =========================================================
+   2. CREAR LA RUTA BASE DEL PROYECTO
+   ---------------------------------------------------------
+   ¿Qué hace?
 
-  fetch("componentes/header-global.html")
+   Construye automáticamente:
+
+   https://nuvary.github.io/
+   NEXATA-INSIGHT-MEDIA-STUDIO/
+
+   Así dejamos de depender de ../
+========================================================= */
+
+const rutaBase =
+  window.location.origin +
+  nombreProyecto;
+
+
+/* =========================================================
+   3. DEFINIR LA RUTA DEL HEADER
+   ---------------------------------------------------------
+   ¿Qué hace?
+
+   Indica dónde está nuestro archivo global.
+
+   Ya no importa si estamos en:
+
+   index.html
+   Informacion.html
+   BLOGS/6.html
+   BLOGS/7.html
+
+   Todos buscarán el mismo header.
+========================================================= */
+
+const rutaHeader =
+  rutaBase + "componentes/header-global.html";
+
+
+/* =========================================================
+   4. BUSCAR EL CONTENEDOR DEL HEADER
+   ---------------------------------------------------------
+   ¿Qué hace?
+
+   Busca en la página:
+
+   <div id="header-global"></div>
+
+   Ese será el lugar donde aparecerá
+   nuestro encabezado.
+========================================================= */
+
+const contenedorHeader =
+  document.getElementById("header-global");
+
+
+/* =========================================================
+   5. COMPROBAR QUE EXISTE EL CONTENEDOR
+   ---------------------------------------------------------
+   ¿Qué hace?
+
+   Evita errores si alguna página no tiene
+   <div id="header-global"></div>
+========================================================= */
+
+if (!contenedorHeader) {
+
+  console.warn(
+    "No se encontró el contenedor #header-global"
+  );
+
+} else {
+
+
+  /* =======================================================
+     6. CARGAR EL HEADER GLOBAL
+     -------------------------------------------------------
+     ¿Qué hace?
+
+     Descarga header-global.html.
+  ======================================================= */
+
+  fetch(rutaHeader)
 
     .then(response => {
+
+      /* ===============================================
+         7. COMPROBAR SI EL ARCHIVO EXISTE
+         -----------------------------------------------
+         ¿Qué hace?
+
+         Si GitHub no encuentra el archivo,
+         mostramos un error.
+      =============================================== */
 
       if (!response.ok) {
 
         throw new Error(
-          "No se pudo cargar header-global.html"
+          "No se pudo encontrar header-global.html"
         );
 
       }
@@ -32,63 +123,94 @@ document.addEventListener("DOMContentLoaded", function () {
 
     })
 
+
+    /* ===================================================
+       8. INSERTAR EL HEADER
+       ---------------------------------------------------
+       ¿Qué hace?
+
+       Coloca el contenido de header-global.html
+       dentro de:
+
+       <div id="header-global"></div>
+    =================================================== */
+
     .then(data => {
 
-      contenedor.innerHTML = data;
+      contenedorHeader.innerHTML = data;
 
 
-      // ==================================
-      // CARGAR CSS DEL HEADER
-      // ==================================
+      /* =================================================
+         9. CORREGIR AUTOMÁTICAMENTE LAS IMÁGENES
+         -------------------------------------------------
+         ¿Qué hace?
 
-      if (!document.querySelector(
-        'link[data-header-css]'
-      )) {
+         Busca imágenes del header que tengan:
 
-        const css = document.createElement("link");
+         data-root="IMAGENES/..."
 
-        css.rel = "stylesheet";
+         y les coloca automáticamente
+         la dirección completa del proyecto.
+      ================================================= */
 
-        css.href =
-          "css/header-global.css";
+      contenedorHeader
+        .querySelectorAll("[data-root]")
+        .forEach(elemento => {
 
-        css.dataset.headerCss = "true";
+          const ruta =
+            elemento.getAttribute("data-root");
 
-        document.head.appendChild(css);
+          elemento.src =
+            rutaBase + ruta;
 
-      }
+        });
 
 
-      // ==================================
-      // CARGAR FUENTE ORBITRON
-      // ==================================
+      /* =================================================
+         10. CORREGIR AUTOMÁTICAMENTE LOS ENLACES
+         -------------------------------------------------
+         ¿Qué hace?
 
-      if (!document.querySelector(
-        'link[data-orbitron]'
-      )) {
+         Busca enlaces que tengan:
 
-        const font = document.createElement("link");
+         data-root="index.html"
 
-        font.rel = "stylesheet";
+         y crea automáticamente:
 
-        font.href =
-          "https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800;900&display=swap";
+         /NEXATA-INSIGHT-MEDIA-STUDIO/index.html
+      ================================================= */
 
-        font.dataset.orbitron = "true";
+      contenedorHeader
+        .querySelectorAll("[data-link]")
+        .forEach(enlace => {
 
-        document.head.appendChild(font);
+          const ruta =
+            enlace.getAttribute("data-link");
 
-      }
+          enlace.href =
+            rutaBase + ruta;
+
+        });
 
     })
+
+
+    /* =====================================================
+       11. MOSTRAR ERRORES
+       -----------------------------------------------------
+       ¿Qué hace?
+
+       Si algo falla, aparecerá el error
+       en la consola del navegador.
+    ===================================================== */
 
     .catch(error => {
 
       console.error(
-        "Error cargando Header Global:",
+        "Error al cargar el Header Global:",
         error
       );
 
     });
 
-});
+}
