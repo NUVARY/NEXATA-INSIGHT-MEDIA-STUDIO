@@ -1,0 +1,510 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUVARY | En actualización</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0b0b0f;
+            color: white;
+            overflow: hidden;
+        }
+
+        .offline-page {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        /* LIVE DESCONECTADO */
+
+        .live-status {
+            position: absolute;
+            top: 30px;
+            right: 35px;
+
+            display: flex;
+            align-items: center;
+            gap: 9px;
+
+            padding: 9px 15px;
+
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 1px;
+
+            border: 1px solid #33343d;
+            border-radius: 30px;
+
+            color: #b8b8c2;
+            background: #121219;
+        }
+
+        .live-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #555;
+        }
+
+        /* CONTENIDO */
+
+        .maintenance {
+            width: 90%;
+            max-width: 1050px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            gap: 80px;
+        }
+
+        /* PERSONAJE */
+
+        .character-area {
+            width: 430px;
+            height: 430px;
+
+            position: relative;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* LETRA N */
+
+        .nuvary-n {
+            position: absolute;
+
+            font-size: 370px;
+            font-weight: 900;
+
+            line-height: 1;
+
+            color: #171821;
+
+            transform: rotate(-8deg);
+
+            text-shadow: 0 0 40px rgba(255,255,255,0.03);
+        }
+
+        /* ANIMAL HUMANIZADO */
+
+        .character {
+            position: absolute;
+
+            width: 210px;
+            height: 280px;
+
+            left: 105px;
+            top: 90px;
+
+            transform: rotate(-7deg);
+        }
+
+        /* CABEZA */
+
+        .head {
+            position: absolute;
+
+            width: 105px;
+            height: 95px;
+
+            left: 55px;
+            top: 10px;
+
+            background: #d8d8df;
+
+            border-radius: 48% 48% 45% 45%;
+
+            z-index: 5;
+        }
+
+        /* OREJAS */
+
+        .ear {
+            position: absolute;
+
+            width: 45px;
+            height: 65px;
+
+            background: #c7c7d0;
+
+            border-radius: 60% 60% 20% 20%;
+
+            top: 0;
+
+            z-index: 3;
+        }
+
+        .ear-left {
+            left: 43px;
+            transform: rotate(-30deg);
+        }
+
+        .ear-right {
+            left: 128px;
+            transform: rotate(30deg);
+        }
+
+        /* OJOS */
+
+        .eye {
+            position: absolute;
+
+            width: 10px;
+            height: 13px;
+
+            background: #17171c;
+
+            border-radius: 50%;
+
+            top: 39px;
+        }
+
+        .eye-left {
+            left: 28px;
+        }
+
+        .eye-right {
+            right: 28px;
+        }
+
+        /* NARIZ */
+
+        .nose {
+            position: absolute;
+
+            width: 13px;
+            height: 10px;
+
+            background: #555660;
+
+            border-radius: 50%;
+
+            left: 46px;
+            top: 57px;
+        }
+
+        /* BOCA */
+
+        .mouth {
+            position: absolute;
+
+            width: 25px;
+            height: 10px;
+
+            border-bottom: 2px solid #555660;
+
+            border-radius: 50%;
+
+            left: 40px;
+            top: 65px;
+        }
+
+        /* CUERPO */
+
+        .body {
+            position: absolute;
+
+            width: 125px;
+            height: 105px;
+
+            left: 40px;
+            top: 92px;
+
+            background: #c8c8d0;
+
+            border-radius: 50%;
+        }
+
+        /* BRAZOS */
+
+        .arm {
+            position: absolute;
+
+            width: 85px;
+            height: 27px;
+
+            background: #c8c8d0;
+
+            border-radius: 30px;
+        }
+
+        .arm-left {
+            left: 10px;
+            top: 125px;
+            transform: rotate(25deg);
+        }
+
+        .arm-right {
+            right: 0;
+            top: 150px;
+            transform: rotate(35deg);
+        }
+
+        /* PIERNAS */
+
+        .leg {
+            position: absolute;
+
+            width: 95px;
+            height: 30px;
+
+            background: #c8c8d0;
+
+            border-radius: 30px;
+        }
+
+        .leg-left {
+            left: 45px;
+            top: 185px;
+            transform: rotate(15deg);
+        }
+
+        .leg-right {
+            left: 105px;
+            top: 205px;
+            transform: rotate(-25deg);
+        }
+
+        /* COLA */
+
+        .tail {
+            position: absolute;
+
+            width: 80px;
+            height: 55px;
+
+            border: 18px solid #c8c8d0;
+
+            border-left: 0;
+            border-bottom: 0;
+
+            border-radius: 0 60px 0 0;
+
+            right: -20px;
+            top: 110px;
+
+            transform: rotate(20deg);
+        }
+
+        /* TEXTO */
+
+        .message {
+            max-width: 500px;
+        }
+
+        .message h1 {
+            font-size: 75px;
+            line-height: 1;
+
+            margin-bottom: 15px;
+
+            letter-spacing: -4px;
+        }
+
+        .message h2 {
+            font-size: 25px;
+
+            letter-spacing: 2px;
+
+            margin-bottom: 20px;
+
+            color: #d0d0d7;
+        }
+
+        .message p {
+            font-size: 17px;
+
+            line-height: 1.7;
+
+            color: #858691;
+        }
+
+        /* ANIMACIÓN */
+
+        .loading {
+            display: flex;
+            gap: 7px;
+
+            margin-top: 30px;
+        }
+
+        .loading span {
+            width: 7px;
+            height: 7px;
+
+            background: #777984;
+
+            border-radius: 50%;
+
+            animation: loading 1.2s infinite ease-in-out;
+        }
+
+        .loading span:nth-child(2) {
+            animation-delay: .15s;
+        }
+
+        .loading span:nth-child(3) {
+            animation-delay: .3s;
+        }
+
+        @keyframes loading {
+
+            0%, 80%, 100% {
+                opacity: .25;
+                transform: translateY(0);
+            }
+
+            40% {
+                opacity: 1;
+                transform: translateY(-5px);
+            }
+        }
+
+        /* MÓVIL */
+
+        @media (max-width: 800px) {
+
+            body {
+                overflow: auto;
+            }
+
+            .maintenance {
+                flex-direction: column;
+                gap: 20px;
+
+                padding-top: 70px;
+                padding-bottom: 40px;
+            }
+
+            .character-area {
+                width: 330px;
+                height: 330px;
+            }
+
+            .nuvary-n {
+                font-size: 280px;
+            }
+
+            .character {
+                transform: scale(.8) rotate(-7deg);
+
+                left: 60px;
+                top: 50px;
+            }
+
+            .message {
+                text-align: center;
+            }
+
+            .message h1 {
+                font-size: 60px;
+            }
+
+            .message h2 {
+                font-size: 19px;
+            }
+
+            .message p {
+                font-size: 15px;
+            }
+
+            .loading {
+                justify-content: center;
+            }
+
+            .live-status {
+                top: 18px;
+                right: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="offline-page">
+
+        <div class="live-status">
+            <span class="live-dot"></span>
+            LIVE DESCONECTADO
+        </div>
+
+        <section class="maintenance">
+
+            <div class="character-area">
+
+                <div class="nuvary-n">N</div>
+
+                <div class="character">
+
+                    <div class="ear ear-left"></div>
+                    <div class="ear ear-right"></div>
+
+                    <div class="head">
+                        <div class="eye eye-left"></div>
+                        <div class="eye eye-right"></div>
+
+                        <div class="nose"></div>
+                        <div class="mouth"></div>
+                    </div>
+
+                    <div class="body"></div>
+
+                    <div class="arm arm-left"></div>
+                    <div class="arm arm-right"></div>
+
+                    <div class="leg leg-left"></div>
+                    <div class="leg leg-right"></div>
+
+                    <div class="tail"></div>
+
+                </div>
+
+            </div>
+
+            <div class="message">
+
+                <h1>UPS...</h1>
+
+                <h2>AÚN ESTAMOS EN ACTUALIZACIÓN</h2>
+
+                <p>
+                    Estamos preparando algo nuevo para ti.
+                    <br>
+                    Vuelve a visitarnos más tarde.
+                </p>
+
+                <div class="loading">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
+```
