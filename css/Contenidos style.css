@@ -58,16 +58,16 @@ body{
 .card-content h3{color:var(--accent);margin-bottom:6px}
 .card-content p{color:var(--muted);font-size:14px;}
 
-/* =========================
-        PIE DE PÁGINA
-========================= */
-footer{
- color: var(--black-45);
- text-align:center;
- padding: var(--pd-15);
- text-decoration: none; /* este quita lo interlineado cuando tiene un enlace */
+.card-content a{
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: 0.3s;
 }
-/* =================================== */
-/*           VISTA MÓVIL               */
-/* =================================== */
-@media (max-width: 768px){ }
+
+.card-content a:hover{
+    background: #f0f2f5;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.20);
+}
+
