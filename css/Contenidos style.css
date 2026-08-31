@@ -89,8 +89,5 @@ body{
 =================================== */
 
 @media (max-width: 768px) {
-  .btn-feed,
-  .btn-info {
-    display: none;
-  }
+  
 }
