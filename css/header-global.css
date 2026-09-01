@@ -311,31 +311,45 @@
 
   .menu-movil {
 
-    display: block;
-
+    display: flex;
+    align-items: center;
+    gap: 8px;
     margin-left: auto;
 
   }
 
 
-  .menu-movil a {
+.menu-movil a {
 
-    color: black;
+    color: black; /*si*/
 
-    text-decoration: none;
+    text-decoration: none; /*si*/
 
-    font-weight: bold;
+    align-items: center;
 
-    font-size: 12px;
+    display: flex;
 
-    background: #f0f2f5;
+    justify-content: center;
 
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+    background: #f0f2f5;  /*si*/
 
-    border-radius: 50px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12); /*si*/
 
-    padding: 8px 12px;
+    border-radius: 50px; /*si*/
+
+    width: 36px; /*si*/
+
+    height: 36px; /*si*/
 
   }
+
+  .btn-feed img,
+  .btn-contenidos img,
+  .btn-perfil img{
+    width: 18px;
+    height: 18px;
+    display: block;
+}
+
 
 }
