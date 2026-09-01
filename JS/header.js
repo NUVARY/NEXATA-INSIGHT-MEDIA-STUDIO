@@ -168,6 +168,67 @@ if (!contenedorHeader) {
 
       document.head.appendChild(cssHeader);
 
+      /* =====================================================
+            RUTA BASE DEL SITIO
+      =====================================================
+
+   Si estamos dentro de /html/, usamos "../"
+   para regresar a la raíz del proyecto.
+
+   Ejemplos:
+
+   index.html
+   → rutaBase = ""
+
+   html/blog.html
+   → rutaBase = "../"
+*/
+
+   const rutaBase =
+   window.location.pathname.includes("/html/")
+   ? "../"
+   : "";
+ 
+   /* =====================================================
+   CARPETA GLOBAL DE SVG
+   =====================================================
+
+   Aquí definimos UNA SOLA VEZ dónde están
+   guardados todos los SVG.
+
+   Resultado:
+
+   index.html
+   → IMAGENES/svg/
+
+   html/blog.html
+   → ../IMAGENES/svg/
+*/
+
+const svgBase =
+rutaBase + "IMAGENES/svg/";
+
+
+/* =====================================================
+   CARGAR TODOS LOS SVG AUTOMÁTICAMENTE
+   =====================================================
+
+   Busca cualquier imagen que tenga:
+
+   data-svg="nombre.svg"
+
+   y le asigna la ruta completa.
+*/
+
+document
+.querySelectorAll("[data-svg]")
+.forEach(img => {
+
+  img.src =
+  svgBase + img.dataset.svg;
+
+});
+
 
       /* =================================================
          9. CORREGIR AUTOMÁTICAMENTE LAS IMÁGENES
