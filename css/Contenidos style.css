@@ -22,7 +22,6 @@
 body{
  font-family: arial, sans-serif;
  line-height: 1.6;
- margin: 20px;
  background:var(--color-bg);
 }
 /* galeria (grid) */
@@ -89,5 +88,9 @@ body{
 =================================== */
 
 @media (max-width: 768px) {
+
+ body{
+ padding:10px;
+}
   
 }
