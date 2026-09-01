@@ -167,48 +167,15 @@ if (!contenedorHeader) {
       rutaBase + "css/header-global.css";
 
       document.head.appendChild(cssHeader);
-
-      /* =====================================================
-            RUTA BASE DEL SITIO
-      =====================================================
-
-   Si estamos dentro de /html/, usamos "../"
-   para regresar a la raíz del proyecto.
-
-   Ejemplos:
-
-   index.html
-   → rutaBase = ""
-
-   html/blog.html
-   → rutaBase = "../"
-*/
-
-   const rutaBase =
-   window.location.pathname.includes("/html/")
-   ? "../"
-   : "";
- 
-   /* =====================================================
-   CARPETA GLOBAL DE SVG
-   =====================================================
-
-   Aquí definimos UNA SOLA VEZ dónde están
-   guardados todos los SVG.
-
-   Resultado:
-
-   index.html
-   → IMAGENES/svg/
-
-   html/blog.html
-   → ../IMAGENES/svg/
-*/
-
-const svgBase =
-rutaBase + "IMAGENES/svg/";
-
-
+      
+      const svgBase =
+      rutaBase + "IMAGENES/svg/";
+      contenedorHeader
+      .querySelectorAll("[data-svg]")
+      .forEach(img => {
+        img.src =
+        svgBase + img.dataset.svg;
+      });
 /* =====================================================
    CARGAR TODOS LOS SVG AUTOMÁTICAMENTE
    =====================================================
