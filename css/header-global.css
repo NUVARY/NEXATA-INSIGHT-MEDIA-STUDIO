@@ -234,19 +234,14 @@
   .header-movil {
 
     padding: 10px 15px;
-
     justify-content: space-between;
-
     gap: 0;
-
     background: white;
-
     color: black;
-
     display: flex;
-
     align-items: center;
-
+    border-radius: 50px;
+    margin: 15px auto;
   }
 
 
