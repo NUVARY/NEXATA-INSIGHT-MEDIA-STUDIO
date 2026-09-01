@@ -279,6 +279,10 @@ body {
 /* ===================== */
 @media (max-width: 768px) {
 
+  body{
+    padding:10px;
+  }
+
   .menu {
     font-size: 10px;
     margin-left: 5px;
