@@ -103,7 +103,7 @@ body{
     position: absolute;
     left:-9999px;
     width:1px;height:1px;
-    overflow:rect(0 0 0 0);
+    overflow:hidden;
     clip:rect(0 0 0 0);
 }
 
@@ -120,7 +120,7 @@ body{
 .chip{
     padding:8px 14px;
     border-radius:999px;
-    background:var(--chip-bg);
+    background:#0b1220;
     cursor:pointer;
     font-size:14px;
     color:#fff;
@@ -137,9 +137,12 @@ body{
 #filter-6:checked ~ .filter label[for="filter-6"],
 #filter-7:checked ~ .filter label[for="filter-7"],
 #filter-8:checked ~ .filter label[for="filter-8"] {
-  background: var(--chip-active-bg);
-  box-shadow: 0 8px 22px rgba(2,6,23,0.6);
-  border-color: rgba(139,92,246,0.9);
+    background:#fff;
+    color:#0b1220;
+
+    box-shadow:
+        0 0 5px rgba(255,255,255,.4),
+        0 0 10px rgba(255,255,255,.2);
 }
 
 /* FILTRADO CSS (mostrar/ocultar según radio seleccionado) */
