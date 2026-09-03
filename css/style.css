@@ -67,8 +67,8 @@ body {
 }
 
 /* FEED */
-.btn-feed{
-  display: none;
+.menu-movil .btn-feed {
+    display: none;
 }
 
 .feed {
@@ -282,10 +282,6 @@ body {
 /* 📱 RESPONSIVE MÓVIL */
 /* ===================== */
 @media (max-width: 768px) {
-
-  .btn-feed{
-    display: none;
-  }
 
   body{
     padding:10px;

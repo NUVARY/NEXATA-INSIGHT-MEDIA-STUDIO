@@ -25,7 +25,8 @@ body{
  background:var(--color-bg);
 }
 
-.btn-contenidos{
+.menu-escritorio .btn-contenidos,
+.menu-movil .btn-contenidos {
     display: none;
 }
 
@@ -187,10 +188,6 @@ body{
 
  body{
  padding:10px;
-}
-
-.btn-contenidos{
-    display: none;
 }
 
 /* =========================
