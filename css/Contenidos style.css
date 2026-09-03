@@ -24,6 +24,11 @@ body{
  line-height: 1.6;
  background:var(--color-bg);
 }
+
+.btn-contenidos{
+    display: none;
+}
+
 /* galeria (grid) */
 .gallery{
     width:90%;
@@ -182,6 +187,10 @@ body{
 
  body{
  padding:10px;
+}
+
+.btn-contenidos{
+    display: none;
 }
 
 /* =========================
