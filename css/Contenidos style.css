@@ -84,18 +84,6 @@ body{
 }
 
 /* ===================================
-             RESPONSIVE
-=================================== */
-
-@media (max-width: 768px) {
-
- body{
- padding:10px;
-}
-  
-}
-
-/* ===================================
      agrupacion por categorias
 =================================== */
 /* ocultar inputs (pero mantenerlos en DOM) */
@@ -117,6 +105,18 @@ body{
     margin-top: 20px;
     margin-bottom:10px;
 }
+
+.menu-categorias{
+    display:none;
+}
+
+.filtros-escritorio{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
 .chip{
     padding:8px 14px;
     border-radius:999px;
@@ -173,3 +173,109 @@ body{
 #filter-8:checked ~ .gallery .card { display:none; }
 #filter-8:checked ~ .gallery .card.cat-8 { display:block; }
 /* nota: #filter-all está por defecto checked -> muestra todo */
+
+/* ===================================
+             RESPONSIVE
+=================================== */
+
+@media (max-width: 768px) {
+
+ body{
+ padding:10px;
+}
+
+/* =========================
+   MENÚ DE CATEGORÍAS MÓVIL
+========================= */
+
+.filtros-escritorio{
+    display:none;
+}
+
+.menu-categorias{
+    display:block;
+    position:relative;
+}
+
+/* BOTÓN CIRCULAR */
+.menu-categorias summary{
+    list-style:none;
+    width:45px;
+    height:45px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#0b1220;
+    color:#fff;
+
+    font-size:22px;
+    cursor:pointer;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.25);
+}
+
+/* quitar flecha */
+.menu-categorias summary::-webkit-details-marker{
+    display:none;
+}
+
+/* LISTA */
+.lista-categorias{
+    position:absolute;
+    top:55px;
+    right:0;
+
+    width:190px;
+
+    background:#fff;
+    padding:8px;
+
+    border-radius:12px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.25);
+
+    z-index:100;
+}
+
+/* BOTONES DE LA LISTA */
+.lista-categorias .chip{
+    display:block;
+    width:100%;
+
+    margin:3px 0;
+
+    padding:9px 12px;
+
+    border-radius:8px;
+
+    background:#0b1220;
+    color:#fff;
+
+    font-size:13px;
+    text-align:left;
+}
+
+/* CATEGORÍA SELECCIONADA */
+#filter-all:checked ~ .filter .menu-categorias label[for="filter-all"],
+#filter-1:checked ~ .filter .menu-categorias label[for="filter-1"],
+#filter-2:checked ~ .filter .menu-categorias label[for="filter-2"],
+#filter-3:checked ~ .filter .menu-categorias label[for="filter-3"],
+#filter-4:checked ~ .filter .menu-categorias label[for="filter-4"],
+#filter-5:checked ~ .filter .menu-categorias label[for="filter-5"],
+#filter-6:checked ~ .filter .menu-categorias label[for="filter-6"],
+#filter-7:checked ~ .filter .menu-categorias label[for="filter-7"],
+#filter-8:checked ~ .filter .menu-categorias label[for="filter-8"]{
+
+    background:#fff;
+    color:#0b1220;
+
+    box-shadow:
+        0 0 5px rgba(255,255,255,.4),
+        0 0 10px rgba(255,255,255,.2);
+}
+  
+}
