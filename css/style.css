@@ -16,6 +16,45 @@ body {
   display: none
 }
 
+/* =========================================================
+   SEGUNDO HEADER - BOTONES SOCIALES
+========================================================= */
+
+.header-botones {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+  padding: 10px 0;
+}
+
+.contenedor-botones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+/* BOTONES SOCIALES */
+
+.boton-social {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.boton-social img {
+  width: 42px;
+  height: 42px;
+  display: block;
+  object-fit: contain;
+}
+
+
 /* CONTENEDOR */
 .container {
   display: grid;
