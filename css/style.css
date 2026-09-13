@@ -654,6 +654,179 @@ body {
   z-index: 100;
 }
 
+/* =========================================================
+CONTADOR DE VISITAS Y SUSCRIPCIÓN
+========================================================= */
+
+.nexata-estadisticas {
+width: 100%;
+max-width: 700px;
+margin: 20px auto;
+text-align: center;
+}
+
+/* CONTADOR DE VISITAS */
+
+.contador-visitas {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+gap: 8px;
+
+padding: 8px 16px;
+
+background: #0b1220;
+color: #fff;
+
+border-radius: 20px;
+
+font-size: 13px;
+
+box-shadow:
+0 3px 10px rgba(0, 0, 0, 0.20);
+}
+
+.contador-visitas strong {
+font-size: 14px;
+}
+
+.contador-icono {
+font-size: 15px;
+}
+
+/* SUSCRIPCIÓN */
+
+.suscripcion-nexata {
+margin-top: 15px;
+
+padding: 22px 18px;
+
+background: white;
+
+border-radius: 14px;
+
+box-shadow:
+0 4px 15px rgba(0, 0, 0, 0.10);
+
+text-align: center;
+}
+
+.suscripcion-etiqueta {
+display: block;
+
+margin-bottom: 8px;
+
+color: #94a3b8;
+
+font-size: 10px;
+
+font-weight: bold;
+
+letter-spacing: 2px;
+}
+
+.suscripcion-nexata h2 {
+margin: 0 0 8px;
+
+color: #0b1220;
+
+font-size: 20px;
+}
+
+.suscripcion-nexata p {
+margin: 0 auto 15px;
+
+max-width: 500px;
+
+color: #64748b;
+
+font-size: 13px;
+
+line-height: 1.5;
+}
+
+/* FORMULARIO */
+
+.formulario-suscripcion {
+display: flex;
+
+justify-content: center;
+
+gap: 8px;
+
+max-width: 550px;
+
+margin: auto;
+}
+
+.formulario-suscripcion input {
+flex: 1;
+
+min-width: 0;
+
+padding: 11px 12px;
+
+border: 1px solid #d1d5db;
+
+border-radius: 9px;
+
+outline: none;
+
+font-size: 13px;
+}
+
+.formulario-suscripcion input:focus {
+border-color: #1877f2;
+}
+
+.formulario-suscripcion button {
+padding: 11px 15px;
+
+border: none;
+
+border-radius: 9px;
+
+background: #0b1220;
+
+color: white;
+
+font-weight: bold;
+
+cursor: pointer;
+
+transition: 0.2s ease;
+}
+
+.formulario-suscripcion button:hover {
+transform: translateY(-1px);
+
+box-shadow:
+0 4px 10px rgba(0, 0, 0, 0.20);
+}
+
+#mensajeSuscripcion {
+display: block;
+
+margin-top: 10px;
+
+font-size: 12px;
+}
+
+/* MÓVIL */
+
+@media (max-width: 600px) {
+
+.formulario-suscripcion {
+flex-direction: column;
+}
+
+.formulario-suscripcion button {
+width: 100%;
+}
+
+}
+
+
 
 /* =========================================================
    RESPONSIVE MÓVIL

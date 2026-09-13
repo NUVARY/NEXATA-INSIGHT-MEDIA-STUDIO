@@ -280,6 +280,56 @@
 
 </main>
 
+<!-- =========================================================
+     CONTADOR DE VISITAS Y SUSCRIPCIÓN
+========================================================= -->
+
+<section class="nexata-estadisticas">
+
+  <!-- CONTADOR -->
+
+  <div class="contador-visitas">
+    <span class="contador-icono">👁️</span>
+    <span>Visitas</span>
+    <strong id="contadorVisitas">0</strong>
+  </div>
+
+  <!-- SUSCRIPCIÓN -->
+
+  <div class="suscripcion-nexata">
+
+<span class="suscripcion-etiqueta">NEXATA INSIGHT MEDIA STUDIO</span>
+
+<h2>🔔 Suscríbete a NEXATA</h2>
+
+<p>
+  Recibe una notificación cuando publiquemos
+  nuevas publicaciones o actualizaciones importantes.
+</p>
+
+<div class="formulario-suscripcion">
+
+  <input
+    type="email"
+    id="correoSuscripcion"
+    placeholder="Escribe tu correo electrónico"
+    autocomplete="email"
+    required
+  >
+
+  <button id="btnSuscribirse">
+    🔔 Suscribirme
+  </button>
+
+</div>
+
+<small id="mensajeSuscripcion"></small>
+
+  </div>
+
+</section>
+
+
 <!-- BUZÓN DE QUEJAS -->
 <details class="buzon-desplegable">
   <summary>Buzón de Quejas</summary>
@@ -308,5 +358,264 @@
         }
     }
 </script>
+<script type="module">
+
+  /* =========================================================
+     FIREBASE - NEXATA
+     CONTADOR DE VISITAS + SUSCRIPCIONES
+  ========================================================= */
+
+  import { initializeApp }
+    from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
+
+  import {
+    getFirestore,
+    doc,
+    getDoc,
+    setDoc,
+    updateDoc,
+    increment,
+    collection,
+    addDoc,
+    serverTimestamp
+  }
+    from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
+
+
+  /* =========================================================
+     CONFIGURACIÓN
+  ========================================================= */
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyCsucEr-t1QVVIdG6YnWLm-5p5Kzp6nwUk",
+    authDomain: "comentarios-nims.firebaseapp.com",
+    projectId: "comentarios-nims",
+    storageBucket: "comentarios-nims.firebasestorage.app",
+    messagingSenderId: "529237253093",
+    appId: "1:529237253093:web:1cb81ffe914c89be172d0c"
+  };
+
+
+  /* =========================================================
+     INICIALIZAR FIREBASE
+  ========================================================= */
+
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+
+  /* =========================================================
+     CONTADOR DE VISITAS
+  ========================================================= */
+
+  async function registrarVisita() {
+
+    const referencia =
+      doc(db, "estadisticas", "visitas");
+
+    try {
+
+      const datos = await getDoc(referencia);
+
+      if (datos.exists()) {
+
+        await updateDoc(
+          referencia,
+          {
+            visitas: increment(1)
+          }
+        );
+
+      } else {
+
+        await setDoc(
+          referencia,
+          {
+            visitas: 1
+          }
+        );
+
+      }
+
+      const actualizado =
+        await getDoc(referencia);
+
+      const total =
+        actualizado.data().visitas;
+
+      document.getElementById(
+        "contadorVisitas"
+      ).textContent = total;
+
+    } catch (error) {
+
+      console.error(
+        "Error en contador:",
+        error
+      );
+
+    }
+
+  }
+
+
+  /* =========================================================
+     SUSCRIPCIÓN
+  ========================================================= */
+
+  async function suscribirse() {
+
+    const input =
+      document.getElementById(
+        "correoSuscripcion"
+      );
+
+    const boton =
+      document.getElementById(
+        "btnSuscribirse"
+      );
+
+    const mensaje =
+      document.getElementById(
+        "mensajeSuscripcion"
+      );
+
+    const correo =
+      input.value.trim().toLowerCase();
+
+
+    /* VALIDAR CORREO */
+
+    if (!correo || !correo.includes("@")) {
+
+      mensaje.textContent =
+        "⚠️ Escribe un correo electrónico válido.";
+
+      return;
+    }
+
+
+    boton.disabled = true;
+    boton.textContent = "Guardando...";
+
+
+    try {
+
+      /*
+       * Creamos una identificación única
+       * basada en el correo.
+       */
+
+      const datosCorreo =
+        new TextEncoder().encode(correo);
+
+      const hash =
+        await crypto.subtle.digest(
+          "SHA-256",
+          datosCorreo
+        );
+
+      const hashArray =
+        Array.from(
+          new Uint8Array(hash)
+        );
+
+      const identificador =
+        hashArray
+          .map(
+            byte =>
+              byte.toString(16).padStart(2, "0")
+          )
+          .join("");
+
+
+      const referencia =
+        doc(
+          db,
+          "suscriptores",
+          identificador
+        );
+
+
+      /*
+       * Comprobamos si ya existe.
+       */
+
+      const existente =
+        await getDoc(referencia);
+
+
+      if (existente.exists()) {
+
+        mensaje.textContent =
+          "✅ Este correo ya está suscrito a NEXATA.";
+
+        input.value = "";
+
+        boton.disabled = false;
+        boton.textContent = "🔔 Suscribirme";
+
+        return;
+      }
+
+
+      /*
+       * Guardar suscripción.
+       */
+
+      await setDoc(
+        referencia,
+        {
+          correo: correo,
+          fecha: serverTimestamp()
+        }
+      );
+
+
+      mensaje.textContent =
+        "✅ ¡Suscripción realizada correctamente!";
+
+      input.value = "";
+
+
+    } catch (error) {
+
+      console.error(
+        "Error al suscribirse:",
+        error
+      );
+
+      mensaje.textContent =
+        "❌ No se pudo completar la suscripción.";
+
+    }
+
+
+    boton.disabled = false;
+    boton.textContent = "🔔 Suscribirme";
+
+  }
+
+
+  /* =========================================================
+     BOTÓN DE SUSCRIPCIÓN
+  ========================================================= */
+
+  document
+    .getElementById("btnSuscribirse")
+    .addEventListener(
+      "click",
+      suscribirse
+    );
+
+
+  /* =========================================================
+     INICIAR CONTADOR
+  ========================================================= */
+
+  registrarVisita();
+
+</script>
+
 </body>
 </html>
