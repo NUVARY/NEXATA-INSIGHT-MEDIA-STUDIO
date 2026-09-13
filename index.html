@@ -492,6 +492,7 @@
         "⚠️ Escribe un correo electrónico válido.";
 
       return;
+
     }
 
 
@@ -501,69 +502,22 @@
 
     try {
 
-      /*
-       * Creamos una identificación única
-       * basada en el correo.
-       */
-
-      const datosCorreo =
-        new TextEncoder().encode(correo);
-
-      const hash =
-        await crypto.subtle.digest(
-          "SHA-256",
-          datosCorreo
-        );
-
-      const hashArray =
-        Array.from(
-          new Uint8Array(hash)
-        );
-
-      const identificador =
-        hashArray
-          .map(
-            byte =>
-              byte.toString(16).padStart(2, "0")
-          )
-          .join("");
-
+      /* =====================================================
+         CREAR UNA ID ALEATORIA
+      ===================================================== */
 
       const referencia =
-        doc(
+        collection(
           db,
-          "suscriptores",
-          identificador
+          "suscriptores"
         );
 
 
-      /*
-       * Comprobamos si ya existe.
-       */
+      /* =====================================================
+         GUARDAR SUSCRIPTOR
+      ===================================================== */
 
-      const existente =
-        await getDoc(referencia);
-
-
-      if (existente.exists()) {
-
-        mensaje.textContent =
-          "✅ Este correo ya está suscrito a NEXATA.";
-
-        input.value = "";
-
-        boton.disabled = false;
-        boton.textContent = "🔔 Suscribirme";
-
-        return;
-      }
-
-
-      /*
-       * Guardar suscripción.
-       */
-
-      await setDoc(
+      await addDoc(
         referencia,
         {
           correo: correo,
@@ -572,8 +526,12 @@
       );
 
 
+      /* =====================================================
+         CONFIRMACIÓN
+      ===================================================== */
+
       mensaje.textContent =
-        "✅ ¡Suscripción realizada correctamente!";
+        "✅ ¡Te has suscrito correctamente! Recibirás avisos de nuevas publicaciones y actualizaciones.";
 
       input.value = "";
 
