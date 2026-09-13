@@ -1,3 +1,7 @@
+/* =========================================================
+   ESTILOS GENERALES
+========================================================= */
+
 * {
   margin: 0;
   padding: 0;
@@ -9,12 +13,19 @@ body {
   background: #f0f2f5;
 }
 
-.btn-feed{
+
+/* =========================================================
+   BOTONES OCULTOS
+========================================================= */
+
+.btn-feed {
   display: none;
 }
-.btn-contenidos{
-  display: none
+
+.btn-contenidos {
+  display: none;
 }
+
 
 /* =========================================================
    SEGUNDO HEADER - BOTONES SOCIALES
@@ -22,65 +33,149 @@ body {
 
 .header-botones {
   width: 100%;
+
+  background: linear-gradient(
+    135deg,
+    #031a3d 0%,
+    #07122f 50%,
+    #020817 100%
+  );
+
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 15px 0;
-  padding: 10px 0;
+
+  padding: 9px 15px;
+  margin: 0;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.25);
+
+  position: relative;
+  z-index: 10;
 }
+
+
+/* CONTENEDOR DE BOTONES */
 
 .contenedor-botones {
   display: flex;
   justify-content: center;
   align-items: center;
+
   gap: 12px;
 }
 
-/* BOTONES SOCIALES */
+
+/* =========================================================
+   BOTONES SOCIALES
+========================================================= */
 
 .boton-social {
   width: 42px;
   height: 42px;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  border-radius: 10px;
+
   text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
+
+/* IMAGEN DEL BOTÓN */
+
 .boton-social img {
-  width: 42px;
-  height: 42px;
+  width: 23px;
+  height: 23px;
+
   display: block;
+
   object-fit: contain;
 }
 
 
-/* CONTENEDOR */
+/* EFECTO AL PASAR EL MOUSE */
+
+.boton-social:hover {
+  transform: translateY(-2px);
+
+  background: rgba(255, 255, 255, 0.12);
+
+  border-color: rgba(255, 255, 255, 0.30);
+
+  box-shadow:
+    0 0 15px rgba(255, 255, 255, 0.10);
+}
+
+
+/* EFECTO AL PRESIONAR */
+
+.boton-social:active {
+  transform: scale(0.94);
+}
+
+
+/* =========================================================
+   CONTENEDOR PRINCIPAL
+========================================================= */
+
 .container {
   display: grid;
+
   grid-template-columns: 1fr 2fr 1fr;
+
   gap: 15px;
+
   padding: 15px;
 }
 
-/* PERFIL */
+
+/* =========================================================
+   PERFIL
+========================================================= */
+
 .perfil {
   background: white;
+
   padding: 15px;
+
   text-align: center;
+
   border-radius: 8px;
 }
 
 .perfil img {
   border-radius: 50%;
+
   margin-bottom: 10px;
 }
+
+
+/* MENÚ PERFIL */
+
 .menu-perfil {
   margin-top: 20px;
 }
 
 .menu-perfil ul {
   list-style: none;
+
   padding: 0;
   margin: 0;
 }
@@ -91,333 +186,534 @@ body {
 
 .menu-perfil a {
   display: block;
+
   padding: 12px;
+
   background: #f0f2f5;
+
   color: black;
+
   text-decoration: none;
+
   border-radius: 8px;
+
   font-weight: bold;
+
   transition: 0.3s;
 }
 
 .menu-perfil a:hover {
   background: #e4e6eb;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+
+  box-shadow:
+    0 3px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* FEED */
+
+/* =========================================================
+   FEED
+========================================================= */
+
 .menu-movil .btn-feed {
-    display: none;
+  display: none;
 }
 
 .feed {
   display: flex;
+
   flex-direction: column;
+
   gap: 15px;
 }
 
 .publicacion {
   background: white;
+
   padding: 15px;
+
   border-radius: 8px;
 }
 
 .publicacion img {
   width: 100%;
+
   border-radius: 6px;
+
   margin: 10px 0;
 }
-.contenido-extra{
-    display: none;
-}
-.boton-leer{
-    margin-top: 10px;
-    border-radius: 15px;
-    background: white;
-    font-weight: bold;
-    cursor: pointer;
-    color: #1877f2;
-    font-size: 13px;
-    padding: 6px 12px;
-    border: 1px solid #ddd;
-    transition: 0.3s;
-}
-.boton-leer:hover{
-    background: #f0f2f5;
-    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.12);
+
+
+/* CONTENIDO EXTRA */
+
+.contenido-extra {
+  display: none;
 }
 
-/* ACCIONES */
+
+/* BOTÓN LEER MÁS */
+
+.boton-leer {
+  margin-top: 10px;
+
+  border-radius: 15px;
+
+  background: white;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  color: #1877f2;
+
+  font-size: 13px;
+
+  padding: 6px 12px;
+
+  border: 1px solid #ddd;
+
+  transition: 0.3s;
+}
+
+.boton-leer:hover {
+  background: #f0f2f5;
+
+  box-shadow:
+    0 2px 7px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================================
+   ACCIONES
+========================================================= */
+
 .acciones {
   display: flex;
+
   justify-content: space-between;
+
   margin-top: 10px;
 }
 
 .acciones button {
   border: none;
+
   background: #e4e6eb;
+
   padding: 6px 10px;
+
   border-radius: 5px;
+
   cursor: pointer;
+
   font-size: 13px;
-}
-
-/* CATEGORÍAS */
-.categorias{
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
-    height: fit-content;
-}
-
-.menu-categorias a{
-    display:block;
-    padding:10px;
-    color:black;
-    text-decoration:none;
-    background:white;
-    border-bottom:1px solid #eee;
-}
-
-.menu-categorias a:last-child{
-    border-bottom:none;
-}
-
-.menu-categorias{
-    width:100%;
-    max-width:250px;
-}
-
-.menu-categorias summary{
-    list-style:none;
-    cursor:pointer;
-    padding:12px;
-    background:#0b1220;
-    color:#fff;
-    border-radius:10px;
-    font-weight:bold;
-}
-
-.menu-categorias a{
-    display:block;
-    padding:10px;
-    color:black;
-    text-decoration:none;
-    background:white;
-}
-
-/* MEDIA */
-.media {
-  display: flex;
-  gap: 10px;
-  padding: 15px;
-}
-
-.media div {
-  background: white;
-  padding: 15px;
-  border-radius: 8px;
-  flex: 1;
-  text-align: center;
-}
-
-/* BUZÓN */
-.buzon {
-  background: white;
-  padding: 20px;
-  margin: 15px;
-  border-radius: 8px;
-}
-
-.buzon textarea {
-  width: 100%;
-  height: 80px;
-  margin: 10px 0;
-}
-
-.buzon button {
-  padding: 8px 15px;
-  border: none;
-  background: #1877f2;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-/* WHATSAPP */
-.whatsapp {
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-  background: #25d366;
-  color: white;
-  font-size: 24px;
-  padding: 14px;
-  border-radius: 50%;
-  text-decoration: none;
-  z-index: 100;
-}
-/* BUZÓN DESPLEGABLE */
-
-.buzon-desplegable{
-    background:white;
-    border-radius:10px;
-    padding:10px;
-    margin:15px;
-}
-
-.buzon-desplegable summary{
-    cursor:pointer;
-    list-style:none;
-    background:#0b1220;
-    color:white;
-    padding:12px;
-    border-radius:10px;
-    font-weight:bold;
-    user-select:none;
-}
-
-.buzon-desplegable summary:hover{
-    opacity:.9;
-}
-
-.buzon-desplegable form{
-    margin-top:12px;
-}
-
-.buzon-desplegable textarea{
-    width:100%;
-    min-height:120px;
-    padding:10px;
-    border:1px solid #ccc;
-    border-radius:8px;
-    resize:vertical;
-}
-
-.buzon-desplegable button{
-    margin-top:10px;
-    background:#1877f2;
-    color:white;
-    border:none;
-    padding:10px 15px;
-    border-radius:8px;
-    cursor:pointer;
-}
-
-.buzon-desplegable button:hover{
-    opacity:.9;
-}
-/* Oculta la flecha nativa */
-.buzon-desplegable summary::-webkit-details-marker{
-    display:none;
-}
-
-.buzon-desplegable summary::marker{
-    display:none;
 }
 
 
 /* =========================================================
-   RECOMENDACIONES Y CATEGORÍAS
-   ========================================================= */
+   CATEGORÍAS
+========================================================= */
 
 .categorias {
+  background: white;
+
+  padding: 15px;
+
+  border-radius: 8px;
+
+  height: fit-content;
+
   text-align: center;
 }
 
-/* RECOMENDACIONES */
 
-.recomendacion-mercadolibre {
-  text-align: center;
-  padding: 20px 15px;
-}
-
-.recomendaciones-etiqueta {
-  display: block;
-  margin-bottom: 8px;
-  color: #94a3b8;
-  font-size: 11px;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
-.recomendacion-mercadolibre h2 {
-  margin: 0 0 10px;
-  color: #0b1220;
-  font-size: 21px;
-  font-weight: 700;
-}
-
-.recomendacion-mercadolibre p {
-  color: #94a3b8;
-  font-size: 14px;
-  line-height: 1.5;
-  margin-bottom: 18px;
-}
-
-.btn-mercadolibre {
-  display: inline-block;
-  padding: 11px 18px;
-  background: #ffd600;
-  color: #111;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 10px;
-  transition: 0.3s ease;
-}
-
-.btn-mercadolibre:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
-}
-
-/* LÍNEA DIVISORA */
+/* MENÚ CATEGORÍAS */
 
 .menu-categorias {
+  width: 100%;
+
+  max-width: 250px;
+
   border-top: 1px solid rgba(255, 255, 255, 0.15);
+
   padding-top: 15px;
+
   margin-top: 5px;
+
   text-align: center;
 }
+
 
 /* BOTÓN CATEGORÍAS */
 
 .menu-categorias summary {
-  cursor: pointer;
-  text-align: center;
   list-style: none;
+
+  cursor: pointer;
+
+  text-align: center;
+
+  padding: 12px;
+
+  background: #0b1220;
+
+  color: #fff;
+
+  border-radius: 10px;
+
+  font-weight: bold;
+
+  user-select: none;
 }
 
-/* Oculta la flecha predeterminada */
+
+/* QUITAR FLECHA */
 
 .menu-categorias summary::-webkit-details-marker {
   display: none;
 }
 
-/* CENTRAR LOS ENLACES */
+.menu-categorias summary::marker {
+  display: none;
+}
+
+
+/* ENLACES */
 
 .menu-categorias a {
   display: block;
+
+  padding: 10px;
+
+  color: black;
+
+  text-decoration: none;
+
+  background: white;
+
+  text-align: center;
+
+  border-bottom: 1px solid #eee;
+}
+
+.menu-categorias a:last-child {
+  border-bottom: none;
+}
+
+
+/* =========================================================
+   MEDIA
+========================================================= */
+
+.media {
+  display: flex;
+
+  gap: 10px;
+
+  padding: 15px;
+}
+
+.media div {
+  background: white;
+
+  padding: 15px;
+
+  border-radius: 8px;
+
+  flex: 1;
+
   text-align: center;
 }
 
-/* ===================== */
-/* 📱 RESPONSIVE MÓVIL */
-/* ===================== */
+
+/* =========================================================
+   BUZÓN
+========================================================= */
+
+.buzon {
+  background: white;
+
+  padding: 20px;
+
+  margin: 15px;
+
+  border-radius: 8px;
+}
+
+.buzon textarea {
+  width: 100%;
+
+  height: 80px;
+
+  margin: 10px 0;
+}
+
+.buzon button {
+  padding: 8px 15px;
+
+  border: none;
+
+  background: #1877f2;
+
+  color: white;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   BUZÓN DESPLEGABLE
+========================================================= */
+
+.buzon-desplegable {
+  background: white;
+
+  border-radius: 10px;
+
+  padding: 10px;
+
+  margin: 15px;
+}
+
+.buzon-desplegable summary {
+  cursor: pointer;
+
+  list-style: none;
+
+  background: #0b1220;
+
+  color: white;
+
+  padding: 12px;
+
+  border-radius: 10px;
+
+  font-weight: bold;
+
+  user-select: none;
+}
+
+.buzon-desplegable summary:hover {
+  opacity: 0.9;
+}
+
+.buzon-desplegable form {
+  margin-top: 12px;
+}
+
+.buzon-desplegable textarea {
+  width: 100%;
+
+  min-height: 120px;
+
+  padding: 10px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 8px;
+
+  resize: vertical;
+}
+
+.buzon-desplegable button {
+  margin-top: 10px;
+
+  background: #1877f2;
+
+  color: white;
+
+  border: none;
+
+  padding: 10px 15px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+.buzon-desplegable button:hover {
+  opacity: 0.9;
+}
+
+
+/* OCULTAR FLECHA NATIVA */
+
+.buzon-desplegable summary::-webkit-details-marker {
+  display: none;
+}
+
+.buzon-desplegable summary::marker {
+  display: none;
+}
+
+
+/* =========================================================
+   RECOMENDACIONES Y CATEGORÍAS
+========================================================= */
+
+.categorias {
+  text-align: center;
+}
+
+
+/* RECOMENDACIONES */
+
+.recomendacion-mercadolibre {
+  text-align: center;
+
+  padding: 20px 15px;
+}
+
+.recomendaciones-etiqueta {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #94a3b8;
+
+  font-size: 11px;
+
+  font-weight: bold;
+
+  letter-spacing: 2px;
+}
+
+.recomendacion-mercadolibre h2 {
+  margin: 0 0 10px;
+
+  color: #0b1220;
+
+  font-size: 21px;
+
+  font-weight: 700;
+}
+
+.recomendacion-mercadolibre p {
+  color: #94a3b8;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+
+  margin-bottom: 18px;
+}
+
+
+/* BOTÓN MERCADO LIBRE */
+
+.btn-mercadolibre {
+  display: inline-block;
+
+  padding: 11px 18px;
+
+  background: #ffd600;
+
+  color: #111;
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+  border-radius: 10px;
+
+  transition: 0.3s ease;
+}
+
+.btn-mercadolibre:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================================================
+   WHATSAPP
+========================================================= */
+
+.whatsapp {
+  position: fixed;
+
+  bottom: 15px;
+
+  right: 15px;
+
+  background: #25d366;
+
+  color: white;
+
+  font-size: 24px;
+
+  padding: 14px;
+
+  border-radius: 50%;
+
+  text-decoration: none;
+
+  z-index: 100;
+}
+
+
+/* =========================================================
+   RESPONSIVE MÓVIL
+========================================================= */
+
 @media (max-width: 768px) {
 
-  body{
-    padding:10px;
+  body {
+    padding: 10px;
   }
+
+
+  /* SEGUNDO HEADER EN MÓVIL */
+
+  .header-botones {
+    margin-left: -10px;
+    margin-right: -10px;
+
+    width: calc(100% + 20px);
+
+    padding: 8px 10px;
+  }
+
+
+  .contenedor-botones {
+    gap: 8px;
+  }
+
+
+  .boton-social {
+    width: 36px;
+    height: 36px;
+
+    border-radius: 8px;
+  }
+
+
+  .boton-social img {
+    width: 20px;
+    height: 20px;
+  }
+
+
+  /* MENÚ */
 
   .menu {
     font-size: 10px;
+
     margin-left: 5px;
   }
+
+
+  /* CONTENEDOR */
+
   .container {
     grid-template-columns: 1fr;
   }
+
+
+  /* ORDEN */
 
   .perfil {
     order: 1;
@@ -431,25 +727,37 @@ body {
     order: 3;
   }
 
+
+  /* MEDIA */
+
   .media {
     flex-direction: column;
   }
 
+
+  /* ACCIONES */
+
   .acciones button {
     flex: 1;
+
     margin: 0 3px;
+
     font-size: 12px;
   }
 
-  .feed h4{
+
+  /* TEXTOS DEL FEED */
+
+  .feed h4 {
     font-size: 15px;
-}
+  }
 
-.feed p{
+  .feed p {
     font-size: 13px;
-}
+  }
 
-.feed small{
+  .feed small {
     font-size: 11px;
-}
+  }
+
 }
