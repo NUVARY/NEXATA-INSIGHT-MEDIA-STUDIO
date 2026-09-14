@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>NEXATA Runner</title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
+</head>
+
+
+<body>
+
+
+  <main class="juego">
+
+
+    <!-- =========================================
+         CABECERA
+    ========================================== -->
+
+    <header class="cabecera-juego">
+
+      <div>
+
+        <span class="mini-logo">
+          NEXATA
+        </span>
+
+        <h1>
+          RUNNER
+        </h1>
+
+      </div>
+
+
+      <div class="marcadores">
+
+        <div>
+
+          <span>
+            PUNTOS
+          </span>
+
+          <strong id="puntos">
+            0
+          </strong>
+
+        </div>
+
+
+        <div>
+
+          <span>
+            RÉCORD
+          </span>
+
+          <strong id="record">
+            0
+          </strong>
+
+        </div>
+
+      </div>
+
+    </header>
+
+
+
+    <!-- =========================================
+         PANTALLA DE INICIO
+    ========================================== -->
+
+    <section
+      id="inicio"
+      class="pantalla"
+    >
+
+      <div class="icono-rocket">
+        🚀
+      </div>
+
+
+      <h2>
+        NEXATA RUNNER
+      </h2>
+
+
+      <p>
+
+        Corre, esquiva los obstáculos
+        <br>
+
+        y supera tu récord.
+
+      </p>
+
+
+      <button id="btnJugar">
+
+        JUGAR
+
+      </button>
+
+
+      <small>
+
+        PC: ESPACIO / ↑
+        &nbsp; • &nbsp;
+        MÓVIL: TOCAR
+
+      </small>
+
+    </section>
+
+
+
+    <!-- =========================================
+         ZONA DEL JUEGO
+    ========================================== -->
+
+    <section
+      id="zonaJuego"
+      class="zona-juego"
+    >
+
+
+      <!-- BOTÓN DE SONIDO -->
+
+      <button
+        id="btnSonido"
+        class="boton-sonido"
+        aria-label="Activar o desactivar sonido"
+      >
+
+        🔊
+
+      </button>
+
+
+      <!-- CANVAS -->
+
+      <canvas id="canvas"></canvas>
+
+
+      <!-- BOTÓN DE SALTO PARA MÓVIL -->
+
+      <button
+        id="btnSaltar"
+        class="boton-salto"
+      >
+
+        ↑
+
+      </button>
+
+
+    </section>
+
+
+
+    <!-- =========================================
+         GAME OVER
+    ========================================== -->
+
+    <section
+      id="gameOver"
+      class="pantalla oculto"
+    >
+
+
+      <div class="icono-final">
+        💥
+      </div>
+
+
+      <h2>
+        GAME OVER
+      </h2>
+
+
+      <p>
+        Puntuación
+      </p>
+
+
+      <strong id="puntuacionFinal">
+        0
+      </strong>
+
+
+      <p id="mensajeRecord"></p>
+
+
+      <button id="btnReintentar">
+
+        VOLVER A JUGAR
+
+      </button>
+
+
+    </section>
+
+
+  </main>
+
+
+
+  <script src="juego.js"></script>
+
+
+</body>
+
+</html>
