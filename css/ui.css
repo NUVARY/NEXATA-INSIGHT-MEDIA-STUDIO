@@ -219,6 +219,9 @@ code{
   border-radius:var(--radius-sm);
 }
 
+.btn-info{
+  display:none !important;
+}
 
 /* ===================================
             RESPONSIVE
