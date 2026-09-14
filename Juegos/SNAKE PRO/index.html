@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>🐍 Snake Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🐍 Snake Pro</h1>
+
+<p>
+  Puntaje: <span id="score">0</span> |
+  Récord: <span id="highScore">0</span>
+</p>
+
+<div class="buttons">
+  <button onclick="startGame()">▶️ Start</button>
+  <button onclick="resetGame()">🔄 Reiniciar</button>
+</div>
+
+<canvas id="game" width="400" height="400"></canvas>
+
+<div class="controls">
+  <button onclick="setDir('UP')">⬆️</button>
+  <div>
+    <button onclick="setDir('LEFT')">⬅️</button>
+    <button onclick="setDir('RIGHT')">➡️</button>
+  </div>
+  <button onclick="setDir('DOWN')">⬇️</button>
+</div>
+
+<audio id="startSound" src="start.mp3"></audio>
+<audio id="eatSound" src="eat.mp3"></audio>
+<audio id="loseSound" src="lose.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
