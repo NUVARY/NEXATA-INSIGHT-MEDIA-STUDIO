@@ -1,1 +1,30 @@
+name: Notificar nueva publicación
 
+on:
+  push:
+    branches:
+      - "NUVARY-(B)"
+    paths:
+      - "BLOGS/**"
+
+jobs:
+  enviar-notificacion:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Enviar correo mediante Resend
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+        run: |
+          curl -X POST https://api.resend.com/emails \
+            -H "Authorization: Bearer $RESEND_API_KEY" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "from": "NEXATA INSIGHT MEDIA STUDIO <avisos@nexata.site>",
+              "to": ["TU_CORREO_DE_PRUEBA"],
+              "subject": "🔔 Nueva publicación en NEXATA",
+              "html": "<h2>🔔 Hay una nueva publicación</h2><p>Ya puedes visitar NEXATA INSIGHT MEDIA STUDIO para descubrir el nuevo contenido.</p><p><a href=\"https://nexata.site\">Visitar NEXATA</a></p>"
+            }'
