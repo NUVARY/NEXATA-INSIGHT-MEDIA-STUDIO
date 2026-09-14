@@ -305,18 +305,40 @@ jobs:
                           margin:auto;
                           padding:20px;
                           color:#222;
+                          text-align:center;
                         "
                       >
+
+                        <!-- LOGO DE NEXATA -->
+
+                        <img
+                          src="https://nexata.site/IMAGENES/Logotipo/enso_play_logo.webp"
+                          alt="NEXATA INSIGHT MEDIA STUDIO"
+                          style="
+                            width:90px;
+                            height:90px;
+                            object-fit:contain;
+                            border-radius:50%;
+                            margin-bottom:15px;
+                          "
+                        >
+
+
+                        <!-- TITULO -->
 
                         <h2>
                           🔔 Nueva publicación en NEXATA
                         </h2>
 
 
+                        <!-- TITULO DE LA PUBLICACIÓN -->
+
                         <h3>
                           ${titulo}
                         </h3>
 
+
+                        <!-- MENSAJE -->
 
                         <p>
                           Ya está disponible una nueva publicación
@@ -329,6 +351,8 @@ jobs:
                           siguiente botón:
                         </p>
 
+
+                        <!-- BOTÓN -->
 
                         <p>
 
@@ -352,6 +376,8 @@ jobs:
 
                         </p>
 
+
+                        <!-- PIE -->
 
                         <p
                           style="
@@ -408,6 +434,7 @@ jobs:
 
 
             console.log("");
+
             console.log(
               "✓ Todas las notificaciones fueron procesadas."
             );
@@ -422,6 +449,7 @@ jobs:
           enviar().catch(error => {
 
             console.error("");
+
             console.error(
               "❌ Error al enviar las notificaciones:"
             );
