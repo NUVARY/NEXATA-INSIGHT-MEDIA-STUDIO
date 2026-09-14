@@ -12,43 +12,88 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
+      # =========================================================
+      # 1. DESCARGAR REPOSITORIO
+      # =========================================================
       - name: Descargar repositorio
         uses: actions/checkout@v4
         with:
-          fetch-depth: 2
+          fetch-depth: 0
 
+
+      # =========================================================
+      # 2. CONFIGURAR NODE.JS
+      # =========================================================
       - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 24
 
+
+      # =========================================================
+      # 3. INSTALAR FIREBASE ADMIN
+      # =========================================================
       - name: Instalar Firebase Admin
         run: npm install firebase-admin
 
+
+      # =========================================================
+      # 4. DETECTAR PUBLICACIONES NUEVAS
+      # =========================================================
       - name: Detectar publicaciones nuevas
         id: publicaciones
+        env:
+          BEFORE_SHA: ${{ github.event.before }}
+          AFTER_SHA: ${{ github.sha }}
         run: |
-          archivos=$(git diff --name-status HEAD^ HEAD | awk '$1 == "A" && $2 ~ /^BLOGS\/.*\.html$/ {print $2}')
 
+          echo "Commit anterior:"
+          echo "$BEFORE_SHA"
+
+          echo "Commit actual:"
+          echo "$AFTER_SHA"
+
+          archivos=$(git diff --name-status "$BEFORE_SHA" "$AFTER_SHA" \
+            | awk '$1 == "A" && $2 ~ /^BLOGS\/.*\.html$/ {print $2}')
+
+          echo ""
           echo "Archivos nuevos encontrados:"
           echo "$archivos"
+          echo ""
 
           if [ -z "$archivos" ]; then
+
+            echo "No hay publicaciones nuevas."
+
             echo "hay_nuevas=false" >> "$GITHUB_OUTPUT"
+
             exit 0
+
           fi
 
           echo "hay_nuevas=true" >> "$GITHUB_OUTPUT"
 
           archivo=$(echo "$archivos" | head -n 1)
 
+          echo "Publicación nueva:"
+          echo "$archivo"
+
           echo "archivo=$archivo" >> "$GITHUB_OUTPUT"
 
+
+      # =========================================================
+      # 5. OBTENER TÍTULO DE LA PUBLICACIÓN
+      # =========================================================
       - name: Obtener título de la publicación
         if: steps.publicaciones.outputs.hay_nuevas == 'true'
         id: titulo
         run: |
+
           archivo="${{ steps.publicaciones.outputs.archivo }}"
+
+          echo "Leyendo título de:"
+          echo "$archivo"
 
           titulo=$(grep -o '<title>[^<]*</title>' "$archivo" \
             | head -n 1 \
@@ -58,7 +103,8 @@ jobs:
             titulo="Nueva publicación en NEXATA"
           fi
 
-          echo "Título detectado: $titulo"
+          echo "Título detectado:"
+          echo "$titulo"
 
           {
             echo "titulo<<EOF"
@@ -66,6 +112,10 @@ jobs:
             echo "EOF"
           } >> "$GITHUB_OUTPUT"
 
+
+      # =========================================================
+      # 6. OBTENER SUSCRIPTORES Y ENVIAR CORREOS
+      # =========================================================
       - name: Obtener suscriptores y enviar correos
         if: steps.publicaciones.outputs.hay_nuevas == 'true'
         env:
@@ -73,85 +123,218 @@ jobs:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
           ARCHIVO: ${{ steps.publicaciones.outputs.archivo }}
           TITULO: ${{ steps.titulo.outputs.titulo }}
+
         run: |
+
           cat > enviar.js <<'EOF'
-          const admin = require("firebase-admin");
+
+          const { initializeApp, cert } = require("firebase-admin/app");
+          const { getFirestore } = require("firebase-admin/firestore");
+
+
+          // =====================================================
+          // CONFIGURAR CUENTA DE SERVICIO
+          // =====================================================
 
           const serviceAccount =
             JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
 
-          admin.initializeApp({
-            credential: admin.credential.cert(serviceAccount)
+
+          // =====================================================
+          // INICIAR FIREBASE ADMIN
+          // =====================================================
+
+          initializeApp({
+            credential: cert(serviceAccount)
           });
 
-          const db = admin.firestore();
+
+          // =====================================================
+          // CONECTAR CON FIRESTORE
+          // =====================================================
+
+          const db = getFirestore();
+
+
+          // =====================================================
+          // ENVIAR NOTIFICACIONES
+          // =====================================================
 
           async function enviar() {
+
+            console.log("Buscando suscriptores...");
+
+
             const snapshot =
               await db.collection("suscriptores").get();
 
+
+            // ---------------------------------------------------
+            // COMPROBAR SI HAY SUSCRIPTORES
+            // ---------------------------------------------------
+
             if (snapshot.empty) {
+
               console.log("No hay suscriptores.");
+
               return;
             }
 
+
+            // ---------------------------------------------------
+            // OBTENER CORREOS
+            // ---------------------------------------------------
+
             const correos = [];
 
+
             snapshot.forEach(doc => {
+
               const datos = doc.data();
 
-              if (datos.correo) {
-                correos.push(datos.correo);
+
+              if (
+                datos.correo &&
+                typeof datos.correo === "string"
+              ) {
+
+                correos.push(datos.correo.trim());
+
               }
+
             });
+
 
             console.log(
               `Suscriptores encontrados: ${correos.length}`
             );
 
-            const archivo = process.env.ARCHIVO;
-            const titulo = process.env.TITULO;
+
+            if (correos.length === 0) {
+
+              console.log(
+                "No se encontraron correos válidos."
+              );
+
+              return;
+
+            }
+
+
+            // ---------------------------------------------------
+            // DATOS DE LA PUBLICACIÓN
+            // ---------------------------------------------------
+
+            const archivo =
+              process.env.ARCHIVO;
+
+
+            const titulo =
+              process.env.TITULO;
+
+
+            // ---------------------------------------------------
+            // CREAR ENLACE DIRECTO
+            // ---------------------------------------------------
 
             const ruta =
               archivo.replace(/^BLOGS\//, "");
 
+
             const enlace =
               `https://nexata.site/BLOGS/${ruta}`;
 
+
+            console.log("");
+            console.log("Publicación:");
+            console.log(titulo);
+
+            console.log("");
+            console.log("Enlace:");
+            console.log(enlace);
+
+            console.log("");
+
+
+            // ---------------------------------------------------
+            // ENVIAR CORREO A CADA SUSCRIPTOR
+            // ---------------------------------------------------
+
             for (const correo of correos) {
+
+              console.log(
+                `Enviando correo a: ${correo}`
+              );
+
 
               const respuesta = await fetch(
                 "https://api.resend.com/emails",
                 {
+
                   method: "POST",
+
                   headers: {
+
                     "Authorization":
                       `Bearer ${process.env.RESEND_API_KEY}`,
-                    "Content-Type": "application/json"
+
+                    "Content-Type":
+                      "application/json"
+
                   },
+
                   body: JSON.stringify({
+
                     from:
                       "NEXATA INSIGHT MEDIA STUDIO <avisos@nexata.site>",
 
+
                     to: [correo],
+
 
                     subject:
                       `🔔 Nueva publicación: ${titulo}`,
 
-                    html: `
-                      <div style="font-family:Arial,sans-serif;max-width:600px;margin:auto;">
-                        <h2>🔔 Nueva publicación en NEXATA</h2>
 
-                        <h3>${titulo}</h3>
+                    html: `
+
+                      <div
+                        style="
+                          font-family:Arial,sans-serif;
+                          max-width:600px;
+                          margin:auto;
+                          padding:20px;
+                          color:#222;
+                        "
+                      >
+
+                        <h2>
+                          🔔 Nueva publicación en NEXATA
+                        </h2>
+
+
+                        <h3>
+                          ${titulo}
+                        </h3>
+
 
                         <p>
                           Ya está disponible una nueva publicación
                           en NEXATA INSIGHT MEDIA STUDIO.
                         </p>
 
+
                         <p>
+                          Puedes leerla directamente desde el
+                          siguiente botón:
+                        </p>
+
+
+                        <p>
+
                           <a
                             href="${enlace}"
+
                             style="
                               display:inline-block;
                               padding:12px 18px;
@@ -162,38 +345,98 @@ jobs:
                               font-weight:bold;
                             "
                           >
+
                             Leer publicación
+
                           </a>
+
                         </p>
 
-                        <p style="font-size:12px;color:#777;">
+
+                        <p
+                          style="
+                            font-size:12px;
+                            color:#777;
+                            margin-top:30px;
+                          "
+                        >
+
                           NEXATA INSIGHT MEDIA STUDIO
+
                         </p>
+
                       </div>
+
                     `
+
                   })
+
                 }
+
               );
+
 
               const resultado =
                 await respuesta.text();
 
+
               console.log(
-                `Correo enviado a ${correo}: ${resultado}`
+                `Respuesta de Resend para ${correo}:`
               );
 
+              console.log(resultado);
+
+
+              // -------------------------------------------------
+              // COMPROBAR RESPUESTA DE RESEND
+              // -------------------------------------------------
+
               if (!respuesta.ok) {
+
                 throw new Error(
                   `Resend rechazó el correo: ${resultado}`
                 );
+
               }
+
+
+              console.log(
+                `✓ Correo enviado correctamente a ${correo}`
+              );
+
             }
+
+
+            console.log("");
+            console.log(
+              "✓ Todas las notificaciones fueron procesadas."
+            );
+
           }
 
+
+          // =====================================================
+          // EJECUTAR
+          // =====================================================
+
           enviar().catch(error => {
+
+            console.error("");
+            console.error(
+              "❌ Error al enviar las notificaciones:"
+            );
+
             console.error(error);
+
             process.exit(1);
+
           });
+
           EOF
+
+
+          # =====================================================
+          # EJECUTAR SCRIPT
+          # =====================================================
 
           node enviar.js
