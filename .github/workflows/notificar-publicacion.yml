@@ -14,19 +14,65 @@ jobs:
     steps:
       - name: Descargar repositorio
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
 
       - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
 
       - name: Instalar Firebase Admin
         run: npm install firebase-admin
 
+      - name: Detectar publicaciones nuevas
+        id: publicaciones
+        run: |
+          archivos=$(git diff --name-status HEAD^ HEAD | awk '$1 == "A" && $2 ~ /^BLOGS\/.*\.html$/ {print $2}')
+
+          echo "Archivos nuevos encontrados:"
+          echo "$archivos"
+
+          if [ -z "$archivos" ]; then
+            echo "hay_nuevas=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          echo "hay_nuevas=true" >> "$GITHUB_OUTPUT"
+
+          archivo=$(echo "$archivos" | head -n 1)
+
+          echo "archivo=$archivo" >> "$GITHUB_OUTPUT"
+
+      - name: Obtener título de la publicación
+        if: steps.publicaciones.outputs.hay_nuevas == 'true'
+        id: titulo
+        run: |
+          archivo="${{ steps.publicaciones.outputs.archivo }}"
+
+          titulo=$(grep -o '<title>[^<]*</title>' "$archivo" \
+            | head -n 1 \
+            | sed 's/<[^>]*>//g')
+
+          if [ -z "$titulo" ]; then
+            titulo="Nueva publicación en NEXATA"
+          fi
+
+          echo "Título detectado: $titulo"
+
+          {
+            echo "titulo<<EOF"
+            echo "$titulo"
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+
       - name: Obtener suscriptores y enviar correos
+        if: steps.publicaciones.outputs.hay_nuevas == 'true'
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          ARCHIVO: ${{ steps.publicaciones.outputs.archivo }}
+          TITULO: ${{ steps.titulo.outputs.titulo }}
         run: |
           cat > enviar.js <<'EOF'
           const admin = require("firebase-admin");
@@ -59,9 +105,21 @@ jobs:
               }
             });
 
-            console.log(`Suscriptores encontrados: ${correos.length}`);
+            console.log(
+              `Suscriptores encontrados: ${correos.length}`
+            );
+
+            const archivo = process.env.ARCHIVO;
+            const titulo = process.env.TITULO;
+
+            const ruta =
+              archivo.replace(/^BLOGS\//, "");
+
+            const enlace =
+              `https://nexata.site/BLOGS/${ruta}`;
 
             for (const correo of correos) {
+
               const respuesta = await fetch(
                 "https://api.resend.com/emails",
                 {
@@ -74,24 +132,61 @@ jobs:
                   body: JSON.stringify({
                     from:
                       "NEXATA INSIGHT MEDIA STUDIO <avisos@nexata.site>",
+
                     to: [correo],
+
                     subject:
-                      "🔔 Nueva publicación en NEXATA",
-                    html:
-                      "<h2>🔔 Hay una nueva publicación</h2>" +
-                      "<p>Ya puedes visitar NEXATA INSIGHT MEDIA STUDIO " +
-                      "para descubrir el nuevo contenido.</p>" +
-                      "<p><a href='https://nexata.site'>" +
-                      "Visitar NEXATA</a></p>"
+                      `🔔 Nueva publicación: ${titulo}`,
+
+                    html: `
+                      <div style="font-family:Arial,sans-serif;max-width:600px;margin:auto;">
+                        <h2>🔔 Nueva publicación en NEXATA</h2>
+
+                        <h3>${titulo}</h3>
+
+                        <p>
+                          Ya está disponible una nueva publicación
+                          en NEXATA INSIGHT MEDIA STUDIO.
+                        </p>
+
+                        <p>
+                          <a
+                            href="${enlace}"
+                            style="
+                              display:inline-block;
+                              padding:12px 18px;
+                              background:#0b1220;
+                              color:#ffffff;
+                              text-decoration:none;
+                              border-radius:8px;
+                              font-weight:bold;
+                            "
+                          >
+                            Leer publicación
+                          </a>
+                        </p>
+
+                        <p style="font-size:12px;color:#777;">
+                          NEXATA INSIGHT MEDIA STUDIO
+                        </p>
+                      </div>
+                    `
                   })
                 }
               );
 
-              const resultado = await respuesta.text();
+              const resultado =
+                await respuesta.text();
 
               console.log(
                 `Correo enviado a ${correo}: ${resultado}`
               );
+
+              if (!respuesta.ok) {
+                throw new Error(
+                  `Resend rechazó el correo: ${resultado}`
+                );
+              }
             }
           }
 
