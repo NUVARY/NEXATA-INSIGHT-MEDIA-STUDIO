@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>NEXATA Coin Rush</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="juego">
+
+    <h1>🪙 NEXATA COIN RUSH</h1>
+
+    <div class="marcador">
+
+      <div>
+        🪙 Monedas
+        <span id="monedas">0</span>
+      </div>
+
+      <div>
+        🏆 Récord
+        <span id="record">0</span>
+      </div>
+
+      <div>
+        ⚡ Nivel
+        <span id="nivel">1</span>
+      </div>
+
+    </div>
+
+
+    <div class="contenedor-canvas">
+
+      <canvas id="canvas"></canvas>
+
+
+      <!-- PANTALLA DE INICIO -->
+
+      <div id="pantallaInicio" class="pantalla">
+
+        <h2>🪙 COIN RUSH</h2>
+
+        <p>
+          Recoge todas las monedas que puedas.
+        </p>
+
+        <p>
+          ¡Pero cuidado con los obstáculos!
+        </p>
+
+        <button id="botonIniciar">
+          COMENZAR
+        </button>
+
+      </div>
+
+
+      <!-- PANTALLA GAME OVER -->
+
+      <div
+        id="pantallaGameOver"
+        class="pantalla oculto"
+      >
+
+        <h2>💥 GAME OVER</h2>
+
+        <p>
+          Monedas:
+          <strong id="monedasFinales">0</strong>
+        </p>
+
+        <p>
+          Récord:
+          <strong id="recordFinal">0</strong>
+        </p>
+
+        <button id="botonReiniciar">
+          JUGAR DE NUEVO
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- CONTROLES -->
+
+    <div class="controles">
+
+      <button id="izquierda">
+        ◀
+      </button>
+
+      <button id="derecha">
+        ▶
+      </button>
+
+    </div>
+
+
+    <p class="instrucciones">
+
+      PC: usa las teclas ◀ ▶ o A / D
+
+      <br>
+
+      Móvil: utiliza los botones
+
+    </p>
+
+  </main>
+
+
+  <script src="juego.js"></script>
+
+</body>
+
+</html>
