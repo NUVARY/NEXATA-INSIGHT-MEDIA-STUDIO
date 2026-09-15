@@ -1,48 +1,267 @@
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { min-height: 100vh; background: #07122f; color: white; font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; padding: 20px; }
-.juego { width: 100%; max-width: 850px; text-align: center; }
-h1 { color: #00eaff; font-size: 28px; letter-spacing: 2px; margin-bottom: 15px; }
-.marcador { display: flex; justify-content: center; gap: 15px; margin-bottom: 12px; flex-wrap: wrap; }
-.marcador div { background: #031a3d; border: 1px solid #00eaff; border-radius: 10px; padding: 8px 16px; min-width: 130px; box-shadow: 0 0 10px rgba(0, 234, 255, 0.15); }
-.marcador span { display: block; color: #00eaff; font-size: 20px; font-weight: bold; margin-top: 3px; }
-.contenedor-canvas { position: relative; width: 100%; overflow: hidden; border: 2px solid #00eaff; border-radius: 12px; background: #020817; box-shadow: 0 0 25px rgba(0, 234, 255, 0.2); }
-canvas { display: block; width: 100%; height: auto; background: #020817; }
-.pantalla { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; background: rgba(2, 8, 23, 0.88); padding: 20px; }
-.pantalla h2 { color: #00eaff; font-size: 34px; margin-bottom: 15px; }
-.pantalla p { margin: 5px; font-size: 17px; }
-.pantalla strong { color: #ffd700; }
-.pantalla button { margin-top: 20px; }
-button { border: 2px solid #00eaff; border-radius: 10px; background: #031a3d; color: white; padding: 12px 25px; font-size: 16px; font-weight: bold; cursor: pointer; transition: 0.2s; }
-button:hover { background: #00eaff; color: #031a3d; box-shadow: 0 0 18px rgba(0, 234, 255, 0.6); }
-button:active { transform: scale(0.95); }
-.oculto { display: none; }
-.controles { display: flex; justify-content: center; gap: 20px; margin-top: 15px; }
-.controles button { width: 100px; height: 55px; font-size: 25px; padding: 0; touch-action: manipulation; user-select: none; }
-.instrucciones { margin-top: 12px; color: #9fb4d0; font-size: 14px; line-height: 1.5; }
-/* BOTON SONIDO ESTILO NEXATA RUNNER */
-.boton-sonido {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  z-index: 50;
-  width: 44px;
-  height: 44px;
+* {
+  box-sizing: border-box;
+  margin: 0;
   padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: #07122f;
+  color: white;
+  font-family: Arial, sans-serif;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+
+  padding: 20px;
+}
+
+.juego {
+  width: 100%;
+  max-width: 850px;
+  text-align: center;
+}
+
+h1 {
+  color: #00eaff;
+  font-size: 28px;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.marcador {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.marcador div {
   background: #031a3d;
   border: 1px solid #00eaff;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,234,255,0.3);
+
+  padding: 8px 16px;
+  min-width: 130px;
+
+  box-shadow: 0 0 10px rgba(0, 234, 255, 0.15);
 }
+
+.marcador span {
+  display: block;
+
+  color: #00eaff;
+  font-size: 20px;
+  font-weight: bold;
+
+  margin-top: 3px;
+}
+
+.contenedor-canvas {
+  position: relative;
+
+  width: 100%;
+
+  overflow: hidden;
+
+  border: 2px solid #00eaff;
+  border-radius: 12px;
+
+  background: #020817;
+
+  box-shadow:
+    0 0 25px rgba(0, 234, 255, 0.2);
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #020817;
+}
+
+.pantalla {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(2, 8, 23, 0.88);
+
+  padding: 20px;
+}
+
+.pantalla h2 {
+  color: #00eaff;
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+.pantalla p {
+  margin: 5px;
+  font-size: 17px;
+}
+
+.pantalla strong {
+  color: #ffd700;
+}
+
+.pantalla button {
+  margin-top: 20px;
+}
+
+button {
+  border: 2px solid #00eaff;
+  border-radius: 10px;
+
+  background: #031a3d;
+  color: white;
+
+  padding: 12px 25px;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #00eaff;
+  color: #031a3d;
+
+  box-shadow:
+    0 0 18px rgba(0, 234, 255, 0.6);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.oculto {
+  display: none;
+}
+
+.controles {
+  display: flex;
+  justify-content: center;
+
+  gap: 20px;
+
+  margin-top: 15px;
+}
+
+.controles button {
+  width: 100px;
+  height: 55px;
+
+  font-size: 25px;
+  padding: 0;
+
+  touch-action: manipulation;
+  user-select: none;
+}
+
+.instrucciones {
+  margin-top: 12px;
+
+  color: #9fb4d0;
+
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* =========================================================
+   BOTÓN DE SONIDO
+========================================================= */
+
+.boton-sonido {
+  position: absolute;
+
+  top: 12px;
+  right: 12px;
+
+  z-index: 50;
+
+  width: 44px;
+  height: 44px;
+
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 20px;
+
+  background: #031a3d;
+
+  border: 1px solid #00eaff;
+  border-radius: 10px;
+
+  box-shadow:
+    0 0 10px rgba(0, 234, 255, 0.3);
+}
+
 .boton-sonido:hover {
   background: #00eaff;
 }
+
 .boton-sonido.apagado {
   opacity: 0.6;
+
   border-color: #ff4057;
-  box-shadow: 0 0 10px rgba(255,64,87,0.3);
+
+  box-shadow:
+    0 0 10px rgba(255, 64, 87, 0.3);
 }
-@media (max-width: 600px) { body { padding: 10px; } h1 { font-size: 21px; }.marcador { gap: 6px; }.marcador div { min-width: 95px; padding: 6px 8px; font-size: 13px; }.marcador span { font-size: 17px; }.pantalla h2 { font-size: 27px; }.pantalla p { font-size: 14px; }.controles button { width: 90px; height: 50px; } }
+
+/* =========================================================
+   MÓVIL
+========================================================= */
+
+@media (max-width: 600px) {
+
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 21px;
+  }
+
+  .marcador {
+    gap: 6px;
+  }
+
+  .marcador div {
+    min-width: 95px;
+    padding: 6px 8px;
+    font-size: 13px;
+  }
+
+  .marcador span {
+    font-size: 17px;
+  }
+
+  .pantalla h2 {
+    font-size: 27px;
+  }
+
+  .pantalla p {
+    font-size: 14px;
+  }
+
+  .controles button {
+    width: 90px;
+    height: 50px;
+  }
+
+}

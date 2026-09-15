@@ -6,41 +6,94 @@
   <title>NEXATA Coin Rush</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
   <main class="juego">
+
     <h1>🪙 NEXATA COIN RUSH</h1>
+
     <div class="marcador">
-      <div>🪙 Monedas <span id="monedas">0</span></div>
-      <div>🏆 Récord <span id="record">0</span></div>
-      <div>⚡ Nivel <span id="nivel">1</span></div>
+
+      <div>
+        🪙 Monedas
+        <span id="monedas">0</span>
+      </div>
+
+      <div>
+        🏆 Récord
+        <span id="record">0</span>
+      </div>
+
+      <div>
+        ⚡ Nivel
+        <span id="nivel">1</span>
+      </div>
+
     </div>
+
     <div class="contenedor-canvas">
-      <!-- BOTON SONIDO ESTILO NEXATA RUNNER -->
-      <button id="botonSonido" class="boton-sonido" title="Sonido">🔊</button>
-      
+
+      <button
+        id="botonSonido"
+        class="boton-sonido"
+        title="Activar o desactivar sonido">
+        🔊
+      </button>
+
       <canvas id="canvas"></canvas>
 
       <div id="pantallaInicio" class="pantalla">
+
         <h2>🪙 COIN RUSH</h2>
+
         <p>Recoge todas las monedas que puedas.</p>
         <p>¡Pero cuidado con los obstáculos!</p>
-        <button id="botonIniciar">COMENZAR</button>
+
+        <button id="botonIniciar">
+          COMENZAR
+        </button>
+
       </div>
 
       <div id="pantallaGameOver" class="pantalla oculto">
+
         <h2>💥 GAME OVER</h2>
-        <p>Monedas: <strong id="monedasFinales">0</strong></p>
-        <p>Récord: <strong id="recordFinal">0</strong></p>
-        <button id="botonReiniciar">JUGAR DE NUEVO</button>
+
+        <p>
+          Monedas:
+          <strong id="monedasFinales">0</strong>
+        </p>
+
+        <p>
+          Récord:
+          <strong id="recordFinal">0</strong>
+        </p>
+
+        <button id="botonReiniciar">
+          JUGAR DE NUEVO
+        </button>
+
       </div>
+
     </div>
 
     <div class="controles">
+
       <button id="izquierda">◀</button>
       <button id="derecha">▶</button>
+
     </div>
-    <p class="instrucciones">PC: usa las teclas ◀ ▶ o A / D<br>Móvil: utiliza los botones</p>
+
+    <p class="instrucciones">
+      PC: usa las teclas ◀ ▶ o A / D
+      <br>
+      Móvil: utiliza los botones
+    </p>
+
   </main>
+
   <script src="juego.js"></script>
+
 </body>
 </html>
