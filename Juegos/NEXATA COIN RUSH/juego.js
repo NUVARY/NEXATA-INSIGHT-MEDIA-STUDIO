@@ -19,9 +19,9 @@ const botonSonido = document.getElementById("botonSonido");
 // SONIDOS CON BOTON ON/OFF COMO NEXATA RUNNER
 // =========================================================
 const sonidoMoneda = new Audio("sonidos/moneda.mp3");
-const sonidoChoque = new Audio("sonidos/choque.mp3");
-const sonidoNivel = new Audio("sonidos/nivel.mp3");
-const musica = new Audio("sonidos/musica.mp3");
+const sonidoChoque = new Audio("sonidos/choques.mp3");
+const sonidoNivel = new Audio("sonidos/nivels.mp3");
+const musica = new Audio("sonidos/musicas.mp3");
 
 [sonidoMoneda, sonidoChoque, sonidoNivel, musica].forEach(a => a.preload = "auto");
 musica.loop = true;
