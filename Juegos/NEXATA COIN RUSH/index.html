@@ -15,13 +15,18 @@
       <div>⚡ Nivel <span id="nivel">1</span></div>
     </div>
     <div class="contenedor-canvas">
+      <!-- BOTON SONIDO ESTILO NEXATA RUNNER -->
+      <button id="botonSonido" class="boton-sonido" title="Sonido">🔊</button>
+      
       <canvas id="canvas"></canvas>
+
       <div id="pantallaInicio" class="pantalla">
         <h2>🪙 COIN RUSH</h2>
         <p>Recoge todas las monedas que puedas.</p>
         <p>¡Pero cuidado con los obstáculos!</p>
         <button id="botonIniciar">COMENZAR</button>
       </div>
+
       <div id="pantallaGameOver" class="pantalla oculto">
         <h2>💥 GAME OVER</h2>
         <p>Monedas: <strong id="monedasFinales">0</strong></p>
@@ -29,6 +34,7 @@
         <button id="botonReiniciar">JUGAR DE NUEVO</button>
       </div>
     </div>
+
     <div class="controles">
       <button id="izquierda">◀</button>
       <button id="derecha">▶</button>
