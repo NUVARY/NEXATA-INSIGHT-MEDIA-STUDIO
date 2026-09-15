@@ -25,7 +25,7 @@ const musica = new Audio("sonidos/musicas.mp3");
 
 [sonidoMoneda, sonidoChoque, sonidoNivel, musica].forEach(a => a.preload = "auto");
 musica.loop = true;
-musica.volume = 0.4;
+musica.volume = 1.0;
 sonidoMoneda.volume = 1.0;
 sonidoChoque.volume = 1.0;
 sonidoNivel.volume = 1.0;
