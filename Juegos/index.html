@@ -10,220 +10,11 @@
 <title>CATEGORÍAS | NEXATA INSIGHT MEDIA STUDIO</title>
 
 <link rel="stylesheet" href="style.css">
-
-
 </head>
 
+
+
 <body>
-
-<!-- =========================================================
-     HEADER ESCRITORIO
-========================================================= -->
-
-<header class="header-desktop">
-
-
-<div class="left">
-
-    <img src="N..png"
-         class="logo desktop-logo"
-         alt="Logo NEXATA">
-
-    <span class="title">
-        NEXATA INSIGHT MEDIA STUDIO
-    </span>
-
-</div>
-
-
-<nav class="center-list">
-
-    <ul>
-
-        <li>
-            <a href="https://nexata-insight-media-studio.github.io/NIMS/">
-                🏠 INICIO
-            </a>
-        </li>
-
-    </ul>
-
-</nav>
-
-
-<div class="center-icons">
-
-    <!-- WHATSAPP -->
-
-    <a class="icon-btn"
-       href="https://wa.me/?text=Mira%20este%20contenido%20👉%20https://nexata-insight-media-studio.github.io/CATEGORIA-JUEGOS-/"
-       target="_blank">
-
-        <img src="Whatsapp.png" alt="WhatsApp">
-
-    </a>
-
-
-    <!-- FACEBOOK -->
-
-    <a class="icon-btn"
-       href="https://www.facebook.com/sharer/sharer.php?u=https://nexata-insight-media-studio.github.io/CATEGORIA-JUEGOS-/"
-       target="_blank">
-
-        <img src="facebook.png" alt="Facebook">
-
-    </a>
-
-
-    <!-- COPIAR -->
-
-    <button class="icon-btn"
-            id="copyLinkBtn"
-            aria-label="Copiar enlace">
-
-        <img src="copiar.png" alt="Copiar enlace">
-
-    </button>
-
-</div>
-
-
-<div class="right">
-
-    <span class="short">
-        NIMS
-    </span>
-
-</div>
-
-
-</header>
-
-<!-- =========================================================
-     HEADER MÓVIL
-========================================================= -->
-
-<header class="header-mobile">
-
-<div class="mobile-row">
-
-    <img src="N..png"
-         class="hero-logo"
-         alt="Logo NEXATA">
-
-
-    <nav class="center-mobile">
-
-        <ul>
-
-            <li>
-                <a href="https://nexata-insight-media-studio.github.io/NIMS/">
-                    🏠 INICIO
-                </a>
-            </li>
-
-        </ul>
-
-    </nav>
-
-
-    <div class="hero-icons">
-
-        <a class="icon-btn"
-           href="https://wa.me/?text=Mira%20este%20contenido%20👉%20https://nexata-insight-media-studio.github.io/CATEGORIA-JUEGOS-/"
-           target="_blank">
-
-            <img src="Whatsapp.png" alt="WhatsApp">
-
-        </a>
-
-
-        <a class="icon-btn"
-           href="https://www.facebook.com/sharer/sharer.php?u=https://nexata-insight-media-studio.github.io/CATEGORIA-JUEGOS-/"
-           target="_blank">
-
-            <img src="facebook.png" alt="Facebook">
-
-        </a>
-
-
-        <button class="icon-btn"
-                id="copyLinkBtnMobile"
-                aria-label="Copiar enlace">
-
-            <img src="copiar.png" alt="Copiar enlace">
-
-        </button>
-
-    </div>
-
-</div>
-
-</header>
-
-<!-- =========================================================
-     SCRIPT COPIAR ENLACE
-========================================================= -->
-
-<script>
-
-async function copiarEnlace(btn) {
-
-    try {
-
-        await navigator.clipboard.writeText(
-            window.location.href
-        );
-
-        btn.classList.add("show");
-
-        setTimeout(() => {
-
-            btn.classList.remove("show");
-
-        }, 1200);
-
-    } catch (e) {
-
-        alert("No se pudo copiar automáticamente.");
-
-    }
-
-}
-
-
-document.addEventListener("DOMContentLoaded", () => {
-
-    const btn =
-        document.getElementById("copyLinkBtn");
-
-    const btnMob =
-        document.getElementById("copyLinkBtnMobile");
-
-
-    if (btn) {
-
-        btn.addEventListener(
-            "click",
-            () => copiarEnlace(btn)
-        );
-
-    }
-
-
-    if (btnMob) {
-
-        btnMob.addEventListener(
-            "click",
-            () => copiarEnlace(btnMob)
-        );
-
-    }
-
-});
-
-</script>
-
 <!-- =========================================================
      FILTROS
 ========================================================= -->
@@ -283,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
 <label for="filter-1"
        class="chip">
 
-    TECNOLOGÍA
+    ARCADE RETRO
 
 </label>
 
@@ -291,39 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
 <label for="filter-2"
        class="chip">
 
-    JUEGOS
-
-</label>
-
-
-<label for="filter-3"
-       class="chip">
-
-    CONTENIDOS
-
-</label>
-
-
-<label for="filter-4"
-       class="chip">
-
-    LIBROS
-
-</label>
-
-
-<label for="filter-5"
-       class="chip">
-
-    VIDEOS
-
-</label>
-
-
-<label for="filter-6"
-       class="chip">
-
-    PODCASTS
+    TERROR
 
 </label>
 
@@ -342,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
      SNAKE PRO
 ====================================================== -->
 
-<article class="card cat-6">
+<article class="card cat-1">
 
     <div class="card-image">
 
@@ -406,60 +165,116 @@ document.addEventListener("DOMContentLoaded", () => {
 
 </article>
 
+<!-- =====================================================
+     NEXATA COIN RUSH
+====================================================== -->
+
+<article class="card cat-1">
+
+    <div class="card-image">
+
+        <img src="#"
+             alt="nexata-coin-rush">
+
+        <span class="game-tag">
+            JUEGO
+        </span>
+
+    </div>
+
+
+    <div class="card-content">
+
+        <div class="card-top">
+
+            <span class="category">
+                NEXATA GAMES
+            </span>
+
+            <span class="status">
+                ● ONLINE
+            </span>
+
+        </div>
+
+
+        <h3>
+            NEXATA COIN RUSH
+        </h3>
+
+
+        <p><br><br></p>
+
+
+        <a class="play-button"
+           href="NEXATA COIN RUSH/index.html">
+
+            JUGAR AHORA
+
+            <span>→</span>
+
+        </a>
+
+    </div>
+
+</article>
+
+
+<!-- =====================================================
+     NEXATA RUNNER
+====================================================== -->
+
+<article class="card cat-1">
+
+    <div class="card-image">
+
+        <img src="#"
+             alt="nexata-runner">
+
+        <span class="game-tag">
+            JUEGO
+        </span>
+
+    </div>
+
+
+    <div class="card-content">
+
+        <div class="card-top">
+
+            <span class="category">
+                NEXATA GAMES
+            </span>
+
+            <span class="status">
+                ● ONLINE
+            </span>
+
+        </div>
+
+
+        <h3>
+            NEXATA RUNNER
+        </h3>
+
+
+        <p><br><br></p>
+
+
+        <a class="play-button"
+           href="NEXATA RUNNER/index.html">
+
+            JUGAR AHORA
+
+            <span>→</span>
+
+        </a>
+
+    </div>
+
+</article>
+
+
 </main>
-
-<!-- =========================================================
-     FOOTER
-========================================================= -->
-
-<footer>
-
-<p>
-
-    <a href="Politica de privacidad.html">
-        Política de Privacidad
-    </a>
-
-    <span class="separator">|</span>
-
-    <a href="Informacion.html">
-        Información
-    </a>
-
-    <span class="separator">|</span>
-
-    © 2025 NEXATA INSIGHT MEDIA STUDIO.
-    Todos los derechos reservados.
-
-</p>
-
-
-</footer>
-
-<!-- =========================================================
-     CRÉDITO DEL FONDO
-========================================================= -->
-
-<div class="bg-credit">
-
-
-Fondo de la página:
-Imagen de
-<a href="https://pixabay.com/es/users/alexantropov86-2691829/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3501200">
-
-    Alexander Antropov
-
-</a>
-
-en
-
-<a href="https://pixabay.com/es//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3501200">
-
-    Pixabay
-
-</a>
-
-</div>
-
 </body>
 </html>
