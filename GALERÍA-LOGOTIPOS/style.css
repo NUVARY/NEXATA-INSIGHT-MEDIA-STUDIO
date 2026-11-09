@@ -1,0 +1,660 @@
+
+/* ==========================================
+   CONFIGURACIÓN GENERAL
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f6fa;
+    color: #202333;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+select {
+    font-family: inherit;
+}
+
+
+/* ==========================================
+   ENCABEZADO
+========================================== */
+
+.encabezado {
+    width: 100%;
+    background: #111522;
+    padding: 20px 7%;
+}
+
+.header-contenido {
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.marca {
+    font-size: 23px;
+    font-weight: 900;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.marca span,
+.footer-contenido h2 span {
+    color: #00d4aa;
+}
+
+.header-contenido nav {
+    display: flex;
+    gap: 30px;
+}
+
+.header-contenido nav a {
+    color: #d8dbe5;
+    font-size: 14px;
+    transition: .3s;
+}
+
+.header-contenido nav a:hover {
+    color: #00d4aa;
+}
+
+
+/* ==========================================
+   PRESENTACIÓN
+========================================== */
+
+.presentacion {
+    text-align: center;
+    padding: 100px 20px 110px;
+    background: linear-gradient(135deg, #111522, #222d47);
+    color: white;
+}
+
+.etiqueta {
+    color: #00d4aa;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.presentacion h1 {
+    font-size: clamp(35px, 6vw, 65px);
+    margin: 22px 0;
+    font-weight: 900;
+}
+
+.presentacion h1 span {
+    color: #00d4aa;
+}
+
+.presentacion p {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    color: #c8cedb;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+.btn-explorar {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #00d4aa;
+    color: #111522;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 13px;
+    transition: .3s;
+}
+
+.btn-explorar:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+
+/* ==========================================
+   GALERÍA
+========================================== */
+
+.galeria {
+    max-width: 1250px;
+    margin: auto;
+    padding: 85px 25px;
+}
+
+.titulo-seccion {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 35px;
+    gap: 20px;
+}
+
+.subtitulo {
+    color: #00a98a;
+    font-weight: bold;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.titulo-seccion h2 {
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+.titulo-seccion p {
+    color: #777e90;
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   TARJETAS DE LOGOTIPOS
+========================================== */
+
+.contenedor-logos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.logo-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #e7e9ef;
+    box-shadow: 0 5px 25px rgba(0,0,0,.04);
+    transition: .3s;
+}
+
+.logo-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.09);
+}
+
+.imagen-logo {
+    height: 230px;
+    background: #f0f2f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.imagen-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: .3s;
+}
+
+.logo-card:hover .imagen-logo img {
+    transform: scale(1.05);
+}
+
+.informacion-logo {
+    padding: 23px;
+}
+
+.categoria {
+    color: #00a98a;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.informacion-logo h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.informacion-logo p {
+    color: #818696;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.precio {
+    font-size: 12px;
+    color: #00a98a;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+
+/* ==========================================
+   FORMATOS
+========================================== */
+
+.formatos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.formatos label {
+    font-size: 12px;
+    color: #626879;
+}
+
+.selector-formato {
+    padding: 8px 10px;
+    border: 1px solid #dfe2e9;
+    border-radius: 5px;
+    background: white;
+    color: #202333;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/* ==========================================
+   BOTONES HORIZONTALES
+========================================== */
+
+.acciones {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 7px;
+    width: 100%;
+}
+
+.acciones button,
+.acciones a {
+    display: flex;
+    flex: 1;
+    min-width: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 12px 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-descargar {
+    background: #111522;
+    color: white;
+}
+
+.btn-descargar:hover {
+    background: #303d5c;
+}
+
+.btn-descargar span {
+    font-size: 17px;
+    margin-right: 4px;
+}
+
+.btn-comprar {
+    background: #00d4aa;
+    color: #10211f;
+}
+
+.btn-comprar:hover {
+    background: #00b995;
+}
+
+.btn-correo {
+    background: #edf0f6;
+    color: #333b50;
+}
+
+.btn-correo:hover {
+    background: #dce2ee;
+}
+
+
+/* ==========================================
+   DERECHOS DE USO
+========================================== */
+
+.derechos {
+    background: #111522;
+    color: white;
+    text-align: center;
+    padding: 85px 25px;
+}
+
+.derechos h2 {
+    font-size: clamp(25px, 4vw, 38px);
+    max-width: 750px;
+    margin: 15px auto;
+}
+
+.derechos > p {
+    color: #b8c0d0;
+    max-width: 700px;
+    margin: 15px auto;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.pasos {
+    max-width: 1100px;
+    margin: 55px auto 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.paso {
+    padding: 25px 15px;
+    background: #1c263b;
+    border: 1px solid #303d54;
+    border-radius: 10px;
+}
+
+.paso > span {
+    display: inline-flex;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #00d4aa;
+    color: #111522;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.paso h3 {
+    margin-bottom: 12px;
+    font-size: 17px;
+}
+
+.paso p {
+    color: #b8c0d0;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.btn-derechos {
+    display: inline-block;
+    margin: 15px auto;
+    padding: 16px 25px;
+    background: #00d4aa;
+    color: #111522;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 12px;
+    transition: .3s;
+}
+
+.btn-derechos:hover {
+    background: white;
+}
+
+.derechos .nota-legal {
+    max-width: 800px;
+    margin: 30px auto 0;
+    color: #8e9aaf;
+    font-size: 11px;
+}
+
+
+/* ==========================================
+   PIE DE PÁGINA
+========================================== */
+
+footer {
+    background: #090d17;
+    color: white;
+    padding: 35px 7% 15px;
+}
+
+.footer-contenido {
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+
+.footer-contenido h2 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.footer-contenido p {
+    font-size: 13px;
+    color: #aeb6c7;
+}
+
+.footer-contenido > a {
+    background: #00d4aa;
+    color: #111522;
+    padding: 13px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.copyright {
+    border-top: 1px solid #252b39;
+    padding-top: 18px;
+    text-align: center;
+    color: #7d879b;
+    font-size: 11px;
+}
+
+
+/* ======================================
+   OPCIONES DE COMPRA
+====================================== */
+
+.acciones {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 7px;
+    width: 100%;
+}
+
+.acciones > .btn-descargar {
+    flex: 1;
+    min-width: 0;
+}
+
+.compra-opcion {
+    display: flex;
+    flex: 1;
+    min-width: 0;
+    gap: 4px;
+}
+
+.compra-opcion a {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 11px 5px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-comprar {
+    background: #00d4aa;
+    color: #10211f;
+}
+
+.btn-comprar:hover {
+    background: #00b995;
+}
+
+.btn-derechos-compra {
+    background: #7655dc;
+    color: white;
+}
+
+.btn-derechos-compra:hover {
+    background: #6040c1;
+}
+
+/* BOTONES DE AYUDA */
+
+.btn-ayuda {
+    width: 25px;
+    min-width: 25px;
+    height: auto;
+    flex: 0 0 25px;
+    border-radius: 50%;
+    border: 1px solid #aab1c0;
+    background: white;
+    color: #555d70;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+}
+
+.btn-ayuda:hover {
+    background: #e9edf5;
+}
+
+/* MENSAJES INFORMATIVOS */
+
+.mensaje-compra {
+    display: none;
+    margin-top: 12px;
+    padding: 13px;
+    border-radius: 7px;
+    background: #f0f3f9;
+    color: #333b50;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.mensaje-compra.visible {
+    display: block;
+}
+
+/* CELULARES */
+
+@media (max-width: 400px) {
+
+    .acciones > .btn-descargar {
+        flex-basis: 100%;
+    }
+
+    .compra-opcion {
+        flex: 1 1 calc(50% - 7px);
+    }
+
+}
+
+
+/* ==========================================
+   RESPONSIVE - TABLET
+========================================== */
+
+@media (max-width: 950px) {
+
+    .contenedor-logos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pasos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ==========================================
+   RESPONSIVE - CELULARES
+========================================== */
+
+@media (max-width: 600px) {
+
+    .encabezado {
+        padding: 18px 5%;
+    }
+
+    .header-contenido {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .header-contenido nav {
+        gap: 18px;
+    }
+
+    .header-contenido nav a {
+        font-size: 12px;
+    }
+
+    .presentacion {
+        padding: 75px 20px;
+    }
+
+    .galeria {
+        padding: 60px 15px;
+    }
+
+    .titulo-seccion {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .titulo-seccion h2 {
+        font-size: 26px;
+    }
+
+    .contenedor-logos {
+        grid-template-columns: 1fr;
+    }
+
+    .imagen-logo {
+        height: 250px;
+    }
+
+    .pasos {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .derechos {
+        padding: 65px 18px;
+    }
+
+    .footer-contenido {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .acciones button,
+    .acciones a {
+        font-size: 11px;
+        padding: 13px 3px;
+    }
+
+}
