@@ -557,6 +557,72 @@ footer {
     display: block;
 }
 
+
+/* MENÚ PRINCIPAL */
+
+.menu-principal {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/* CONTENEDOR DESPLEGABLE */
+
+.menu-desplegable {
+    position: relative;
+    display: inline-block;
+}
+
+/* BOTÓN */
+
+.btn-menu {
+    background: transparent;
+    border: none;
+    color: inherit;
+    font-size: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* CONTENIDO */
+
+.menu-contenido {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    min-width: 190px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.18);
+    overflow: hidden;
+    z-index: 1000;
+}
+
+/* OPCIONES */
+
+.menu-contenido a {
+    display: block;
+    padding: 13px 16px;
+    color: #222;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu-contenido a:hover {
+    background: #f0f0f0;
+    color: #007bff;
+}
+
+/* MOSTRAR AL PASAR EL CURSOR */
+
+.menu-desplegable:hover .menu-contenido,
+.menu-desplegable:focus-within .menu-contenido {
+    display: block;
+}
+
+
 /* CELULARES */
 
 @media (max-width: 400px) {
