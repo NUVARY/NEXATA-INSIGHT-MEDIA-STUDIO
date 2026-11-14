@@ -1,0 +1,10 @@
+Agrega esta línea dentro de la etiqueta <head> de BLOGS/15.html, antes de </head>:
+
+<link rel="alternate"
+      type="application/rss+xml"
+      title="NEXATA | Recomendaciones de productos"
+      href="https://nexata.site/feed.xml">
+
+No reemplaces el contenido actual de <head>; solo agrega este enlace.
+Sube también NEXATA/feed.xml a la raíz pública del sitio, para que quede disponible en:
+https://nexata.site/feed.xml

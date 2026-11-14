@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>NEXATA INSIGHT MEDIA STUDIO</title>
+    <link>https://nexata.site/</link>
+    <description>Publicaciones seleccionadas de NEXATA con recomendaciones de productos y tecnología.</description>
+    <language>es-MX</language>
+    <lastBuildDate>Sat, 12 Sep 2026 11:33:00 GMT</lastBuildDate>
+    <atom:link href="https://nexata.site/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>🛍️ 5 productos tecnológicos recomendados</title>
+      <link>https://nexata.site/BLOGS/15.html</link>
+      <guid isPermaLink="true">https://nexata.site/BLOGS/15.html</guid>
+      <pubDate>Sat, 12 Sep 2026 11:33:00 GMT</pubDate>
+      <category>Productos</category>
+      <category>Tecnología</category>
+      <description><![CDATA[En NEXATA INSIGHT MEDIA STUDIO seleccionamos cinco productos relacionados con tecnología y computación: pasta térmica, base enfriadora para laptop, multicontacto USB, carcasa para disco duro y mouse. Consulta las características y enlaces de compra en el artículo original.]]></description>
+      <content:encoded><![CDATA[
+        <p>En NEXATA INSIGHT MEDIA STUDIO seleccionamos cinco productos relacionados con tecnología y computación:</p>
+        <ol>
+          <li><a href="https://meli.la/1rHYbK8">Pasta térmica</a></li>
+          <li><a href="https://meli.la/2t6A9uN">Base enfriadora para laptop</a></li>
+          <li><a href="https://meli.la/2gncz8f">Multicontacto USB</a></li>
+          <li><a href="https://meli.la/2sc4xZc">Carcasa para disco duro</a></li>
+          <li><a href="https://meli.la/2dCZWuH">Mouse</a></li>
+        </ol>
+        <p><a href="https://nexata.site/BLOGS/15.html">Leer la publicación completa en NEXATA</a>.</p>
+      ]]></content:encoded>
+    </item>
+  </channel>
+</rss>
