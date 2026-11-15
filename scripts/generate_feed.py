@@ -333,12 +333,19 @@ def main():
 
         if old_link and old_link not in found_links:
             print(f"Se conserva publicación anterior: {old_link}")
+
+            old_image = old_item.find(
+                "{http://search.yahoo.com/mrss/}content"
+            )
+
             posts.append({
                 "title": old_item.findtext("title", ""),
                 "link": old_link,
                 "description": old_item.findtext("description", ""),
-                "image": "",
-                "content": "",
+                "image": old_image.get("url", "") if old_image is not None else "",
+                "content": old_item.findtext(
+                    "{http://purl.org/rss/1.0/modules/content/}encoded", ""
+                ),
                 "date": old_item.findtext("pubDate", ""),
                 "old": old_item
             })
