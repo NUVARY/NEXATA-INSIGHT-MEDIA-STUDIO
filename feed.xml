@@ -1,15 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"
      xmlns:atom="http://www.w3.org/2005/Atom"
-     xmlns:content="http://purl.org/rss/1.0/modules/content/">
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>NEXATA INSIGHT MEDIA STUDIO</title>
     <link>https://nexata.site/</link>
-    <description>Publicaciones seleccionadas de NEXATA con recomendaciones de productos y tecnología.</description>
+    <description>Publicaciones seleccionadas de NEXATA con recomendaciones, tecnología, información y contenido de interés.</description>
     <language>es-MX</language>
-    <lastBuildDate>Sat, 12 Sep 2026 11:33:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 00:45:35 GMT</lastBuildDate>
     <atom:link href="https://nexata.site/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>🤖 Inteligencia artificial: cómo está cambiando nuestra vida</title>
+      <link>https://nexata.site/BLOGS/16.html</link>
+      <guid isPermaLink="true">https://nexata.site/BLOGS/16.html</guid>
+      <pubDate>Sun, 13 Sep 2026 06:00:00 GMT</pubDate>
+      <description><![CDATA[🤖 La inteligencia artificial está transformando la manera en que trabajamos, estudiamos, buscamos información y utilizamos la tecnología.]]></description>
+      <media:content url="https://i.imgur.com/5DetFJJ.jpeg" medium="image" />
+      <content:encoded><![CDATA[<h1>
+        🤖 Inteligencia artificial: cómo está cambiando nuestra vida
+      </h1>
 
+      <p>
+        La inteligencia artificial, conocida como IA, se ha convertido en una de las tecnologías más importantes de los últimos años. Actualmente podemos encontrarla en herramientas que utilizamos para trabajar, estudiar, crear contenido, buscar información y realizar diferentes tareas.
+      </p>
+
+      <p>
+        Aunque muchas personas relacionan la inteligencia artificial únicamente con los chatbots, su presencia es mucho más amplia. También está presente en aplicaciones, motores de búsqueda, sistemas de recomendación, asistentes digitales, herramientas de edición y diferentes servicios tecnológicos.
+      </p>
+
+      <h2>
+        🧠 ¿Qué es la inteligencia artificial?
+      </h2>
+
+      <p>
+        La inteligencia artificial es un conjunto de tecnologías que permite a las computadoras realizar tareas que normalmente requieren determinadas capacidades humanas, como analizar información, reconocer patrones, comprender lenguaje o generar contenido.
+      </p>
+
+      <p>
+        Estas herramientas funcionan mediante modelos y sistemas entrenados con grandes cantidades de información. Dependiendo de su diseño, pueden analizar datos, responder preguntas, generar textos, crear imágenes, ayudar con programación y realizar muchas otras funciones.
+      </p>
+
+      <hr>
+
+      <h2>
+        💻 ¿Cómo utilizamos la IA actualmente?
+      </h2>
+
+      <p>
+        La inteligencia artificial ya forma parte de muchas actividades cotidianas. Por ejemplo, puede ayudarnos a organizar información, resumir textos, traducir contenidos, generar ideas o aprender sobre diferentes temas.
+      </p>
+
+      <p>
+        En el ámbito laboral también puede ser utilizada para automatizar determinadas tareas y ahorrar tiempo. Sin embargo, la IA debe utilizarse como una herramienta de apoyo y no como sustituto del criterio humano.
+      </p>
+
+      <hr>
+
+      <h2>
+        🎓 IA en la educación
+      </h2>
+
+      <p>
+        En la educación, la inteligencia artificial puede convertirse en una herramienta útil para explicar conceptos, practicar conocimientos y encontrar diferentes formas de abordar un tema.
+      </p>
+
+      <p>
+        Aun así, es importante comprobar la información obtenida. Una respuesta generada por IA no necesariamente es correcta, por lo que aprender a investigar, comparar fuentes y desarrollar pensamiento crítico continúa siendo fundamental.
+      </p>
+
+      <hr>
+
+      <h2>
+        ⚠️ También existen riesgos
+      </h2>
+
+      <p>
+        El crecimiento de la inteligencia artificial también plantea desafíos. Entre ellos se encuentran la difusión de información falsa, la creación de contenido engañoso, la privacidad de los datos y el uso irresponsable de estas tecnologías.
+      </p>
+
+      <p>
+        Por esta razón, utilizar herramientas de IA requiere responsabilidad. No debemos compartir información personal o confidencial sin conocer cómo será utilizada, y siempre es recomendable verificar información importante mediante fuentes confiables.
+      </p>
+
+      <hr>
+
+      <h2>
+        🔎 El pensamiento crítico sigue siendo importante
+      </h2>
+
+      <p>
+        La inteligencia artificial puede ayudarnos a encontrar respuestas rápidamente, pero eso no significa que debamos aceptar todo lo que genera como verdadero.
+      </p>
+
+      <p>
+        Investigar, cuestionar, comparar información y utilizar nuestro propio criterio son habilidades que seguirán siendo importantes en un mundo donde la tecnología tiene cada vez mayor presencia.
+      </p>
+
+      <hr>
+
+      <h2>
+        🚀 El futuro de la inteligencia artificial
+      </h2>
+
+      <p>
+        La IA continuará evolucionando y probablemente estará presente en cada vez más herramientas y servicios. Su impacto dependerá no solamente de lo que la tecnología pueda hacer, sino también de cómo las personas decidan utilizarla.
+      </p>
+
+      <p>
+        La inteligencia artificial no tiene que verse únicamente como una amenaza o como una solución para todo. Puede ser una herramienta poderosa cuando se utiliza de manera responsable, consciente y crítica.
+      </p>
+
+      <p>
+        En NEXATA INSIGHT MEDIA STUDIO continuaremos explorando la tecnología y sus cambios para comprender mejor el mundo digital en el que vivimos.
+      </p>
+
+      <p>
+        <strong>
+          NEXATA INSIGHT MEDIA STUDIO
+        </strong>
+      </p>
+
+      <p>
+        Información • Tecnología • Cultura • Entretenimiento • Descubrimiento
+      </p>]]></content:encoded>
+    </item>
     <item>
       <title>🛍️ 5 productos tecnológicos recomendados</title>
       <link>https://nexata.site/BLOGS/15.html</link>
@@ -17,18 +132,2093 @@
       <pubDate>Sat, 12 Sep 2026 11:33:00 GMT</pubDate>
       <category>Productos</category>
       <category>Tecnología</category>
-      <description><![CDATA[En NEXATA INSIGHT MEDIA STUDIO seleccionamos cinco productos relacionados con tecnología y computación: pasta térmica, base enfriadora para laptop, multicontacto USB, carcasa para disco duro y mouse. Consulta las características y enlaces de compra en el artículo original.]]></description>
-      <content:encoded><![CDATA[
-        <p>En NEXATA INSIGHT MEDIA STUDIO seleccionamos cinco productos relacionados con tecnología y computación:</p>
-        <ol>
-          <li><a href="https://meli.la/1rHYbK8">Pasta térmica</a></li>
-          <li><a href="https://meli.la/2t6A9uN">Base enfriadora para laptop</a></li>
-          <li><a href="https://meli.la/2gncz8f">Multicontacto USB</a></li>
-          <li><a href="https://meli.la/2sc4xZc">Carcasa para disco duro</a></li>
-          <li><a href="https://meli.la/2dCZWuH">Mouse</a></li>
-        </ol>
-        <p><a href="https://nexata.site/BLOGS/15.html">Leer la publicación completa en NEXATA</a>.</p>
-      ]]></content:encoded>
+      <description><![CDATA[🛍️ Productos recomendados Descubre una selección de productos de tecnología y computación que pueden ser útiles para el día a día. Encuentra accesorios para laptops, computadoras, almacenamiento, conexiones USB y mucho más.]]></description>
+      <media:content url="https://i.imgur.com/5DetFJJ.jpeg" medium="image" />
+      <content:encoded><![CDATA[<h1>
+        🛍️ 5 productos tecnológicos recomendados
+      </h1>
+
+
+      <p>En NEXATA INSIGHT MEDIA STUDIO seleccionamos algunos productos relacionados con tecnología y computación que pueden resultar útiles para diferentes necesidades del día a día.</p>
+<p>🧊 1. Pasta térmica</p>
+<p>La pasta térmica es un accesorio utilizado para mejorar la transferencia de calor entre determinados componentes de una computadora y su sistema de disipación.</p>
+<p>Puede ser útil para realizar mantenimiento a equipos compatibles.</p>
+<p> Ver pasta térmica</p>
+<p><a href="https://meli.la/1rHYbK8">https://meli.la/1rHYbK8</a></p>
+<hr>
+<p>💻 2. Base enfriadora para laptop</p>
+<p>Una base enfriadora puede ser una opción interesante para quienes utilizan su laptop durante periodos prolongados y buscan mejorar su ventilación.</p>
+<p> Ver base enfriadora para laptop</p>
+<p><a href="https://meli.la/2t6A9uN">https://meli.la/2t6A9uN</a></p>
+<hr>
+<p>🔌 3. Multicontacto USB</p>
+<p>Un multicontacto con conexiones USB puede resultar práctico cuando tenemos varios dispositivos que necesitan conectarse o cargarse en un mismo lugar.</p>
+<p> Ver multicontacto USB</p>
+<p><a href="https://meli.la/2gncz8f">https://meli.la/2gncz8f</a></p>
+<hr>
+<p>💾 4. Carcasa para disco duro</p>
+<p>Una carcasa para disco duro puede permitir aprovechar un disco compatible como unidad de almacenamiento externa.</p>
+<p>Es una alternativa interesante para quienes tienen un disco que ya no utilizan dentro de una computadora.</p>
+<p> Ver carcasa para disco duro</p>
+<p><a href="https://meli.la/2sc4xZc">https://meli.la/2sc4xZc</a></p>
+<hr>
+<p>🖱️ 5. Mouse</p>
+<p>El mouse es uno de los accesorios básicos para utilizar una computadora y puede ser práctico para trabajar, estudiar, navegar por internet o simplemente complementar una laptop.</p>
+<p> Ver mouse</p>
+<p><a href="https://meli.la/2dCZWuH">https://meli.la/2dCZWuH</a></p>
+<hr>
+<p>🔎 Antes de comprar</p>
+<p>Te recomendamos revisar las características del producto, compatibilidad, precio, disponibilidad, opiniones de otros compradores y condiciones de envío antes de realizar tu compra.</p>
+<p>Los precios y la disponibilidad pueden cambiar con el tiempo.</p>
+<p>NEXATA INSIGHT MEDIA STUDIO
+Información • Tecnología • Cultura • Entretenimiento • Descubrimiento</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Hola mundo, esta es una prueba de actualización.</title>
+      <link>https://nexata.site/BLOGS/14.html</link>
+      <guid isPermaLink="true">https://nexata.site/BLOGS/14.html</guid>
+      <pubDate>Sat, 12 Sep 2026 04:26:00 GMT</pubDate>
+      <description><![CDATA[siguiendo metodos]]></description>
+      <media:content url="https://nexata.site/IMAGENES/Portada de blog/10.jpg" medium="image" />
+      <content:encoded><![CDATA[<h1>
+        Hola mundo, esta es una prueba de actualización.
+      </h1>
+
+
+      <p>hola mundo</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>CRIPTOMONEDA Y SUS AVANCES</title>
+      <link>https://nexata.site/BLOGS/10.html</link>
+      <guid isPermaLink="true">https://nexata.site/BLOGS/10.html</guid>
+      <pubDate>Thu, 31 Jul 2025 20:30:00 GMT</pubDate>
+      <description><![CDATA[Criptomoneda y sus avances, su funcionamiento y su utilidad como medio de pago digital.]]></description>
+      <media:content url="https://i.imgur.com/1rBxkN5.jpeg" medium="image" />
+      <content:encoded><![CDATA[<h1>
+    CRIPTOMONEDA Y SUS AVANCES
+  </h1>
+
+
+  <!-- ======= CONTENIDO ORIGINAL ======= -->
+
+
+  <p>
+    Durante toda la vida las tecnologías van avanzando constantemente, influyendo en las personas, con el tiempo nace la idea de las criptomonedas que es similar al dinero pero en la versión digital con diferentes valor, pero la mayoría de las personas no saben el significado y para que sirve. En el diccionario explica que es una moneda virtual gestionada por una red de computadoras descentralizadas que cuenta con un sistema de encriptacion para asegurar las transacciones entre usuarios.
+  </p>
+
+
+  <p>
+    En la actualidad. <br>
+    Hoy en día las personas mas ambiciosas adquieren las criptomodena, existen plataformas que te ofrecen esta moneda virtual, uno de los ejemplos esta entre mercado libre y bitso y ademas existen un infinidad de aplicaciones que te ofrecen este sistema de la moneda virtual.
+  </p>
+
+
+  <p>
+    ¿Para que sirven? <br>
+    Unas de las preguntas mas intrigantes y la razón que estas leyendo esta información es para darte una respuesta sencilla. La verdad sobre las criptomoneda y su función se basa en un medio de pago digital que se puede usar para enviar dinero, invertir y etc.
+  </p>
+
+
+  <p>
+    "por ejemplos: pagar en tiendas, suscripciones, pagar viajes y estadías"
+  </p>
+
+
+  <p>
+    REALIDAD <br>
+    La realidad es una forma de pago y lo puedes utilizar, aquellas personas que tengan disponible una computadora o un dispositivo móvil. Si deseas entrar al mundo de las criptomonedas, primero asesórate con un profesional o personas que tienen la experiencia, por que hay formas de conseguirlo fácil y hay formas de perderlo fácil
+  </p>]]></content:encoded>
+    </item>
+    <item>
+      <title>¡Trastorno de Ansiedad!</title>
+      <link>https://nexata.site/BLOGS/1.html</link>
+      <guid isPermaLink="true">https://nexata.site/BLOGS/1.html</guid>
+      <description><![CDATA[Alguna vez te preguntaste ¿qué es la ansiedad? Este blog está dedicado a quienes desean comprender mejor la ansiedad y sus efectos.]]></description>
+      <media:content url="https://i.imgur.com/8poSWs2.png" medium="image" />
+      <content:encoded><![CDATA[<h1>
+
+        <strong>
+          ¡Trastorno de Ansiedad!
+        </strong>
+
+      </h1>
+
+
+      <p>
+        Alguna vez te preguntaste ¿qué es la ansiedad?
+        Tal vez la padeces, pero aún no entiendes qué te ocurre.
+        Este blog está dedicado especialmente a quienes viven con
+        ansiedad o desean comprenderla mejor.
+      </p>
+
+
+      <h2>
+        ¿Qué es la ansiedad?
+      </h2>
+
+
+      <p>
+        La ansiedad es un trastorno psicológico y emocional que
+        aparece como respuesta a situaciones impactantes o estresantes.
+        Puede surgir tras la pérdida de un familiar, al hablar en público
+        o al enfrentar momentos de presión.
+      </p>
+
+
+      <p>
+        Cuando la ansiedad se vuelve constante, puede provocar
+        taquicardia, respiración acelerada, sudoración, miedo intenso
+        o pensamientos irracionales como “me va a dar un infarto”.
+      </p>
+
+
+      <h2>
+        Tipos de ansiedad
+      </h2>
+
+
+      <h3>
+        1. Trastorno Obsesivo Compulsivo (TOC)
+      </h3>
+
+
+      <p>
+        Pensamientos repetitivos e intrusivos que generan
+        conductas compulsivas.
+      </p>
+
+
+      <p>
+        <strong>Síntomas:</strong>
+        Ansiedad, compulsiones, rumiación.
+      </p>
+
+
+      <h3>
+        2. Trastorno de Ansiedad por Separación
+      </h3>
+
+
+      <p>
+        Ansiedad excesiva ante la separación de personas
+        significativas, especialmente en niños.
+      </p>
+
+
+      <p>
+        <strong>Síntomas:</strong>
+        Ansiedad, llanto, temor constante.
+      </p>
+
+
+      <h3>
+        3. Fobia Social
+      </h3>
+
+
+      <p>
+        Miedo irracional ante situaciones sociales o al ser observado.
+      </p>
+
+
+      <p>
+        <strong>Síntomas:</strong>
+        Palpitaciones, miedo, depresión.
+      </p>
+
+
+      <h3>
+        4. Trastorno de Ansiedad Generalizada (TAG)
+      </h3>
+
+
+      <p>
+        Preocupación excesiva, constante e incontrolable.
+      </p>
+
+
+      <p>
+        <strong>Síntomas:</strong>
+        Ansiedad severa, estrés emocional, tensión constante.
+      </p>
+
+
+      <h3>
+        5. Trastorno de Ansiedad
+      </h3>
+
+
+      <p>
+        El tipo de ansiedad más común. Puede aparecer como
+        preocupación intensa, miedo, hipocondría o pensamientos
+        catastróficos.
+      </p>
+
+
+      <p>
+        <strong>Síntomas:</strong>
+        Pensamientos intrusivos, fatiga, sudoración,
+        nerviosismo, taquicardia.
+      </p>
+
+
+      <h2>
+        Una mirada más profunda
+      </h2>
+
+
+      <p>
+        La ansiedad a veces es como una sombra inesperada que invade
+        tu mente. Comienza como un leve malestar en el estómago y
+        al pasar el tiempo se transforma en un peso en el pecho,
+        respiración entrecortada o miedo sin explicación.
+      </p>
+
+
+      <p>
+        Surgen preguntas como “¿y si algo malo pasa?”
+        “¿y si no puedo controlarlo?”. Los pensamientos se repiten
+        una y otra vez, amplificando el miedo.
+      </p>
+
+
+      <p>
+        Aun así, la ansiedad no es el fin: es un mensaje, una señal
+        de que algo necesita ser atendido. Hablar, pedir ayuda,
+        practicar la respiración y la autocompasión son formas reales
+        de comenzar a sanar.
+      </p>
+
+
+      <p>
+        La ansiedad no te define. Con tiempo y apoyo adecuado,
+        es posible recuperar la calma.
+      </p>
+
+
+      <p>
+        ¡Gracias por leer! Si deseas que mejore este artículo,
+        agregue información científica o lo haga más creativo,
+        sólo dímelo.
+      </p>]]></content:encoded>
+    </item>
+    <item>
+      <title>ALERTA SÍSMICA EN MÉXICO: MILLONES DE CELULARES SONARON DURANTE EL SIMULACRO NACIONAL 2026</title>
+      <link>https://nexata.site/BLOGS/11.html</link>
+      <guid isPermaLink="true">https://nexata.site/BLOGS/11.html</guid>
+      <description><![CDATA[ALERTA SÍSMICA EN MÉXICO: MILLONES DE CELULARES SONARON DURANTE EL SIMULACRO NACIONAL 2026]]></description>
+      <media:content url="https://i.imgur.com/ugSH0Co.png" medium="image" />
+      <content:encoded><![CDATA[<p class="titulo">
+        ¡ALERTA SÍSMICA! Miles de celulares sonaron hoy
+      </p>
+
+
+      <p class="subtitulo">
+        Primer Simulacro Nacional 2026 activó alertas en millones de teléfonos móviles.
+      </p>
+
+
+      <p>
+        MÉXICO | Miles de celulares sonaron este miércoles 6 de mayo debido al Primer Simulacro Nacional 2026 realizado por autoridades de Protección Civil.
+      </p>
+
+
+      <p>
+        La alerta sísmica se activó aproximadamente a las 11:00 de la mañana en varios estados del país, incluyendo la Ciudad de México, Estado de México, Guerrero, Oaxaca, Puebla y Morelos.
+      </p>
+
+
+      <p>
+        Además de los altavoces tradicionales, millones de teléfonos móviles recibieron un mensaje especial acompañado de una alarma sonora, incluso en algunos dispositivos que estaban en modo silencioso.
+      </p>
+
+
+      <p class="subtitulo">
+        ¿Por qué sonaron los celulares?
+      </p>
+
+
+      <p>
+        El Gobierno utilizó el sistema “Cell Broadcast”, una tecnología que permite enviar alertas masivas directamente a los teléfonos sin necesidad de internet, saldo o aplicaciones instaladas.
+      </p>
+
+
+      <p>
+        Este sistema forma parte de las nuevas medidas de alertamiento sísmico implementadas en México.
+      </p>
+
+
+      <p>
+        Algunos usuarios reportaron sorpresa debido al fuerte sonido y a mensajes como “ESTO ES UN SIMULACRO” o “alerta máxima”, aunque las autoridades aclararon que no existía peligro real.
+      </p>
+
+
+      <p>
+        Cabe recordar que hace apenas unos días, durante un sismo real ocurrido el 4 de mayo en Oaxaca, muchos celulares no recibieron alertas debido a que la plataforma se encontraba en mantenimiento previo a este simulacro nacional.
+      </p>]]></content:encoded>
+    </item>
+    <item>
+      <title>🎮 GTA 6 rompe internet otra vez: Rockstar revela nuevos detalles del juego más esperado del mundo</title>
+      <link>https://nexata.site/BLOGS/12.html</link>
+      <guid isPermaLink="true">https://nexata.site/BLOGS/12.html</guid>
+      <description><![CDATA[GTA 6 rompe internet otra vez: Rockstar revela nuevos detalles del juego más esperado del mundo]]></description>
+      <media:content url="https://i.imgur.com/oGiDv2f.jpeg" medium="image" />
+      <content:encoded><![CDATA[<h1>
+        🎮 GTA 6 rompe internet otra vez: Rockstar revela nuevos detalles del juego más esperado del mundo
+      </h1>
+
+
+      <p>
+        <strong>
+          🎮 GTA 6 rompe internet otra vez: Rockstar revela nuevos detalles del juego más esperado del mundo
+        </strong>
+      </p>
+
+
+      <p>
+        La emoción por GTA 6 sigue creciendo después de que Rockstar Games confirmara oficialmente que el juego llegará el 
+        <strong>19 de noviembre de 2026</strong> para PlayStation 5 y Xbox Series X.
+      </p>
+
+
+      <p>
+        El nuevo título llevará nuevamente a los jugadores a la icónica Vice City, ahora ubicada dentro del enorme estado ficticio de Leonida, inspirado en Florida. Rockstar promete el mapa más grande y detallado en la historia de la saga.
+      </p>
+
+
+      <p>
+        <strong>
+          🔥 Jason y Lucia serán los protagonistas
+        </strong>
+      </p>
+
+
+      <p>
+        Por primera vez en la historia moderna de GTA, la aventura estará protagonizada por una pareja criminal: 
+        <strong>Lucia Caminos</strong> y <strong>Jason Duval</strong>. 
+        La historia tendrá un estilo inspirado en Bonnie y Clyde, mezclando robos, persecuciones y una narrativa cinematográfica.
+      </p>
+
+
+      <p>
+        <strong>
+          🎥 El tráiler 2 superó récords
+        </strong>
+      </p>
+
+
+      <p>
+        El segundo tráiler oficial de GTA 6 explotó en redes sociales y acumuló millones de vistas en tiempo récord. Además, Rockstar confirmó que varias escenas fueron capturadas directamente desde una PS5.
+      </p>
+
+
+      <!-- =========================
+             VIDEO YOUTUBE
+      ========================== -->
+
+      <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin:20px 0;">
+
+        <iframe
+          src="https://www.youtube.com/embed/VQRLujxTm3c?si=JeHSC7vQP18XxPhe"
+          title="YouTube video player"
+          style="position:absolute;top:0;left:0;width:100%;height:100%;"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+
+      </div>
+
+
+      <p>
+        <strong>
+          💻 Mala noticia para jugadores de PC
+        </strong>
+      </p>
+
+
+      <p>
+        Take-Two confirmó que GTA 6 no llegará a PC el día de lanzamiento. La empresa explicó que primero se enfocarán en consolas, como ocurrió anteriormente con GTA V.
+      </p>
+
+
+      <p>
+        <strong>
+          💰 ¿Será el videojuego más caro de la historia?
+        </strong>
+      </p>
+
+
+      <p>
+        Diversos reportes señalan que el desarrollo de GTA 6 podría haber costado más de 
+        <strong>mil millones de dólares</strong>, convirtiéndolo en uno de los videojuegos más caros jamás creados.
+      </p>
+
+
+      <p>
+        <strong>
+          🌎 El hype está fuera de control
+        </strong>
+      </p>
+
+
+      <p>
+        Después de más de 10 años desde el lanzamiento de GTA V, millones de fans consideran que GTA 6 será el evento más grande en la historia de los videojuegos.
+      </p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Android Refuerza la Seguridad: Google Presenta una Nueva Función Contra Llamadas Falsas</title>
+      <link>https://nexata.site/BLOGS/13.html</link>
+      <guid isPermaLink="true">https://nexata.site/BLOGS/13.html</guid>
+      <description><![CDATA[Las nuevas herramientas de seguridad de Android buscan ayudar a los usuarios frente a llamadas falsas y estafas basadas en inteligencia artificial.]]></description>
+      <media:content url="https://i.imgur.com/gGZezdz.png" medium="image" />
+      <content:encoded><![CDATA[<h1>
+        <strong>
+          Android Refuerza la Seguridad:
+        </strong>
+        Google Presenta una Nueva Función Contra Llamadas Falsas
+      </h1>
+      <p>
+        Las estafas telefónicas continúan evolucionando y ahora los
+        delincuentes utilizan herramientas de inteligencia
+        artificial para imitar voces e incluso hacerse pasar por
+        familiares, amigos o instituciones de confianza. Ante esta
+        situación, Google ha comenzado a implementar una nueva
+        función de seguridad en Android diseñada para ayudar a
+        identificar llamadas sospechosas antes de que los usuarios sean
+        engañados.
+      </p>
+      <p>
+        La nueva herramienta busca detectar posibles intentos de
+        suplantación de identidad durante las llamadas telefónicas.
+        Mediante tecnologías de verificación integradas en la aplicación
+        de llamadas de Google, el sistema puede analizar si una
+        comunicación realmente proviene del dispositivo asociado al
+        contacto que aparece en pantalla. Cuando detecta inconsistencias,
+        el usuario recibe una advertencia para actuar con mayor
+        precaución.
+      </p>
+      <p>
+        Este avance surge en un momento en el que las tecnologías de
+        clonación de voz impulsadas por inteligencia artificial se han
+        vuelto más accesibles. Los ciberdelincuentes pueden recrear voces
+        con sorprendente precisión utilizando grabaciones obtenidas de
+        redes sociales, videos o mensajes de audio publicados en internet.
+      </p>
+      <p>
+        Según Google, el objetivo es ofrecer una capa adicional de
+        protección frente a las nuevas modalidades de fraude digital
+        que afectan cada vez a más usuarios en todo el mundo. La compañía
+        señala que la función trabajará en conjunto con otras herramientas
+        de seguridad ya presentes en Android para fortalecer la confianza
+        durante las comunicaciones telefónicas.
+      </p>
+      <p>
+        Aunque la tecnología no garantiza una protección absoluta,
+        representa un paso importante en la lucha contra las estafas
+        basadas en inteligencia artificial. Los especialistas recomiendan
+        seguir manteniendo precaución ante solicitudes de dinero, datos
+        personales o información bancaria, incluso cuando aparentemente
+        provengan de personas conocidas.
+      </p>
+      <p>
+        La llegada de esta función demuestra cómo la inteligencia artificial
+        no solo está siendo utilizada por los estafadores, sino también
+        por las empresas tecnológicas para desarrollar nuevas herramientas
+        de defensa. En un entorno digital cada vez más complejo, la
+        seguridad de las comunicaciones se ha convertido en una prioridad
+        para millones de usuarios de teléfonos inteligentes.
+      </p>]]></content:encoded>
+    </item>
+    <item>
+      <title>INTRODUCCIÓN</title>
+      <link>https://nexata.site/BLOGS/2.html</link>
+      <guid isPermaLink="true">https://nexata.site/BLOGS/2.html</guid>
+      <description><![CDATA[Descubre las ventajas, desventajas y posibles efectos relacionados con los trabajos y turnos nocturnos.]]></description>
+      <media:content url="https://nuvary.github.io/NEXATA-INSIGHT-MEDIA-STUDIO/IMAGENES/Portada%20de%20blog/2.jpg" medium="image" />
+      <content:encoded><![CDATA[<p>
+
+        Hola soy Dennis, soy el autor de esta página web, soy técnico
+        en informática, soy aficionado a las investigaciones de diversos
+        temas y posteriormente comparto mi experiencia con los usuarios.
+        Lo explico en esta página web y conforme se va desarrollando,
+        voy mejorando mi expresión lectora y ortografía.
+
+      </p>
+
+
+      <p>
+
+        Mi objetivo es ser reconocido por explicar a los demás temas
+        complicados de entender.
+
+      </p>
+
+
+      <p>
+
+        Puedes mandarme un correo explicándome sugerencias y cómo mejorar
+        este sitio web.
+
+      </p>
+
+
+      <h1>INTRODUCCIÓN</h1>
+
+
+      <p>
+
+        ¿Alguna vez te preguntaste ¿en qué me afecta el trabajo nocturno?
+        O más bien ya tienes conocimiento pero no sabes del todo. Pues
+        bien, este es un blog dedicado al tema y enfocado a los usuarios
+        que están pensando trabajar de noche o turnos nocturnos.
+
+      </p>
+
+
+      <p>
+
+        Trabajar de noche tiene sus ventajas y desventajas y para poder
+        trabajar por las noches debes de valorarte con un médico si eres
+        apto para el tipo de empleo y posteriormente te recomendará de
+        qué forma debes de cuidarte en tu salud y en tus alimentos.
+
+      </p>
+
+
+      <p>
+
+        Muchos de los usuarios, por no valorarse con un médico y durante
+        su labor de trabajo, sufren problemas de salud y múltiples
+        factores relacionados con trastornos de salud.
+
+      </p>
+
+
+      <p>
+
+        ¿Por qué el tema de los trabajos nocturnos? La razón es sencilla:
+        trabajar de noche tiene sus consecuencias. ¿Te imaginas que estás
+        enfermo por causa de tu empleo por las noches y además no estés
+        enterado?
+
+      </p>
+
+
+      <h2>CAPÍTULO 1 ¡YA TENGO EL EMPLEO!</h2>
+
+
+      <p>
+
+        Has elegido el turno nocturno por conveniencia y a favor tuyo,
+        pero la pregunta es: ¿has descansado lo suficiente?, ¿te sientes
+        sin energía?, ¿estoy comiendo lo necesario?, ¿en qué me está
+        afectando?
+
+      </p>
+
+
+      <p>
+
+        Cuando el trabajo te está afectando surge lo siguiente:
+        hipertensión, efectos biológicos, trastorno de calidad de sueño,
+        ansiedad, problemas cardiovasculares, sobrepeso, alteraciones
+        gastrointestinales, vida sexual, algún tipo de cáncer,
+        envejecimiento prematuro, resistencia a la insulina y, por
+        supuesto, hay más factores que pueden provocar problemas de salud.
+
+      </p>
+
+
+      <p>
+
+        Para identificar si tenemos algún tipo de enfermedad debemos de
+        asistir con el médico y valorarnos. El médico nos explica cómo
+        nos afecta el trabajo nocturno, para que podamos comprender qué
+        sucede con nuestro cuerpo y, ya que hemos logrado identificar qué
+        sucede con nuestro cuerpo, podremos tomar nuestras propias
+        decisiones en nuestra salud.
+
+      </p>
+
+
+      <p>
+
+        <strong>NOTA:</strong>
+
+        Hay muchas enfermedades que en realidad desconocemos, pero si
+        quieres saber más a detalle cuántas enfermedades más existen es
+        mejor preguntarle a un profesional de la salud.
+
+      </p>
+
+
+      <h3>1.1 ¿POR QUÉ TANTA NECESIDAD?</h3>
+
+
+      <p>
+
+        Cuando no descansamos lo suficientemente nos sentimos agotados e
+        incluso nos gana la procrastinación. A veces tenemos ideas
+        maravillosas y queremos crear, pero sorpresa: ¡oh, vaya! "No tengo
+        ganas de hacer nada". Y la respuesta está sencilla:
+        ¡no descansaste nada!
+
+      </p>
+
+
+      <p>
+
+        Muchos de nosotros trabajamos en la noche porque tenemos la
+        necesidad. ¿Por qué elegimos esta clase de trabajo? Porque en el
+        día tenemos pendientes, ya sea tramitar papeles o pasar tiempo con
+        la familia y tal vez simplemente tenemos otro trabajo en el día.
+
+      </p>
+
+
+      <p>
+
+        Incluso de igual forma estamos trabajando en un proyecto que nos
+        va a mejorar la vida y sabemos que si hacemos el mejor esfuerzo
+        tendremos éxito en la vida. Pero ¿qué pasa? No descansamos lo
+        suficiente por culpa de nuestro trabajo nocturno o el hecho de que
+        no descansamos lo suficiente.
+
+      </p>
+
+
+      <p>
+
+        Ahora bien, tenemos que tener en cuenta que debemos dormir lo
+        suficiente para rendir en nuestra vida cotidiana. Si no descansamos
+        nos estamos provocando una mala salud y malos hábitos.
+
+      </p>
+
+
+      <p>
+
+        Cuando menos te lo esperes tendrás problemas de salud y pronto
+        visitarás al médico. ¿Qué debemos hacer? Primero que nada,
+        descansar lo suficiente, tener buena alimentación, hacer
+        revisiones médicas y no ingerir sustancias y químicos.
+
+      </p>
+
+
+      <h3>1.2 ¿CÓMO DEBEMOS TENER UNA BUENA SALUD?</h3>
+
+
+      <p>
+
+        Para tener una buena salud no debemos ingerir comidas chatarras,
+        bebidas alcohólicas, refrescos y mucho menos bebidas
+        carbohidratadas o procesadas de fábrica.
+
+      </p>
+
+
+      <p>
+
+        En México conocemos el plato del buen comer que consiste de:
+
+      </p>
+
+
+      <ul>
+
+        <li>
+          Frutas y verduras.
+        </li>
+
+        <li>
+          Legumbres e integrales.
+        </li>
+
+        <li>
+          Proteína: carne y frutos secos.
+        </li>
+
+      </ul>
+
+
+      <p>
+
+        <strong>
+
+          Debemos de tener una rutina de ejercitar tu cuerpo. Por ejemplo:
+          trabajas todos los días menos los sábados y domingos, en esos
+          días puedes crear la rutina y utilizarlos para descansar bien.
+
+        </strong>
+
+      </p>
+
+
+      <p>
+
+        <strong>
+
+          Los días que trabajas utiliza el día para que descanses y si
+          tienes compromiso a cierta hora toma en cuenta el poco tiempo
+          para descansar un rato y recárgate de energía. Entre más te
+          cuides, más energías tendrás.
+
+        </strong>
+
+      </p>
+
+
+      <h2>CAPÍTULO 2 ¡ENFERMEDADES!</h2>
+
+
+      <p>
+
+        Las enfermedades se producen por mala alimentación, no descansar,
+        ingerir sustancias, bebidas alcohólicas y un sinfín de cosas.
+
+      </p>
+
+
+      <p>
+
+        Pero uno de los factores y problemas es por no descansar y muchas
+        de las personas trabajan de noche.
+
+      </p>
+
+
+      <p>
+
+        El trabajo nocturno es un factor de riesgo para múltiples
+        trastornos orgánicos. Todo mundo necesita de un trabajo para que
+        logremos nuestros objetivos y tener éxito en la vida o simplemente
+        para sobrevivir para este sistema de cosas.
+
+      </p>
+
+
+      <p>
+
+        Sin embargo, no todos los trabajos son sanos y saludables, y que
+        nos guste o sea agradable. La necesidad de trabajar es cuando
+        consigues un trabajo nocturno porque, debido a la exigencia del
+        día, te obligan a trabajar por las noches y sin embargo a largo
+        plazo esto nos va a afectar.
+
+      </p>
+
+
+      <p>
+
+        Primero que nada es en nuestra salud biológica y mental.
+
+      </p>
+
+
+      <h3>TOP 10 ENFERMEDADES</h3>
+
+
+      <ul>
+
+        <li>
+          Trastorno del sueño.
+        </li>
+
+        <li>
+          Trastornos cardiovasculares.
+        </li>
+
+        <li>
+          Obesidad.
+        </li>
+
+        <li>
+          Trastornos gastrointestinales.
+        </li>
+
+        <li>
+          Cáncer.
+        </li>
+
+        <li>
+          Trastornos psiquiátricos y efectos psicológicos generales.
+        </li>
+
+        <li>
+          Trastornos ginecológicos y reproductivos.
+        </li>
+
+        <li>
+          Trastornos oncológicos.
+        </li>
+
+        <li>
+          Hipertensión arterial.
+        </li>
+
+        <li>
+          Diabetes tipo 2.
+        </li>
+
+      </ul>
+
+
+      <p>
+
+        ¡Gracias por leer! Si tienes una nueva idea de cómo mejorar este
+        texto no olvides contactarme y hacerlo más entendible con mejor
+        creatividad, correcciones y proporcionar más información.
+
+      </p>]]></content:encoded>
+    </item>
+    <item>
+      <title>¿QUÉ ES EL MARKETING?</title>
+      <link>https://nexata.site/BLOGS/3.html</link>
+      <guid isPermaLink="true">https://nexata.site/BLOGS/3.html</guid>
+      <description><![CDATA[Conoce qué es el marketing, de dónde proviene la palabra, sus principales conceptos y las definiciones de algunos de sus autores más importantes.]]></description>
+      <media:content url="https://nuvary.github.io/NEXATA-INSIGHT-MEDIA-STUDIO/IMAGENES/Portada%20de%20blog/3.jpg" medium="image" />
+      <content:encoded><![CDATA[<h1>
+
+        <strong>
+          ¿QUÉ ES EL MARKETING?
+        </strong>
+
+      </h1>
+
+
+      <p>
+
+        Hola a todos, el tema es muy interesante y muy emocionante,
+        no todos sabemos qué es el marketing. Dentro de la ignorancia
+        pasamos desapercibido y aunque no lo creas el marketing lo ves
+        donde sea, en el trabajo, la escuela e incluso en los hospitales,
+        pero no saber qué es marketing, vamos a desglosar el tema.
+
+      </p>
+
+
+      <p>
+
+        En administración y economía de la empresa, el mercadeo,
+        mercadotecnia o marketing es una filosofía y metodología que
+        abarca el proceso de exploración, creación y entrega de valor
+        para satisfacer las necesidades de un mercado objetivo en
+        términos de bienes y servicios.
+
+      </p>
+
+
+      <p>
+
+        <strong>Wikipedia</strong>
+
+      </p>
+
+
+      <p>
+
+        <strong>1.- ¿DE DÓNDE PROVIENE LA PALABRA MARKETING?</strong>
+
+      </p>
+
+
+      <p>
+
+        Marketing proviene de la lengua inglesa y posteriormente
+        market significa mercado y marketing en traducción significa
+        mercadotecnia o mercadeo. Estas palabras hacen referencia a
+        acciones de compra y venta.
+
+      </p>
+
+
+      <p>
+
+        <strong>2.- CONCEPTO DE MARKETING.</strong>
+
+      </p>
+
+
+      <p>
+
+        Marketing es el proceso de una empresa, en pocas palabras es
+        la dedicación de implementar técnicas, estudios, estrategias
+        e investigaciones. Hoy en día es para promover e incrementar
+        las ventas.
+
+      </p>
+
+
+      <p>
+
+        Se enfoca en conocer a los consumidores y clientes para ofrecer,
+        generar la necesidad y tener el deseo de adquirir. Dentro del
+        marketing se aplican distintas disciplinas como psicología,
+        sociología, administración, comunicación y publicidad.
+
+      </p>
+
+
+      <p>
+
+        Existen otras técnicas como el marketing digital, marketing
+        influencer, entre otras.
+
+      </p>
+
+
+      <p>
+
+        <strong>MARKETING</strong> de igual forma quiere decir técnicas
+        de mercado y consiste en buscar, promover y servir mercados.
+        Ampliemos el tema por tres puntos:
+
+      </p>
+
+
+      <p>
+
+        <strong>- Buscar:</strong> investigación de mercado y estadísticas.
+
+      </p>
+
+
+      <p>
+
+        <strong>- Promover:</strong> promoción de ventas, publicidad
+        y comunicación.
+
+      </p>
+
+
+      <p>
+
+        <strong>- Servir:</strong> dar el servicio al cliente y generar
+        fidelidad.
+
+      </p>
+
+
+      <p>
+
+        <strong>3.- AUTORES QUE DEFINIERON MARKETING.</strong>
+
+      </p>
+
+
+      <p>
+
+        <strong>Philip Kotler:</strong> Para Philip Kotler es un proceso
+        social y administrativo mediante el cual grupos e individuos
+        obtienen lo que necesitan y desean a través de generar, ofrecer
+        e intercambiar productos de valor con sus semejantes.
+
+      </p>
+
+
+      <p>
+
+        <strong>Jerome McCarthy:</strong> Según Jerome McCarthy, es la
+        realización de aquellas actividades que tienen por objeto cumplir
+        las metas de una organización, al anticiparse a los requerimientos
+        del consumidor o cliente y al encauzar un flujo de mercancías
+        aptas a las necesidades y los servicios que el productor presta
+        al consumidor o cliente.
+
+      </p>
+
+
+      <p>
+
+        <strong>Stanton, Etzel y Walker:</strong> Es un sistema total
+        de actividades de negocios ideado para planear productos
+        satisfactores de necesidades, asignarles precios, promover y
+        distribuirlos a los mercados meta, a fin de lograr los objetivos
+        de la organización.
+
+      </p>
+
+
+      <p>
+
+        <strong>John A. Howard:</strong> Para John A. Howard, de la
+        Universidad de Columbia, es el proceso de identificar las
+        necesidades de los clientes.
+
+      </p>
+
+
+      <p>
+
+        También consiste en:
+
+      </p>
+
+
+      <p>
+
+        - Conceptualizar esas necesidades en función de la capacidad
+        de la empresa para fabricar.
+
+      </p>
+
+
+      <p>
+
+        - Comunicar dicha conceptualización a quienes tienen la capacidad
+        de toma de decisiones dentro de la empresa.
+
+      </p>
+
+
+      <p>
+
+        - Conceptualizar la producción obtenida en función de las
+        necesidades previamente identificadas del consumidor.
+
+      </p>
+
+
+      <p>
+
+        - Comunicar dicha conceptualización al consumidor.
+
+      </p>
+
+
+      <p>
+
+        <strong>American Marketing Association:</strong> Es una función
+        de la organización y un conjunto de procesos para crear,
+        comunicar y entregar valor a los clientes, y para manejar las
+        relaciones con estos últimos, de manera que beneficien a toda
+        la organización.
+
+      </p>]]></content:encoded>
+    </item>
+    <item>
+      <title>SALUD FINANCIERA Y MENTAL</title>
+      <link>https://nexata.site/BLOGS/4.html</link>
+      <guid isPermaLink="true">https://nexata.site/BLOGS/4.html</guid>
+      <description><![CDATA[Una reflexión sobre la salud financiera, las deudas y su relación con la salud mental.]]></description>
+      <media:content url="https://nuvary.github.io/NEXATA-INSIGHT-MEDIA-STUDIO/IMAGENES/Portada%20de%20blog/4.avif" medium="image" />
+      <content:encoded><![CDATA[<h1>
+
+        <strong>
+          SALUD FINANCIERA Y MENTAL
+        </strong>
+
+      </h1>
+
+
+      <p>
+
+        Hola y bienvenido, el tema es la salud financiera y mental,
+        explicaré detalladamente ¿Cómo podemos mejorar nuestra salud
+        financiera y mental?
+
+      </p>
+
+
+      <p>
+
+        La mayoría de las personas no comprenden el tema y no saben
+        ¿Cómo afecta la salud mental y financiera?, no tienen ese
+        concepto de ¿qué es un crédito? y para qué sirve. Es
+        sorprendente que esto no se enseñe en algunas escuelas y,
+        cuando ya somos personas maduras, no tenemos esa educación
+        sobre nuestra salud financiera y mental.
+
+      </p>
+
+
+      <p>
+
+        Constantemente las personas se endeudan con los créditos,
+        ya sea por gusto o necesidad. La mayoría de las personas
+        solo sacan créditos por sacar, sin ningún motivo aparente,
+        y con el tiempo van generando deudas hasta llegar al punto
+        de no poder pagar.
+
+      </p>
+
+
+      <p>
+
+        Posteriormente empiezan a generar preguntas, por ejemplo:
+
+      </p>
+
+
+      <ul>
+
+        <li>¿Cómo salir de las deudas?</li>
+
+        <li>¿Por qué son altos los intereses?</li>
+
+        <li>¿Por qué no rinde el dinero?</li>
+
+      </ul>
+
+
+      <p>
+
+        Esta es la razón de la existencia de este blogpost:
+        responder todas tus dudas. Primero nos enfocaremos en tu
+        salud financiera y finalizaremos hablando sobre cómo salir
+        de las deudas.
+
+      </p>
+
+
+      <p>
+
+        La mayoría de las personas no tienen claro el concepto de
+        salud financiera.
+
+      </p>
+
+
+      <p>
+
+        Todos tenemos entendido que la salud es importante y sin
+        salud no hacemos nada. Esto nos indica que es similar a la
+        salud física y financiera, ya que su relación requiere
+        cuidado y atención constante.
+
+      </p>
+
+
+      <p>
+
+        Si nosotros sacamos un crédito solo para un gusto estamos
+        afectando nuestra salud financiera. Cada vez que hagamos
+        esta acción hay que pensarlo dos veces y la razón es sencilla:
+        las financieras pueden cobrar intereses elevados y, si vamos
+        acumulando los intereses, nuestro dinero no va a rendir.
+
+      </p>
+
+
+      <p>
+
+        Además, es dinero que vamos a devolver. Entre más préstamos
+        o productos adquirimos a crédito, menos dinero disponible
+        tenemos y podemos llegar al punto de no poder disfrutar
+        nuestro propio dinero.
+
+      </p>
+
+
+      <p>
+
+        Te imaginas cobrar tu sueldo y que ese mismo día tengas que
+        devolver gran parte del dinero. Al final te quedas sin
+        efectivo y, en ese momento, puede comenzar un nuevo ciclo:
+        realizar otro crédito en efectivo y así sucesivamente hasta
+        volver a quedarse sin dinero.
+
+      </p>
+
+
+      <p>
+
+        A esto podemos llamarlo un ciclo de endeudamiento.
+
+      </p>
+
+
+      <h2>
+        ¿Pero cómo salimos de este ciclo de deuda?
+      </h2>
+
+
+      <p>
+
+        Si tenemos más de seis deudas, podemos empezar por la de
+        menor cantidad y atacarla hasta lograr liquidarla. Una vez
+        pagada, podemos continuar con la siguiente.
+
+      </p>
+
+
+      <p>
+
+        Si tienes una tarjeta de crédito que ya no deseas utilizar,
+        considera cancelarla siguiendo el procedimiento de la
+        institución financiera correspondiente, en lugar de
+        simplemente destruirla.
+
+      </p>
+
+
+      <p>
+
+        Si la cantidad es excesiva, trata de conversar y planificar
+        un convenio que facilite la forma en que vas a pagar.
+        También puedes explicar la situación en la que te encuentras.
+        En algunos casos, los acreedores pueden ofrecer alternativas
+        de pago.
+
+      </p>
+
+
+      <h2>
+        ¿Cuál es la consecuencia si no pagas tus deudas?
+      </h2>
+
+
+      <p>
+
+        Una de las consecuencias de no pagar tus obligaciones
+        financieras puede ser un historial crediticio negativo.
+        Tu comportamiento de pago puede afectar tu acceso futuro
+        a determinados productos financieros.
+
+      </p>
+
+
+      <h2>
+        ¿Esto cómo nos afecta mentalmente?
+      </h2>
+
+
+      <p>
+
+        Las deudas pueden tener un impacto emocional. Poco a poco
+        pueden aumentar la preocupación y el estrés relacionados
+        con la situación económica.
+
+      </p>
+
+
+      <p>
+
+        Con el tiempo, esta presión puede afectar nuestro bienestar
+        emocional. Por eso es importante buscar apoyo cuando la
+        situación comienza a sentirse fuera de control.
+
+      </p>
+
+
+      <h2>
+        ¿Cómo podemos controlar todo este asunto?
+      </h2>
+
+
+      <p>
+
+        Primero aprendamos a controlar la ansiedad y el estrés
+        generado por las deudas.
+
+      </p>
+
+
+      <ul>
+
+        <li>Busca ayuda profesional.</li>
+
+        <li>Crea un presupuesto.</li>
+
+        <li>Prioriza las deudas.</li>
+
+        <li>Comunícate con los acreedores.</li>
+
+        <li>Busca apoyo emocional.</li>
+
+      </ul>
+
+
+      <p>
+
+        Las deudas son un problema que puede tener solución y,
+        teniendo una ayuda adecuada, puedes mejorar de manera
+        significativa tanto tu bienestar como tu organización
+        financiera.
+
+      </p>
+
+
+      <p>
+
+        En resumen, no debemos pedir un crédito en efectivo o
+        adquirir objetos a crédito solo por gusto o sin pensarlo.
+        Recuerda que la salud financiera y mental están
+        estrechamente relacionadas y, al cuidar una, podemos
+        favorecer la otra.
+
+      </p>
+
+
+      <h2>
+        ¿Qué debemos hacer para mejorar la salud financiera?
+      </h2>
+
+
+      <ul>
+
+        <li>
+          Crear un presupuesto.
+        </li>
+
+        <li>
+          Pagar las deudas de menor a mayor y priorizar las
+          obligaciones más urgentes.
+        </li>
+
+        <li>
+          Ahorrar.
+        </li>
+
+        <li>
+          Invertir de manera responsable.
+        </li>
+
+      </ul>
+
+
+      <h2>
+        Salud mental
+      </h2>
+
+
+      <ul>
+
+        <li>
+          Practica mindfulness.
+        </li>
+
+        <li>
+          Haz ejercicio.
+        </li>
+
+        <li>
+          Conecta con otras personas.
+        </li>
+
+        <li>
+          Duerme lo suficiente.
+        </li>
+
+      </ul>
+
+
+      <p>
+
+        Todo este proceso puede ayudarte a reducir el estrés y
+        favorecer tu bienestar emocional, autoestima y calidad
+        de vida.
+
+      </p>
+
+
+      <p>
+
+        Si te gustó mi contenido, comparte y dale Me gusta.
+        Me estarías apoyando para tener las fuerzas y seguir
+        creando contenido.
+
+      </p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Sony publica el primer tráiler de MLB The Show 26 para Nintendo Switch</title>
+      <link>https://nexata.site/BLOGS/5.html</link>
+      <guid isPermaLink="true">https://nexata.site/BLOGS/5.html</guid>
+      <description><![CDATA[Sony publica el primer tráiler de MLB The Show 26 para Nintendo Switch]]></description>
+      <media:content url="https://i.imgur.com/1rBxkN5.jpeg" medium="image" />
+    </item>
+    <item>
+      <title>¡DEJA LA PROCRASTINACIÓN!</title>
+      <link>https://nexata.site/BLOGS/7.html</link>
+      <guid isPermaLink="true">https://nexata.site/BLOGS/7.html</guid>
+      <description><![CDATA[Una reflexión sobre la procrastinación, la pereza, los malos hábitos y la importancia de actuar para alcanzar nuestros objetivos.]]></description>
+      <media:content url="https://i.imgur.com/quTUsz6.jpeg" medium="image" />
+      <content:encoded><![CDATA[<h1>
+        ¡DEJA LA PROCRASTINACIÓN!
+      </h1>
+
+
+      <!-- =========================
+          BOTONES PARA COMPARTIR
+      ========================== -->
+
+      <div class="social">
+
+
+        <!-- FACEBOOK -->
+
+        <a
+          class="facebook"
+          href="https://www.facebook.com/sharer/sharer.php?u=https://nuvary.github.io/NEXATA-INSIGHT-MEDIA-STUDIO/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+
+          Compartir en Facebook
+
+        </a>
+
+
+        <!-- X -->
+
+        <a
+          class="twitter"
+          href="https://twitter.com/intent/tweet?url=https://nuvary.github.io/NEXATA-INSIGHT-MEDIA-STUDIO/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+
+          Compartir en X
+
+        </a>
+
+
+        <!-- WHATSAPP -->
+
+        <a
+          class="whatsapp"
+          href="https://api.whatsapp.com/send?text=Mira%20este%20artículo%20de%20NEXATA%20INSIGHT%20MEDIA%20STUDIO"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+
+          Compartir en WhatsApp
+
+        </a>
+
+
+      </div>
+
+
+      <!-- =========================
+              CONTENIDO
+      ========================== -->
+
+
+      <p>
+        <strong>Definición:</strong>
+      </p>
+
+
+      <p>
+        La procrastinación es la acción o hábito de retrasar actividades o situaciones que deben atenderse, sustituyéndolas por otras situaciones más irrelevantes o agradables. Atendiendo a esta definición, podemos entender que aquellas tareas que son más susceptibles de ser postergadas son aquellas que no nos divierten.
+      </p>
+
+
+      <p>
+        <strong>Introducción.</strong>
+      </p>
+
+
+      <p>
+        Muchas de las veces estamos trabajo en un proyecto escolar o generar un plan de marketing de tu empresa, puede ser la veces que estés trabajando, no importa la actividad que estés realizando, después de todo pospones la actividad que estás realizando, sin embargo te la pasas posponiendo tus actividades. Por ejemplo hoy puedes decir, mañana lo ago y sucesivamente te vas diciendo que mañana lo ago. Es una clara alerta que estas procastinando.
+        <br>
+        Es un mal hábito que generamos a largo plazo, son cosas que no nos divierten y finalmente no logramos en terminar la actividad pendiente.
+      </p>
+
+
+      <h2>
+        ¿Por qué te aplazas?
+      </h2>
+
+
+      <p>
+        Mayormente nos aplazamos, por el motivo de que es algo que no nos entretiene, que nos distraemos con cualquier cosa, desde crear un avión de papel asta el punto de pasar horas y hora en el teléfono celular, pero como podemos dejar ese hábito.
+      </p>
+
+
+      <p>
+        Para empezar olvídate del teléfono celular, apagalo si es dable, enfocate en terminar tu actividad pendiente y finalmente no te distraigas con cualquier cosa.
+      </p>
+
+
+      <p>
+        No dejes que tus pensamientos sean vagos o te domine pensando en cosas que enfocarte en tus actividades.
+      </p>
+
+
+      <p>
+        Descansa en tu hora adecuada.
+      </p>
+
+
+      <p>
+        Come SanaMente.
+      </p>
+
+
+      <p>
+        Y has ejercicios.
+      </p>
+
+
+      <h2>
+        ¡Deja la pereza!
+      </h2>
+
+
+      <p>
+        Definitivamente tienes que dejar de ser perezoso o la flojera. Muchas veses la pereza nos ganas, no te motiva a crear una idea, tu falta de voluntad, sientes que no eres copetente, la debilidad o lentitud, provoca en no crear acciones o movimientos. ¡Basta! No dejes que te domine las malas ideas y falta de tu voluntad es hora de aser algo por tu vida, as el proyecto de tu vida. ¡Tu puedes!
+      </p>
+
+
+      <h2>
+        Malos hábitos
+      </h2>
+
+
+      <ul>
+
+        <li>Sobre pensar.</li>
+
+        <li>La pereza.</li>
+
+        <li>No dormir 😴 en las noches.</li>
+
+        <li>No hacer ejercicios.</li>
+
+      </ul>
+
+
+      <h2>
+        ¿Qué debemos de hacer?
+      </h2>
+
+
+      <ul>
+
+        <li>Hacer ejercicio.</li>
+
+        <li>Descansa bien.</li>
+
+        <li>Comer bien y sanamente. Desayuno, almuerzo y cenar.</li>
+
+        <li>Dejar la pereza, flojera, ser un aplazador.</li>
+
+      </ul>
+
+
+      <p>
+        En conclusión ser una persona de procastinar es dejar para después tu ideas, actividades o trabajos y es una combinación de aburrimiento, pereza y sobre pensar las cosas que te gustaría aser sin embargo solo vas vagando mentalmente y no llegas a una aser nada. Y es momento que dejes de procrastinar y aser algo por ti mismo, triunfa y tengas tu objetivo, ¡se! Una persona exitosa.
+      </p>
+
+
+      <p>
+        ¡Tu puedes!
+      </p>
+
+
+      <p>
+        ¡Gracias por leer! Si tienes una nueva idea de como mejorar este texto no olvides contactarme y aserlo mas entendible con mejor cretividad, correcciones y proporcionar más información.
+      </p>]]></content:encoded>
+    </item>
+    <item>
+      <title>🌿 ¿Qué son los Therian? Una mirada curiosa a identidad, naturaleza y comunidad</title>
+      <link>https://nexata.site/BLOGS/8.html</link>
+      <guid isPermaLink="true">https://nexata.site/BLOGS/8.html</guid>
+      <description><![CDATA[¿Qué son los Therian? Una mirada curiosa a identidad, naturaleza y comunidad.]]></description>
+      <media:content url="https://i.imgur.com/gGZezdz.png" medium="image" />
+      <content:encoded><![CDATA[<h1>
+        🌿 ¿Qué son los Therian? Una mirada curiosa a identidad,
+        naturaleza y comunidad
+      </h1>
+
+
+      <p>
+        Siempre me ha gustado investigar temas que despiertan curiosidad.
+        Esos que al principio parecen extraños, pero cuando los analizas
+        más a fondo, descubres que tienen historia, comunidad y significado.
+        Hoy quiero hablar de un tema que ha generado debate en internet y
+        fuera de él: los <strong>Therian</strong>.
+      </p>
+
+
+      <p>
+        Cuando escuché el término por primera vez, pensé que se trataba de
+        algo relacionado con fantasía o disfraces. Pero como soy curioso por
+        naturaleza, decidí profundizar más. Y lo que encontré fue una
+        comunidad real, con experiencias personales profundas y una conexión
+        muy particular con el mundo natural.
+      </p>
+
+
+      <h2>
+        🐾 ¿Qué significa ser Therian?
+      </h2>
+
+
+      <p>
+        La palabra proviene del griego <em>therion</em>, que significa
+        “bestia salvaje”. En términos modernos, una persona Therian es
+        alguien que se identifica internamente —ya sea de manera espiritual,
+        psicológica o simbólica— como un animal no humano.
+      </p>
+
+
+      <p>
+        Algo muy importante que descubrí es que no se trata de creer que
+        físicamente son animales. Tampoco es un juego, ni cosplay, ni una
+        moda pasajera. Para quienes se identifican como Therian, es una
+        parte interna de su identidad.
+      </p>
+
+
+      <ul>
+
+        <li>
+          No implica transformación física.
+        </li>
+
+        <li>
+          No necesariamente está ligado a disfraces.
+        </li>
+
+        <li>
+          No es lo mismo que pertenecer a la comunidad furry.
+        </li>
+
+        <li>
+          Es una experiencia personal y subjetiva.
+        </li>
+
+      </ul>
+
+
+      <p>
+        Muchos describen que simplemente “siempre lo han sentido”.
+        Esa frase me llamó la atención. Porque más allá de entenderlo
+        o no, habla de una vivencia interna fuerte.
+      </p>
+
+
+      <h2>
+        🌎 Origen y crecimiento en internet
+      </h2>
+
+
+      <p>
+        El movimiento Therian moderno comenzó a tomar forma en los años 90,
+        principalmente en foros y comunidades en línea. Internet permitió
+        que personas con experiencias similares se encontraran y compartieran
+        lo que sentían.
+      </p>
+
+
+      <p>
+        Sin embargo, la idea de humanos con conexión animal no es nueva.
+        A lo largo de la historia han existido mitologías sobre hombres lobo,
+        chamanes que adoptaban espíritus animales y culturas donde el vínculo
+        con un animal representaba identidad y protección espiritual.
+      </p>
+
+
+      <p>
+        La diferencia es que ahora se habla de esto abiertamente, dentro de
+        comunidades digitales organizadas.
+      </p>
+
+
+      <h2>
+        🧠 La parte psicológica y emocional
+      </h2>
+
+
+      <p>
+        Una de las preguntas que más me hice fue: ¿esto es psicológico?
+        Actualmente no está reconocido oficialmente como un trastorno clínico.
+        Para muchos dentro de la comunidad, no se trata de enfermedad,
+        sino de identidad.
+      </p>
+
+
+      <p>
+        Algunos Therian describen experiencias llamadas
+        <strong>“shifts”</strong>, momentos en los que sienten
+        comportamientos, emociones o instintos similares a los del animal
+        con el que se identifican.
+      </p>
+
+
+      <p>
+        Puede ser una sensación de mayor alerta, deseo de correr,
+        sensibilidad a sonidos o una conexión emocional intensa
+        con la naturaleza.
+      </p>
+
+
+      <p>
+        Desde mi perspectiva, esto abre una conversación interesante sobre
+        cómo los seres humanos construimos nuestra identidad y cómo
+        interpretamos nuestras emociones internas.
+      </p>
+
+
+      <h2>
+        🐺 Tipos más comunes
+      </h2>
+
+
+      <p>
+        Dentro de la comunidad, algunos de los animales más mencionados son:
+      </p>
+
+
+      <ul>
+
+        <li>
+          Lobo 🐺
+        </li>
+
+        <li>
+          Zorro 🦊
+        </li>
+
+        <li>
+          Gato 🐱
+        </li>
+
+        <li>
+          Felinos grandes
+        </li>
+
+        <li>
+          Aves rapaces
+        </li>
+
+      </ul>
+
+
+      <p>
+        También existen los llamados <strong>Otherkin</strong>, que se
+        identifican con seres no humanos que pueden ser mitológicos o
+        fantásticos, como dragones.
+      </p>
+
+
+      <h2>
+        🌱 Vida cotidiana y expresión
+      </h2>
+
+
+      <p>
+        Algo que me pareció importante recalcar es que la mayoría de los
+        Therian llevan una vida completamente normal. Estudian, trabajan,
+        tienen amistades y responsabilidades como cualquier otra persona.
+      </p>
+
+
+      <p>
+        Algunos expresan su identidad de forma privada. Otros pueden usar
+        accesorios simbólicos o practicar comportamientos que les ayuden
+        a conectar con esa parte interna.
+      </p>
+
+
+      <p>
+        No existe una sola forma correcta de ser Therian.
+      </p>
+
+
+      <p>
+        Y aquí es donde entra algo que siempre me gusta reflexionar:
+        cada comunidad tiene su manera de entenderse a sí misma.
+        Lo interesante es observar sin prejuicio y tratar de comprender
+        antes de juzgar.
+      </p>
+
+
+      <h2>
+        🔍 Diferencia con la comunidad Furry
+      </h2>
+
+
+      <p>
+        Es común que se confunda Therian con furry, pero no son lo mismo.
+        La comunidad furry está más enfocada en arte, personajes
+        antropomórficos y cultura creativa.
+      </p>
+
+
+      <p>
+        Un Therian puede no tener ningún interés en eso.
+      </p>
+
+
+      <p>
+        La diferencia principal está en la identidad interna.
+        Mientras que el furry suele ser una afición cultural o artística,
+        el Therian lo vive como parte de su identidad personal.
+      </p>
+
+
+      <h2>
+        💬 Debate y opiniones
+      </h2>
+
+
+      <p>
+        Como todo fenómeno moderno que rompe esquemas tradicionales,
+        el tema genera opiniones divididas.
+      </p>
+
+
+      <p>
+        Hay quienes lo ven como una forma válida de exploración personal,
+        y otros que lo consideran simplemente una subcultura de internet.
+      </p>
+
+
+      <p>
+        Personalmente, creo que entender no siempre significa compartir
+        la misma experiencia, pero sí significa respetar que para otros
+        es algo real y significativo.
+      </p>
+
+
+      <h2>
+        ✍️ Mi reflexión final
+      </h2>
+
+
+      <p>
+        Como alguien entusiasta y curioso, me gusta analizar estos temas
+        con mente abierta. Vivimos en una época donde las identidades
+        se exploran de formas que hace décadas no eran posibles.
+      </p>
+
+
+      <p>
+        Más allá de las etiquetas, lo que veo es una comunidad que busca
+        comprenderse y expresarse. Y eso, en cierto modo, es algo muy humano.
+      </p>
+
+
+      <p>
+        Investigar sobre los Therian me recordó que el mundo es más diverso
+        de lo que a veces imaginamos. Y mientras más aprendemos, más amplia
+        se vuelve nuestra perspectiva.
+      </p>
+
+
+      <p>
+        <strong>
+          ¿Tú qué opinas sobre este tema?
+        </strong>
+      </p>
+
+
+      <p>
+
+        <em>
+          Dennis Moisés Palma Juárez
+        </em>
+
+        <br>
+
+        Editor – NEXATA INSIGHT MEDIA STUDIO
+
+        <br>
+
+        Explorando cultura, identidad y curiosidades del mundo moderno.
+
+      </p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Zorin OS 18 Beta: similar a Windows</title>
+      <link>https://nexata.site/BLOGS/9.html</link>
+      <guid isPermaLink="true">https://nexata.site/BLOGS/9.html</guid>
+      <description><![CDATA[Descubre Zorin OS 18, sus novedades, características, rendimiento y experiencia para usuarios que buscan una alternativa a Windows.]]></description>
+      <media:content url="https://i.imgur.com/quTUsz6.jpeg" medium="image" />
+      <content:encoded><![CDATA[<h1>
+        <strong>
+          Zorin OS 18 Beta:
+        </strong>
+        similar a Windows
+      </h1>
+
+
+      <p>
+        Recientemente, el
+        <strong>18 de septiembre de 2025</strong>,
+        se lanzó una nueva versión de
+        <strong>Zorin OS</strong>,
+        dirigida principalmente a usuarios de
+        <strong>Windows 10</strong>
+        que buscan una alternativa moderna y sencilla.
+      </p>
+
+
+      <p>
+        El sistema está basado en
+        <strong>Ubuntu 24.04 LTS</strong>
+        y ofrece una experiencia familiar para quienes están
+        acostumbrados al entorno de Windows.
+      </p>
+
+
+      <h2>
+        Interfaz y experiencia
+      </h2>
+
+
+      <p>
+        Zorin OS 18 Beta ofrece una apariencia similar a
+        Windows 11, con transparencias, dock y barra de tareas.
+        Su diseño busca facilitar la adaptación de los usuarios
+        que deciden dar el salto hacia Linux.
+      </p>
+
+
+      <h2>
+        Funciones destacadas
+      </h2>
+
+
+      <ul>
+
+        <li>
+          <strong>Web Apps:</strong>
+          convierte sitios web en aplicaciones.
+        </li>
+
+        <li>
+          <strong>Microsoft 365:</strong>
+          integración sencilla para trabajar con servicios de Microsoft.
+        </li>
+
+        <li>
+          <strong>OneDrive:</strong>
+          sincronización directa con el sistema.
+        </li>
+
+        <li>
+          <strong>Búsqueda global:</strong>
+          permite encontrar información desde un solo lugar.
+        </li>
+
+        <li>
+          <strong>PipeWire:</strong>
+          mejoras en el manejo y reproducción de audio.
+        </li>
+
+        <li>
+          <strong>Compatibilidad:</strong>
+          mejoras para hardware reciente.
+        </li>
+
+      </ul>
+
+
+      <p>
+        Zorin OS ofrece soporte a largo plazo basado en
+        <strong>Ubuntu 24.04 LTS</strong>,
+        con soporte de la base del sistema hasta
+        <strong>2029</strong>.
+      </p>
+
+
+      <h2>
+        Zorin OS 18 apuesta por un rediseño moderno
+      </h2>
+
+
+      <p>
+        El equipo de desarrollo de Zorin OS ha presentado una
+        nueva versión de su sistema operativo basado en Ubuntu
+        que busca consolidarse como una de las alternativas más
+        atractivas para quienes desean migrar desde Windows a Linux.
+      </p>
+
+
+      <p>
+        Esta actualización introduce cambios visuales significativos,
+        además de mejoras en rendimiento, compatibilidad y herramientas
+        enfocadas en la productividad diaria.
+      </p>
+
+
+      <p>
+        Uno de los cambios más destacados es su renovado entorno
+        de escritorio, que ofrece un diseño más moderno con panel
+        flotante, esquinas redondeadas y animaciones más fluidas.
+      </p>
+
+
+      <p>
+        La experiencia visual se siente más limpia y actual,
+        manteniendo al mismo tiempo la simplicidad que caracteriza
+        a esta distribución.
+      </p>
+
+
+      <p>
+        Además, el sistema de organización de ventanas
+        <strong>(tiling)</strong>
+        ha sido mejorado, permitiendo acomodar aplicaciones
+        de manera más eficiente en diferentes diseños.
+        Esto facilita el trabajo multitarea.
+      </p>
+
+
+      <h2>
+        Mejoras técnicas
+      </h2>
+
+
+      <p>
+        En el apartado técnico, Zorin OS 18 incorpora mejoras
+        importantes en el manejo del audio gracias a la integración
+        de <strong>PipeWire</strong>.
+      </p>
+
+
+      <p>
+        Esto permite una mejor compatibilidad con dispositivos
+        Bluetooth y una menor latencia en diferentes situaciones.
+        También se han implementado optimizaciones generales que
+        buscan ofrecer un sistema más rápido y estable.
+      </p>
+
+
+      <h2>
+        Integración con servicios en la nube
+      </h2>
+
+
+      <p>
+        Otro punto relevante es la integración más profunda con
+        servicios en la nube y aplicaciones web.
+      </p>
+
+
+      <p>
+        Plataformas como <strong>OneDrive</strong> pueden conectarse
+        directamente con el gestor de archivos del sistema,
+        facilitando el acceso a los archivos almacenados en la nube.
+      </p>
+
+
+      <p>
+        Con esto, Zorin OS refuerza su enfoque en brindar una
+        experiencia práctica y familiar para usuarios que buscan
+        productividad sin complicaciones.
+      </p>
+
+
+      <h2>
+        Una alternativa para usuarios de Windows
+      </h2>
+
+
+      <p>
+        Con estas novedades, Zorin OS 18 reafirma su objetivo:
+        ofrecer un sistema operativo elegante, eficiente y fácil
+        de usar, ideal tanto para nuevos usuarios de Linux como
+        para quienes desean una transición más cómoda desde otros
+        sistemas operativos.
+      </p>]]></content:encoded>
     </item>
   </channel>
 </rss>
