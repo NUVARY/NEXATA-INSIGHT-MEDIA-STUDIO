@@ -8,8 +8,1265 @@
     <link>https://nexata.site/</link>
     <description>Publicaciones seleccionadas de NEXATA con recomendaciones, tecnología, información y contenido de interés.</description>
     <language>es-MX</language>
-    <lastBuildDate>Thu, 26 Nov 2026 20:40:03 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 13:27:43 GMT</lastBuildDate>
     <atom:link href="https://nexata.site/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pavel Durov y Telegram: el conflicto que puso a prueba los límites de la libertad digital y la responsabilidad tecnológica</title>
+      <link>https://nexata.site/BLOGS/17.html</link>
+      <guid isPermaLink="true">https://nexata.site/BLOGS/17.html</guid>
+      <pubDate>Fri, 27 Nov 2026 06:00:00 GMT</pubDate>
+      <description><![CDATA[Un reportaje especial sobre la investigación contra el fundador de Telegram, la privacidad digital y la responsabilidad de las plataformas tecnológicas.]]></description>
+      <media:content url="https://i.imgur.com/5DetFJJ.jpeg" medium="image" />
+      <content:encoded><![CDATA[<h1>
+        Pavel Durov y Telegram: el conflicto que puso a prueba los límites de la libertad digital y la responsabilidad tecnológica
+      </h1>
+
+      <p>
+        <strong>REPORTAJE ESPECIAL | NEXATA INSIGHT MEDIA STUDIO</strong>
+      </p>
+
+      <p>
+        <strong>Por:</strong> Dennis Palma
+      </p>
+
+      <p>
+        <strong>Categoría:</strong> Tecnología, actualidad, sociedad y análisis.
+      </p>
+
+      <p>
+        <strong>Formato:</strong> Reportaje informativo y análisis.
+      </p>
+
+      <p>
+        <strong>Lectura estimada:</strong> 15–20 minutos.
+      </p>
+
+      <hr>
+
+      <h2>
+        🌐 Introducción: cuando una plataforma digital llega ante los tribunales
+      </h2>
+
+      <p>
+        Durante años, Telegram construyó una identidad alrededor de la privacidad, la libertad de comunicación y la posibilidad de intercambiar información sin las restricciones habituales de otras plataformas digitales. Su crecimiento la convirtió en una herramienta utilizada por millones de personas: desde usuarios que buscan comunicarse con familiares hasta periodistas, organizaciones, comunidades, empresas y movimientos sociales.
+      </p>
+
+      <p>
+        Sin embargo, el desarrollo de una plataforma de semejante alcance también trae consigo una responsabilidad considerable.
+      </p>
+
+      <p>
+        ¿Qué sucede cuando una herramienta diseñada para facilitar la comunicación termina siendo utilizada para cometer delitos? ¿Hasta dónde debe intervenir la empresa que administra el servicio? ¿Puede responsabilizarse personalmente a su fundador por las actividades de determinados usuarios? Y, sobre todo, ¿qué ocurre cuando las exigencias de las autoridades entran en conflicto con la privacidad que una plataforma promete proteger?
+      </p>
+
+      <p>
+        Estas preguntas dejaron de ser un debate exclusivamente tecnológico en agosto de 2024.
+      </p>
+
+      <p>
+        El 24 de agosto de ese año, Pavel Durov, fundador y director ejecutivo de Telegram, fue detenido en Francia. La noticia generó una reacción internacional y abrió una discusión sobre el papel de las empresas tecnológicas en la prevención de delitos, la cooperación con las autoridades y la protección de los derechos digitales.
+      </p>
+
+      <p>
+        Dos años después, el caso continúa teniendo relevancia. En Francia, la investigación judicial ha seguido su curso y Durov ha comparecido nuevamente ante los jueces. En Rusia, por otra parte, las autoridades anunciaron en julio de 2026 una investigación y acusaciones separadas relacionadas con presunta complicidad en actividades terroristas.
+      </p>
+
+      <p>
+        No se trata de un único procedimiento ni de una sola controversia. Son acontecimientos que deben analizarse por separado, con atención a sus respectivos contextos y sin confundir las acusaciones con hechos judicialmente demostrados.
+      </p>
+
+      <p>
+        Para comprender la dimensión del caso, es necesario comenzar por la persona y la plataforma que se encuentran en el centro de esta historia.
+      </p>
+
+      <hr>
+
+      <h2>
+        👤 1. Pavel Durov: el empresario detrás de Telegram
+      </h2>
+
+      <p>
+        Pavel Valeryevich Durov es un empresario tecnológico nacido en Rusia, conocido internacionalmente por ser cofundador de VKontakte, una de las principales redes sociales rusas, y fundador de Telegram.
+      </p>
+
+      <p>
+        Antes de que Telegram adquiriera relevancia mundial, Durov ya había desarrollado una trayectoria en el sector de las comunicaciones digitales. Su primera gran empresa fue VKontakte, una red social creada en 2006 que alcanzó una enorme popularidad en Rusia y otros países de la región.
+      </p>
+
+      <p>
+        Con el paso del tiempo, su relación con las autoridades rusas se deterioró. Durov abandonó Rusia en 2014, después de conflictos relacionados con el control de VKontakte y las exigencias gubernamentales sobre información de usuarios.
+      </p>
+
+      <p>
+        Ese mismo año, Telegram comenzó a consolidarse como una alternativa de mensajería centrada en la velocidad, las funciones de comunicación y determinadas herramientas de privacidad.
+      </p>
+
+      <p>
+        Su fundador desarrolló una imagen pública asociada con la independencia tecnológica y la resistencia frente a los intentos de control gubernamental sobre las comunicaciones.
+      </p>
+
+      <p>
+        Pero esa imagen también terminó convirtiéndose en parte del debate.
+      </p>
+
+      <p>
+        Una plataforma que defiende la privacidad debe demostrar cómo protege a sus usuarios. Al mismo tiempo, debe explicar qué mecanismos utiliza para impedir que su infraestructura sea aprovechada para actividades delictivas.
+      </p>
+
+      <p>
+        La discusión sobre Telegram no se limita, por tanto, a la personalidad de Durov. También involucra las decisiones empresariales, las políticas de moderación y el funcionamiento de un servicio digital de alcance internacional.
+      </p>
+
+      <hr>
+
+      <h2>
+        📱 2. Telegram: una plataforma de comunicación con alcance mundial
+      </h2>
+
+      <p>
+        Telegram es un servicio de mensajería que permite enviar mensajes, fotografías, videos, documentos y otros archivos. También ofrece grupos, canales públicos, bots, herramientas administrativas y funciones para comunidades de gran tamaño.
+      </p>
+
+      <p>
+        Estas características han contribuido a su expansión.
+      </p>
+
+      <p>
+        A diferencia de una aplicación utilizada únicamente para conversaciones individuales, Telegram puede funcionar como un espacio de distribución de información. Un canal permite publicar mensajes para una audiencia amplia, mientras que los grupos facilitan la interacción entre numerosos participantes.
+      </p>
+
+      <p>
+        Los bots, por su parte, permiten automatizar tareas, ofrecer servicios y crear experiencias interactivas.
+      </p>
+
+      <p>
+        Este conjunto de herramientas convierte a Telegram en algo más que una aplicación para enviar mensajes: es también una infraestructura de comunicación y distribución de contenido.
+      </p>
+
+      <h3>
+        🔐 La privacidad como elemento central
+      </h3>
+
+      <p>
+        Telegram ha promovido distintas funciones relacionadas con la seguridad y la privacidad. Sin embargo, es importante comprender que no todas sus conversaciones funcionan de la misma manera.
+      </p>
+
+      <p>
+        La aplicación distingue entre los chats en la nube y los chats secretos.
+      </p>
+
+      <p>
+        Los chats en la nube permiten sincronizar conversaciones entre dispositivos y almacenan información en la infraestructura del servicio. Los chats secretos, en cambio, utilizan cifrado de extremo a extremo y están diseñados para mantener la conversación vinculada a los dispositivos participantes.
+      </p>
+
+      <p>
+        Esta diferencia es fundamental.
+      </p>
+
+      <p>
+        No sería correcto afirmar que absolutamente todas las conversaciones de Telegram cuentan con el mismo tipo de cifrado de extremo a extremo.
+      </p>
+
+      <p>
+        Además, los canales y grupos públicos tienen una naturaleza diferente a la de una conversación privada: el contenido publicado en ellos puede alcanzar audiencias muy amplias y, dependiendo de su configuración, resultar accesible para numerosos usuarios.
+      </p>
+
+      <p>
+        Por eso, hablar de privacidad en Telegram exige distinguir entre las funciones concretas de la aplicación y no tratar todos sus espacios como si fueran equivalentes.
+      </p>
+
+      <h3>
+        ⚠️ El otro lado de una plataforma abierta
+      </h3>
+
+      <p>
+        Las mismas herramientas que permiten crear comunidades, difundir noticias y compartir conocimientos también pueden ser utilizadas para distribuir contenido ilegal, comercializar productos prohibidos, organizar fraudes o facilitar otras actividades delictivas.
+      </p>
+
+      <p>
+        Este problema no es exclusivo de Telegram. Las redes sociales, los servicios de almacenamiento, las aplicaciones de mensajería y los mercados digitales enfrentan desafíos similares.
+      </p>
+
+      <p>
+        La cuestión importante es determinar qué medidas debe adoptar cada empresa para detectar abusos, atender denuncias y cumplir las obligaciones legales que le corresponden.
+      </p>
+
+      <hr>
+
+      <h2>
+        ⚖️ 3. Agosto de 2024: la detención que colocó a Telegram en el centro de la controversia
+      </h2>
+
+      <p>
+        El 24 de agosto de 2024, Pavel Durov fue detenido en el aeropuerto de Le Bourget, cerca de París.
+      </p>
+
+      <p>
+        La detención ocurrió en el marco de una investigación judicial que ya había sido abierta el 8 de julio de 2024 por las autoridades francesas.
+      </p>
+
+      <p>
+        El caso estaba relacionado con posibles delitos cometidos mediante Telegram y con la presunta falta de cooperación de la plataforma ante determinadas solicitudes de información de las autoridades competentes.
+      </p>
+
+      <p>
+        El comunicado de la Fiscalía de París, publicado el 26 de agosto de 2024, describió distintas líneas de investigación.
+      </p>
+
+      <p>
+        Entre los posibles delitos mencionados se encontraban:
+      </p>
+
+      <ul>
+        <li>Presunta complicidad en la administración de una plataforma utilizada para realizar transacciones ilícitas por grupos organizados.</li>
+        <li>Presunta negativa a proporcionar información o documentos solicitados legalmente por autoridades habilitadas.</li>
+        <li>Posibles delitos relacionados con la posesión y difusión de material de abuso sexual infantil.</li>
+        <li>Presunta complicidad en actividades relacionadas con el tráfico de drogas.</li>
+        <li>Posible participación en fraudes organizados.</li>
+        <li>Otras conductas relacionadas con la delincuencia organizada.</li>
+      </ul>
+
+      <p>
+        Es importante señalar que estas eran líneas de investigación y calificaciones jurídicas contempladas en el procedimiento. No representan, por sí mismas, una demostración de culpabilidad.
+      </p>
+
+      <h3>
+        ¿Por qué fue detenido el fundador y no solamente investigada la empresa?
+      </h3>
+
+      <p>
+        Esta pregunta fue una de las más discutidas después de conocerse la noticia.
+      </p>
+
+      <p>
+        La investigación francesa no se limitaba a examinar el contenido publicado por usuarios. También analizaba la posible responsabilidad vinculada con la administración de la plataforma y la respuesta de Telegram ante solicitudes judiciales.
+      </p>
+
+      <p>
+        En determinados supuestos, la legislación puede contemplar responsabilidades de personas que administran servicios digitales cuando existen elementos que justifican investigar su posible participación o complicidad en conductas delictivas.
+      </p>
+
+      <p>
+        Sin embargo, ser fundador o director ejecutivo de una compañía no significa automáticamente ser responsable de todos los actos cometidos por sus usuarios.
+      </p>
+
+      <p>
+        La responsabilidad penal individual requiere analizar conductas, conocimiento, participación y pruebas conforme a la legislación aplicable.
+      </p>
+
+      <p>
+        Este punto es esencial para entender por qué el caso generó una discusión jurídica mucho más amplia que una simple disputa entre una aplicación y las autoridades.
+      </p>
+
+      <hr>
+
+      <h2>
+        🏛️ 4. El procedimiento judicial francés: investigación, cargos y medidas de control
+      </h2>
+
+      <p>
+        Después de su detención, Durov permaneció bajo custodia policial durante varios días.
+      </p>
+
+      <p>
+        El 28 de agosto de 2024 fue formalmente puesto bajo investigación judicial por varios delitos relacionados con el funcionamiento de Telegram y la presunta cooperación insuficiente con las autoridades.
+      </p>
+
+      <p>
+        La justicia francesa estableció medidas de control judicial que incluyeron:
+      </p>
+
+      <ul>
+        <li>Una fianza de cinco millones de euros.</li>
+        <li>La obligación de presentarse periódicamente ante la policía.</li>
+        <li>La prohibición de abandonar Francia sin autorización.</li>
+      </ul>
+
+      <p>
+        Estas medidas no equivalían a una sentencia condenatoria ni significaban que se hubiera demostrado su participación en los delitos investigados.
+      </p>
+
+      <p>
+        En el sistema judicial francés, la puesta en examen representa una etapa formal de investigación cuando existen elementos suficientes para examinar la posible participación de una persona en determinados hechos. No equivale a una declaración definitiva de culpabilidad.
+      </p>
+
+      <h3>
+        La defensa de Durov
+      </h3>
+
+      <p>
+        Desde el comienzo, la defensa cuestionó las acusaciones y la forma en que se había desarrollado el procedimiento.
+      </p>
+
+      <p>
+        Los abogados de Durov sostuvieron que no existían elementos suficientes para demostrar que el empresario hubiera participado en las actividades criminales investigadas.
+      </p>
+
+      <p>
+        También defendieron la posición de que un director de una plataforma no puede ser considerado responsable automáticamente por las conductas individuales de sus usuarios.
+      </p>
+
+      <p>
+        La posición de la defensa debe considerarse parte del procedimiento, al igual que las investigaciones y argumentos de la Fiscalía.
+      </p>
+
+      <p>
+        El análisis de un caso de esta naturaleza requiere escuchar ambas posiciones y permitir que las autoridades judiciales determinen qué hechos pueden demostrarse.
+      </p>
+
+      <hr>
+
+      <h2>
+        🔎 5. El conflicto central: ¿Telegram no cooperaba con las autoridades?
+      </h2>
+
+      <p>
+        Uno de los aspectos más importantes del caso fue la presunta falta de respuesta de Telegram a solicitudes judiciales.
+      </p>
+
+      <p>
+        La Fiscalía francesa investigaba si la plataforma había atendido adecuadamente determinadas peticiones de información relacionadas con investigaciones criminales.
+      </p>
+
+      <p>
+        Esto plantea un problema complejo.
+      </p>
+
+      <p>
+        Una empresa tecnológica puede recibir solicitudes de autoridades de diferentes países, pero no todas las solicitudes tienen necesariamente el mismo fundamento legal, alcance o validez.
+      </p>
+
+      <p>
+        Una compañía debe examinar si una petición cumple los requisitos correspondientes, si la autoridad tiene competencia y qué información puede entregarse legalmente.
+      </p>
+
+      <p>
+        La cooperación no debería significar entregar indiscriminadamente todos los datos de los usuarios.
+      </p>
+
+      <p>
+        Pero la protección de la privacidad tampoco debería convertirse en una justificación para ignorar solicitudes judiciales válidas.
+      </p>
+
+      <h3>
+        Un cambio en la política de Telegram
+      </h3>
+
+      <p>
+        Después de la detención de Durov, distintos medios informaron sobre cambios en la forma en que Telegram atendía solicitudes de las autoridades y moderaba determinados contenidos.
+      </p>
+
+      <p>
+        En septiembre de 2024, la sección de preguntas frecuentes de Telegram relacionada con la denuncia de contenido ilegal fue modificada. La explicación anterior, que indicaba que la empresa no procesaba solicitudes relacionadas con chats privados, dejó de aparecer en los mismos términos.
+      </p>
+
+      <p>
+        En ese periodo, Durov también anunció cambios en la política de la plataforma para facilitar la atención de solicitudes legales válidas.
+      </p>
+
+      <p>
+        Posteriormente, Telegram actualizó su política de privacidad para explicar que, cuando recibe una orden válida de autoridades judiciales competentes que confirma que una persona es sospechosa en un caso relacionado con actividades criminales que violan sus condiciones de servicio, puede analizar la solicitud y revelar determinados datos, como la dirección IP y el número telefónico.
+      </p>
+
+      <p>
+        La política también señala que los casos de divulgación de información se reflejan en informes de transparencia.
+      </p>
+
+      <p>
+        Esto no significa que Telegram entregue automáticamente el contenido de todas las conversaciones ni que cualquier autoridad pueda acceder libremente a los datos de sus usuarios.
+      </p>
+
+      <p>
+        La distinción entre datos de cuenta, metadatos y contenido de conversaciones resulta indispensable.
+      </p>
+
+      <h3>
+        ¿Qué nos dice este cambio?
+      </h3>
+
+      <p>
+        El caso muestra que las políticas de privacidad de una plataforma no son elementos estáticos.
+      </p>
+
+      <p>
+        Pueden cambiar como consecuencia de decisiones empresariales, nuevas regulaciones, investigaciones judiciales y presiones sociales.
+      </p>
+
+      <p>
+        También demuestra que la confianza de los usuarios depende de que las empresas expliquen con claridad qué información recopilan, bajo qué circunstancias pueden compartirla y cuáles son los límites de esa cooperación.
+      </p>
+
+      <hr>
+
+      <h2>
+        📊 6. Los datos personales y la transparencia: una discusión que va más allá de Telegram
+      </h2>
+
+      <p>
+        En enero de 2025, TechCrunch publicó un análisis de los datos de transparencia de Telegram correspondientes a 2024.
+      </p>
+
+      <p>
+        El medio informó de un aumento considerable en las solicitudes de información atendidas por la plataforma durante ese año.
+      </p>
+
+      <p>
+        Entre las cifras señaladas, Telegram habría proporcionado números telefónicos y direcciones IP a autoridades estadounidenses en 900 ocasiones, afectando a 2,253 usuarios. El artículo también destacó cifras correspondientes a India y Reino Unido.
+      </p>
+
+      <p>
+        Estos datos deben interpretarse con cuidado.
+      </p>
+
+      <p>
+        No representan necesariamente el número de personas investigadas por delitos ni demuestran que todas las solicitudes estuvieran relacionadas con el caso Durov.
+      </p>
+
+      <p>
+        Tampoco permiten concluir, por sí solos, que Telegram haya entregado el contenido de conversaciones privadas.
+      </p>
+
+      <p>
+        Lo que muestran es que la cooperación con autoridades y la entrega de determinados datos de identificación se convirtieron en un tema de mayor relevancia pública.
+      </p>
+
+      <h3>
+        ¿Por qué importa la transparencia?
+      </h3>
+
+      <p>
+        Cuando una plataforma entrega información de sus usuarios, debería existir claridad sobre:
+      </p>
+
+      <ol>
+        <li>Qué tipo de información puede entregar.</li>
+        <li>Qué autoridad está solicitándola.</li>
+        <li>Bajo qué fundamento legal se realiza la solicitud.</li>
+        <li>Qué mecanismos existen para revisar una petición.</li>
+        <li>Cómo se informa a los usuarios y al público sobre estas prácticas.</li>
+      </ol>
+
+      <p>
+        Los informes de transparencia permiten observar tendencias y exigir explicaciones a las empresas.
+      </p>
+
+      <p>
+        Una política de privacidad no debería ser solamente un documento extenso que pocas personas leen. Debe representar un compromiso comprensible sobre el tratamiento de la información personal.
+      </p>
+
+      <hr>
+
+      <h2>
+        🗣️ 7. La libertad de expresión frente a la moderación de contenido
+      </h2>
+
+      <p>
+        La controversia también abrió un debate sobre la libertad de expresión.
+      </p>
+
+      <p>
+        Telegram ha sido utilizado para compartir información política, noticias, denuncias, opiniones y contenidos de interés público.
+      </p>
+
+      <p>
+        En diferentes países, sus canales han servido para difundir información que puede resultar difícil de encontrar en medios tradicionales.
+      </p>
+
+      <p>
+        Sin embargo, la libertad de expresión no significa que cualquier contenido deba permanecer disponible sin importar sus consecuencias.
+      </p>
+
+      <p>
+        Existen materiales que pueden constituir delitos, vulnerar derechos de otras personas o poner en peligro la seguridad pública.
+      </p>
+
+      <p>
+        El desafío de una plataforma consiste en establecer reglas que permitan proteger la expresión legítima y actuar frente a contenidos ilegales.
+      </p>
+
+      <h3>
+        El problema de la moderación
+      </h3>
+
+      <p>
+        Una moderación demasiado limitada puede facilitar la circulación de actividades ilícitas y contenidos dañinos.
+      </p>
+
+      <p>
+        Pero una moderación excesiva también puede provocar la eliminación injustificada de publicaciones, restringir opiniones legítimas o afectar a comunidades enteras.
+      </p>
+
+      <p>
+        Por eso, las decisiones de moderación deberían contar con criterios claros, mecanismos de denuncia y posibilidades de revisión.
+      </p>
+
+      <p>
+        No basta con eliminar contenido. También es importante explicar por qué se tomó una decisión y permitir que los usuarios puedan cuestionarla cuando consideren que fue injusta.
+      </p>
+
+      <h3>
+        La privacidad no debe confundirse con impunidad
+      </h3>
+
+      <p>
+        Defender la privacidad significa proteger la información personal y evitar accesos arbitrarios.
+      </p>
+
+      <p>
+        No significa otorgar inmunidad a las personas que utilizan servicios digitales para cometer delitos.
+      </p>
+
+      <p>
+        Del mismo modo, combatir los delitos no debería justificar una vigilancia generalizada sobre todas las comunicaciones.
+      </p>
+
+      <p>
+        El reto está en encontrar mecanismos legales, proporcionales y supervisados.
+      </p>
+
+      <hr>
+
+      <h2>
+        🇪🇺 8. Telegram y la regulación europea: el Reglamento de Servicios Digitales
+      </h2>
+
+      <p>
+        El caso también debe comprenderse dentro de un escenario más amplio: la regulación de las plataformas digitales en Europa.
+      </p>
+
+      <p>
+        La Unión Europea aprobó el Reglamento de Servicios Digitales, conocido como Digital Services Act o DSA.
+      </p>
+
+      <p>
+        Esta normativa establece obligaciones para distintos intermediarios y plataformas digitales que operan en el mercado europeo.
+      </p>
+
+      <p>
+        Entre sus objetivos se encuentran mejorar la transparencia, establecer procedimientos para denunciar contenidos ilegales, reforzar la protección de los usuarios y exigir determinadas medidas de gestión de riesgos a las plataformas de mayor tamaño.
+      </p>
+
+      <p>
+        El reglamento no establece que una plataforma sea automáticamente culpable por todo lo que publican sus usuarios.
+      </p>
+
+      <p>
+        En cambio, establece obligaciones relacionadas con el funcionamiento del servicio y con la manera en que las empresas deben responder ante determinados riesgos y solicitudes.
+      </p>
+
+      <h3>
+        ¿Telegram está sometida a estas reglas?
+      </h3>
+
+      <p>
+        Sí. La Comisión Europea explicó en una respuesta oficial de febrero de 2025 que Telegram debía cumplir las disposiciones del DSA aplicables a sus servicios, aunque en ese momento no estaba designada como una plataforma en línea de muy gran tamaño.
+      </p>
+
+      <p>
+        Esta distinción importa.
+      </p>
+
+      <p>
+        La categoría de plataforma de muy gran tamaño se relaciona con un umbral de usuarios activos mensuales en la Unión Europea y con obligaciones adicionales.
+      </p>
+
+      <p>
+        No estar incluida en esa categoría no significa quedar fuera de toda regulación.
+      </p>
+
+      <p>
+        Telegram debe cumplir las obligaciones que correspondan a su servicio y a su actividad dentro del marco europeo.
+      </p>
+
+      <h3>
+        ¿Qué cambia con esta regulación?
+      </h3>
+
+      <p>
+        El DSA representa un intento de establecer reglas comunes para empresas que tienen una influencia considerable en la circulación de información.
+      </p>
+
+      <p>
+        Entre los asuntos que aborda se encuentran:
+      </p>
+
+      <ul>
+        <li>Procedimientos de notificación y actuación frente a contenidos ilegales.</li>
+        <li>Transparencia en las condiciones de servicio.</li>
+        <li>Información sobre las decisiones de moderación.</li>
+        <li>Mecanismos de reclamación y revisión.</li>
+        <li>Determinadas obligaciones de evaluación y gestión de riesgos para plataformas de mayor tamaño.</li>
+      </ul>
+
+      <p>
+        La importancia de este marco consiste en que la responsabilidad de las empresas tecnológicas ya no depende únicamente de sus propias políticas internas.
+      </p>
+
+      <p>
+        También está vinculada a obligaciones legales y mecanismos de supervisión.
+      </p>
+
+      <hr>
+
+      <h2>
+        ✈️ 9. Noviembre de 2025: Francia levanta las restricciones de viaje
+      </h2>
+
+      <p>
+        El procedimiento francés continuó después de la detención de Durov.
+      </p>
+
+      <p>
+        Durante 2025, las autoridades fueron modificando algunas de las medidas de control judicial que se habían establecido inicialmente.
+      </p>
+
+      <p>
+        En noviembre de ese año, Bloomberg Law informó que las autoridades francesas habían levantado la prohibición de viajar que pesaba sobre el empresario.
+      </p>
+
+      <p>
+        La decisión también eliminó la obligación de presentarse periódicamente ante una comisaría.
+      </p>
+
+      <p>
+        Este acontecimiento representó un cambio importante en las condiciones personales de Durov mientras continuaba la investigación.
+      </p>
+
+      <p>
+        Sin embargo, es necesario evitar una interpretación equivocada.
+      </p>
+
+      <p>
+        El levantamiento de las restricciones de viaje no significó que Durov hubiera sido declarado inocente, que los cargos hubieran desaparecido o que el procedimiento judicial hubiera concluido.
+      </p>
+
+      <p>
+        Las medidas cautelares y la determinación final de responsabilidad son cuestiones diferentes.
+      </p>
+
+      <p>
+        Una persona puede dejar de estar sometida a determinadas restricciones mientras una investigación continúa.
+      </p>
+
+      <hr>
+
+      <h2>
+        🏛️ 10. Julio de 2026: Durov vuelve a comparecer ante la justicia francesa
+      </h2>
+
+      <p>
+        El 8 de julio de 2026, Pavel Durov volvió a comparecer ante jueces de instrucción en París.
+      </p>
+
+      <p>
+        Según TF1 Info, el interrogatorio se prolongó durante más de seis horas y estuvo relacionado con la investigación sobre la posible complicidad de Telegram en actividades criminales.
+      </p>
+
+      <p>
+        El medio informó que se trataba de una nueva comparecencia dentro del procedimiento iniciado en 2024.
+      </p>
+
+      <p>
+        Después del interrogatorio, los abogados de Durov insistieron en que, a su juicio, no existían elementos que demostraran el fundamento de las acusaciones.
+      </p>
+
+      <p>
+        Esta declaración corresponde a la posición de la defensa y no debe confundirse con una resolución judicial definitiva.
+      </p>
+
+      <p>
+        El acontecimiento confirma que el caso francés seguía teniendo actividad judicial en julio de 2026.
+      </p>
+
+      <p>
+        La existencia de nuevas comparecencias tampoco permite concluir por sí sola que se haya probado una responsabilidad penal.
+      </p>
+
+      <p>
+        La investigación debe continuar su curso y las autoridades competentes tendrán que determinar qué hechos pueden sostenerse jurídicamente.
+      </p>
+
+      <hr>
+
+      <h2>
+        🇷🇺 11. Rusia abre un nuevo frente: las acusaciones anunciadas en julio de 2026
+      </h2>
+
+      <p>
+        El 29 de julio de 2026, las autoridades rusas anunciaron nuevas acusaciones contra Pavel Durov.
+      </p>
+
+      <p>
+        De acuerdo con reportes de Reuters, Associated Press y Le Monde, el Servicio Federal de Seguridad ruso, conocido como FSB, afirmó que Telegram habría permitido la permanencia de canales, conversaciones y bots presuntamente utilizados para organizar actividades de sabotaje, ataques y otras operaciones ilegales dentro de Rusia.
+      </p>
+
+      <p>
+        Las autoridades rusas anunciaron una investigación por presunta complicidad en actividades terroristas y comunicaron la emisión de una orden de búsqueda internacional.
+      </p>
+
+      <p>
+        Según las acusaciones difundidas por el FSB, determinados servicios y herramientas de Telegram habrían sido utilizados para reclutar personas y coordinar actividades violentas.
+      </p>
+
+      <p>
+        Estas afirmaciones corresponden a la versión de las autoridades rusas. No deben presentarse como hechos demostrados únicamente porque hayan sido anunciadas oficialmente.
+      </p>
+
+      <h3>
+        La respuesta de Durov y el contexto político
+      </h3>
+
+      <p>
+        Durov ha rechazado las acusaciones rusas y ha presentado la investigación como un intento de presionar a Telegram y limitar la privacidad y la libertad de expresión.
+      </p>
+
+      <p>
+        La controversia se produce en un contexto de creciente tensión entre las autoridades rusas y las plataformas digitales extranjeras.
+      </p>
+
+      <p>
+        Rusia ha impulsado restricciones contra determinados servicios de internet y ha promovido alternativas nacionales de comunicación.
+      </p>
+
+      <p>
+        En ese escenario, Telegram ocupa una posición particular: es una plataforma de origen ruso que ha adquirido una dimensión internacional y que también se ha convertido en un espacio de comunicación utilizado dentro del propio país.
+      </p>
+
+      <h3>
+        ¿Es el mismo caso que el de Francia?
+      </h3>
+
+      <p>
+        No. Es indispensable separar ambos procedimientos.
+      </p>
+
+      <p>
+        <strong>Francia:</strong> la investigación se relaciona con presuntas actividades criminales realizadas mediante Telegram y con la posible falta de cooperación de la plataforma ante determinadas solicitudes judiciales.
+      </p>
+
+      <p>
+        <strong>Rusia:</strong> las autoridades anunciaron acusaciones distintas relacionadas con presunta complicidad en actividades terroristas y con el supuesto uso de Telegram para organizar actos violentos.
+      </p>
+
+      <p>
+        Los hechos investigados, las autoridades involucradas y los fundamentos jurídicos no son los mismos.
+      </p>
+
+      <p>
+        Tampoco debe asumirse que las acusaciones rusas confirman las francesas o viceversa.
+      </p>
+
+      <p>
+        Cada procedimiento necesita analizarse de acuerdo con sus propias pruebas y garantías judiciales.
+      </p>
+
+      <hr>
+
+      <h2>
+        🌍 12. El caso Telegram como ejemplo de un problema global
+      </h2>
+
+      <p>
+        Lo ocurrido con Pavel Durov no es solamente una historia sobre un empresario y una aplicación.
+      </p>
+
+      <p>
+        Es un ejemplo de los problemas que aparecen cuando las plataformas digitales adquieren una influencia que supera las fronteras nacionales.
+      </p>
+
+      <p>
+        Una empresa puede tener usuarios en cientos de países, operar servidores en distintas jurisdicciones y recibir solicitudes de autoridades con legislaciones diferentes.
+      </p>
+
+      <p>
+        Esto crea preguntas difíciles.
+      </p>
+
+      <ul>
+        <li>¿Qué sucede cuando una solicitud es legal en un país, pero entra en conflicto con las normas de otro?</li>
+        <li>¿Cómo debe actuar una empresa cuando una autoridad solicita información de un usuario que vive en otra jurisdicción?</li>
+        <li>¿Qué límites deben existir para evitar que las investigaciones criminales se conviertan en mecanismos de vigilancia política?</li>
+        <li>¿Qué ocurre cuando una empresa utiliza la privacidad como argumento para no colaborar ante investigaciones legítimas?</li>
+      </ul>
+
+      <p>
+        No existen respuestas sencillas.
+      </p>
+
+      <p>
+        El problema requiere una combinación de legislación, cooperación internacional, supervisión independiente, transparencia empresarial y protección de los derechos fundamentales.
+      </p>
+
+      <h3>
+        El poder de las empresas tecnológicas
+      </h3>
+
+      <p>
+        Las plataformas digitales ya no son simples herramientas de comunicación.
+      </p>
+
+      <p>
+        Muchas de ellas controlan espacios donde circulan noticias, opiniones, actividades comerciales y relaciones personales.
+      </p>
+
+      <p>
+        Sus decisiones pueden afectar la reputación de individuos, la visibilidad de organizaciones y la circulación de información en sociedades completas.
+      </p>
+
+      <p>
+        Por eso, la responsabilidad tecnológica debe analizarse con mayor profundidad.
+      </p>
+
+      <p>
+        Una empresa que administra un servicio de comunicación tiene poder sobre sus reglas, sus mecanismos de moderación, sus políticas de privacidad y las condiciones de acceso.
+      </p>
+
+      <p>
+        Ese poder debe estar acompañado de obligaciones proporcionales.
+      </p>
+
+      <h3>
+        El peligro de responsabilizar automáticamente a los fundadores
+      </h3>
+
+      <p>
+        También existe un riesgo en el extremo contrario.
+      </p>
+
+      <p>
+        Si se considera que un fundador debe responder automáticamente por cada delito cometido mediante su plataforma, podría establecerse un precedente problemático para todo el sector tecnológico.
+      </p>
+
+      <p>
+        Un servicio utilizado por millones de personas inevitablemente puede ser aprovechado por individuos que incumplen la ley.
+      </p>
+
+      <p>
+        La responsabilidad individual no puede determinarse únicamente por la posición que alguien ocupa dentro de una empresa.
+      </p>
+
+      <p>
+        Debe existir una investigación concreta sobre su conducta y su posible participación.
+      </p>
+
+      <p>
+        La justicia debe evitar tanto la impunidad como las responsabilidades automáticas.
+      </p>
+
+      <hr>
+
+      <h2>
+        🛡️ 13. ¿Qué debería exigirse a una plataforma como Telegram?
+      </h2>
+
+      <p>
+        El caso permite identificar algunas condiciones que deberían formar parte de cualquier servicio digital de gran alcance.
+      </p>
+
+      <h3>
+        1. Políticas de privacidad comprensibles
+      </h3>
+
+      <p>
+        Los usuarios deben saber qué información se recopila, cuánto tiempo se conserva y bajo qué circunstancias puede compartirse.
+      </p>
+
+      <h3>
+        2. Cooperación legal con límites
+      </h3>
+
+      <p>
+        Las empresas deben examinar las solicitudes de las autoridades y responder cuando exista una obligación legal válida, sin convertir esa cooperación en acceso indiscriminado a la información.
+      </p>
+
+      <h3>
+        3. Moderación transparente
+      </h3>
+
+      <p>
+        Las reglas sobre contenido ilegal deben ser claras y aplicarse con criterios consistentes.
+      </p>
+
+      <h3>
+        4. Protección de la libertad de expresión
+      </h3>
+
+      <p>
+        Las plataformas deben evitar que la moderación se convierta en una herramienta para silenciar opiniones legítimas o eliminar contenido de manera arbitraria.
+      </p>
+
+      <h3>
+        5. Mecanismos de denuncia y revisión
+      </h3>
+
+      <p>
+        Los usuarios deben tener formas accesibles de denunciar abusos y cuestionar decisiones que consideren injustificadas.
+      </p>
+
+      <h3>
+        6. Rendición de cuentas
+      </h3>
+
+      <p>
+        Los informes de transparencia, las explicaciones públicas y la supervisión independiente ayudan a que las empresas respondan por sus decisiones.
+      </p>
+
+      <p>
+        Estas condiciones no eliminan todos los riesgos, pero permiten establecer una relación más equilibrada entre las plataformas, sus usuarios y las autoridades.
+      </p>
+
+      <hr>
+
+      <h2>
+        👥 14. Lo que este caso significa para los usuarios
+      </h2>
+
+      <p>
+        Aunque la investigación se concentra en Pavel Durov y Telegram, sus consecuencias también invitan a reflexionar sobre nuestros propios hábitos digitales.
+      </p>
+
+      <p>
+        Millones de personas utilizan aplicaciones sin conocer realmente cómo funcionan sus sistemas de privacidad.
+      </p>
+
+      <p>
+        Muchas veces se confunde la posibilidad de ocultar información pública con la garantía de que ningún dato podrá ser entregado a una autoridad.
+      </p>
+
+      <p>
+        También se suele pensar que todas las conversaciones dentro de una aplicación cuentan con el mismo nivel de protección.
+      </p>
+
+      <p>
+        Estas ideas pueden provocar una falsa sensación de seguridad.
+      </p>
+
+      <p>
+        Por eso, como usuarios, debemos comprender algunas cuestiones:
+      </p>
+
+      <ul>
+        <li>No todas las funciones de una aplicación tienen las mismas características de privacidad.</li>
+        <li>Los canales y grupos públicos no deben tratarse como espacios equivalentes a una conversación privada.</li>
+        <li>Las políticas de privacidad pueden cambiar con el tiempo.</li>
+        <li>La información personal debe compartirse con cuidado.</li>
+        <li>Ninguna plataforma puede garantizar que sus servicios nunca serán utilizados para cometer delitos.</li>
+        <li>La protección de la privacidad y el cumplimiento de la ley deben coexistir.</li>
+      </ul>
+
+      <p>
+        La alfabetización digital no consiste solamente en saber utilizar una aplicación. También implica comprender sus límites, sus riesgos y las responsabilidades de quienes la administran.
+      </p>
+
+      <hr>
+
+      <h2>
+        📅 15. Cronología: los acontecimientos principales del caso
+      </h2>
+
+      <ul>
+        <li><strong>2006:</strong> Pavel Durov participa en la creación de VKontakte.</li>
+        <li><strong>2013:</strong> Telegram comienza su desarrollo y lanzamiento.</li>
+        <li><strong>8 de julio de 2024:</strong> Francia abre una investigación judicial relacionada con Telegram.</li>
+        <li><strong>24 de agosto de 2024:</strong> Durov es detenido en el aeropuerto de Le Bourget.</li>
+        <li><strong>26 de agosto de 2024:</strong> La Fiscalía de París publica un comunicado sobre el procedimiento.</li>
+        <li><strong>28 de agosto de 2024:</strong> Durov queda formalmente bajo investigación judicial y sujeto a control judicial.</li>
+        <li><strong>Septiembre de 2024:</strong> Telegram modifica aspectos de sus políticas y de sus procedimientos de moderación y cooperación.</li>
+        <li><strong>Enero de 2025:</strong> Se publican análisis sobre el aumento de solicitudes de información atendidas por Telegram.</li>
+        <li><strong>13 de noviembre de 2025:</strong> Se informa del levantamiento de las restricciones de viaje y de la obligación de presentarse ante la policía en Francia.</li>
+        <li><strong>8 de julio de 2026:</strong> Durov vuelve a ser interrogado durante más de seis horas por jueces franceses.</li>
+        <li><strong>29 de julio de 2026:</strong> Rusia anuncia acusaciones separadas contra Durov por presunta complicidad en actividades terroristas.</li>
+        <li><strong>27 de noviembre de 2026:</strong> La controversia sigue siendo relevante por la existencia de procedimientos y acusaciones que deben distinguirse entre sí.</li>
+      </ul>
+
+      <hr>
+
+      <h2>
+        🔎 16. Conclusión: una plataforma no puede estar por encima de la ley, pero tampoco los derechos deben quedar por debajo de la vigilancia
+      </h2>
+
+      <p>
+        El caso de Pavel Durov y Telegram demuestra que la tecnología no puede analizarse únicamente desde sus beneficios.
+      </p>
+
+      <p>
+        Una aplicación puede facilitar la comunicación, permitir el intercambio de información y ofrecer herramientas que mejoren la vida cotidiana. Sin embargo, cuando alcanza una dimensión internacional, también debe enfrentar las consecuencias de las decisiones que toma sobre seguridad, privacidad y moderación.
+      </p>
+
+      <p>
+        Las empresas tecnológicas no pueden ignorar sus obligaciones legales. Pero las autoridades tampoco deberían utilizar esas obligaciones como justificación para acceder indiscriminadamente a la información de los usuarios o restringir la libertad de expresión.
+      </p>
+
+      <p>
+        La responsabilidad debe tener límites, y esos límites deben estar definidos por la ley, las pruebas y los mecanismos de supervisión.
+      </p>
+
+      <p>
+        El caso francés demuestra la importancia de investigar la posible participación de quienes administran una plataforma cuando existen indicios que lo justifican. El caso ruso, por su parte, recuerda que las acusaciones relacionadas con la seguridad nacional también necesitan ser examinadas con garantías y sin asumir que una declaración gubernamental equivale a una prueba judicial.
+      </p>
+
+      <p>
+        No debemos confundir privacidad con impunidad, ni seguridad con vigilancia ilimitada.
+      </p>
+
+      <p>
+        Tampoco debemos olvidar que detrás de cada plataforma existen personas que confían en ella para comunicarse, trabajar, informarse y construir relaciones.
+      </p>
+
+      <hr>
+
+      <h2>
+        💭 Reflexión final de NEXATA
+      </h2>
+
+      <p>
+        La tecnología avanza mucho más rápido que nuestra capacidad para establecer reglas sobre su funcionamiento. Cada nueva herramienta abre oportunidades, pero también crea responsabilidades que no siempre sabemos cómo distribuir.
+      </p>
+
+      <p>
+        Quizá el verdadero problema no sea determinar si Telegram es una plataforma buena o mala, ni decidir si Pavel Durov debe ser defendido o condenado antes de que concluyan los procedimientos correspondientes.
+      </p>
+
+      <p>
+        La pregunta más importante es otra:
+      </p>
+
+      <p>
+        <strong>
+          ¿Qué clase de mundo digital queremos construir?
+        </strong>
+      </p>
+
+      <p>
+        Uno donde las empresas puedan operar sin responder por los riesgos que generan sus servicios; uno donde los gobiernos puedan vigilar cualquier comunicación bajo el argumento de la seguridad; o uno donde existan reglas capaces de proteger simultáneamente la privacidad, la libertad de expresión y el derecho de las personas a vivir sin miedo a los abusos.
+      </p>
+
+      <p>
+        La respuesta no debería estar en los extremos.
+      </p>
+
+      <p>
+        Una sociedad digital responsable necesita empresas transparentes, autoridades sujetas a la ley y usuarios conscientes de sus derechos y obligaciones.
+      </p>
+
+      <p>
+        La libertad digital no debería significar ausencia de responsabilidad. Y la responsabilidad tampoco debería convertirse en una excusa para eliminar la libertad.
+      </p>
+
+      <p>
+        El verdadero desafío consiste en conseguir que ambas puedan existir al mismo tiempo.
+      </p>
+
+      <hr>
+
+      <h2>
+        📚 Referencias y fuentes de consulta
+      </h2>
+
+      <p>
+        Las siguientes referencias permiten revisar los antecedentes judiciales, las posiciones de las partes, las políticas de Telegram y el contexto regulatorio. Se distingue entre documentos oficiales, reportes periodísticos y análisis especializados.
+      </p>
+
+      <h3>
+        A. Documentación oficial y fuentes institucionales
+      </h3>
+
+      <ol>
+
+        <li>
+          <strong>Fiscalía de París — Comunicado sobre la detención de Pavel Durov (26 de agosto de 2024).</strong>
+          <p>
+            Documento oficial que describe la apertura de la investigación y las líneas del procedimiento.
+          </p>
+          <a href="https://www.tribunal-de-paris.justice.fr/sites/default/files/2024-08/2024-08-26%20-%20CP%20TELEGRAM%20.pdf" target="_blank" rel="noopener noreferrer">
+            Consultar comunicado oficial
+          </a>
+        </li>
+
+        <li>
+          <strong>Tribunal de París — Comunicados de prensa y discursos.</strong>
+          <p>
+            Índice institucional donde se encuentran los comunicados relacionados con la detención y la puesta bajo investigación de Durov.
+          </p>
+          <a href="https://www.tribunal-de-paris.justice.fr/75/communiques-de-presse-et-discours" target="_blank" rel="noopener noreferrer">
+            Consultar el Tribunal de París
+          </a>
+        </li>
+
+        <li>
+          <strong>Telegram — Política de privacidad.</strong>
+          <p>
+            Documento de la empresa sobre el tratamiento de datos personales y las condiciones en las que puede divulgar determinados datos ante solicitudes judiciales válidas.
+          </p>
+          <a href="https://telegram.org/privacy" target="_blank" rel="noopener noreferrer">
+            Consultar política de privacidad
+          </a>
+        </li>
+
+        <li>
+          <strong>Telegram — Preguntas frecuentes.</strong>
+          <p>
+            Información oficial sobre el funcionamiento del servicio y los mecanismos para denunciar contenido ilegal.
+          </p>
+          <a href="https://www.telegram.org/faq" target="_blank" rel="noopener noreferrer">
+            Consultar preguntas frecuentes
+          </a>
+        </li>
+
+        <li>
+          <strong>Telegram — Orientación para usuarios de la Unión Europea sobre el DSA.</strong>
+          <p>
+            Información de la plataforma sobre sus reglas y procedimientos relacionados con el Reglamento de Servicios Digitales.
+          </p>
+          <a href="https://telegram.org/tos/eu-dsa" target="_blank" rel="noopener noreferrer">
+            Consultar información sobre el DSA
+          </a>
+        </li>
+
+        <li>
+          <strong>Comisión Europea — Reglamento de Servicios Digitales: preguntas y respuestas.</strong>
+          <p>
+            Explicación institucional sobre el alcance del DSA y las obligaciones de los servicios digitales.
+          </p>
+          <a href="https://digital-strategy.ec.europa.eu/en/faqs/digital-services-act-questions-and-answers" target="_blank" rel="noopener noreferrer">
+            Consultar a la Comisión Europea
+          </a>
+        </li>
+
+        <li>
+          <strong>Parlamento Europeo — Respuesta de la Comisión sobre Telegram y el DSA (17 de febrero de 2025).</strong>
+          <p>
+            Documento que explica que Telegram no estaba designada como plataforma de muy gran tamaño, pero debía cumplir las disposiciones aplicables del reglamento.
+          </p>
+          <a href="https://www.europarl.europa.eu/doceo/document/E-10-2024-002762-ASW_EN.pdf" target="_blank" rel="noopener noreferrer">
+            Consultar documento parlamentario
+          </a>
+        </li>
+
+      </ol>
+
+      <h3>
+        B. Reportes periodísticos y cobertura judicial
+      </h3>
+
+      <ol start="8">
+
+        <li>
+          <strong>Le Monde — Telegram CEO Pavel Durov charged but released under judicial supervision (29 de agosto de 2024).</strong>
+          <p>
+            Cobertura sobre la puesta bajo investigación judicial y las medidas impuestas en Francia.
+          </p>
+          <a href="https://www.lemonde.fr/en/france/article/2024/08/29/telegram-ceo-pavel-durov-charged-but-released-under-judicial-supervision_6723047_7.html" target="_blank" rel="noopener noreferrer">
+            Leer reportaje
+          </a>
+        </li>
+
+        <li>
+          <strong>Le Monde — Después de la detención de Pavel Durov, el cambio de cooperación de Telegram con la justicia francesa y belga (13 de septiembre de 2024).</strong>
+          <p>
+            Reportaje sobre la evolución de la cooperación de la plataforma con las autoridades judiciales.
+          </p>
+          <a href="https://www.lemonde.fr/societe/article/2024/09/13/apres-l-arrestation-de-pavel-durov-le-sursaut-de-cooperation-de-telegram-avec-les-autorites-judiciaires-en-france-et-en-belgique_6316647_3224.html" target="_blank" rel="noopener noreferrer">
+            Leer reportaje
+          </a>
+        </li>
+
+        <li>
+          <strong>TechCrunch — Telegram reports spike in sharing user data with law enforcement (7 de enero de 2025).</strong>
+          <p>
+            Análisis de los datos de transparencia y de las solicitudes de información atendidas por Telegram.
+          </p>
+          <a href="https://techcrunch.com/2025/01/07/telegram-reports-spike-in-sharing-user-data-with-law-enforcement/" target="_blank" rel="noopener noreferrer">
+            Leer análisis
+          </a>
+        </li>
+
+        <li>
+          <strong>Bloomberg Law — Telegram CEO’s French Travel Ban Fully Lifted By Investigators (13 de noviembre de 2025).</strong>
+          <p>
+            Reporte sobre el levantamiento de las restricciones de viaje y de la obligación de presentarse ante la policía.
+          </p>
+          <a href="https://news.bloomberglaw.com/ip-law/telegram-ceos-french-travel-ban-fully-lifted-by-investigators" target="_blank" rel="noopener noreferrer">
+            Leer reporte
+          </a>
+        </li>
+
+        <li>
+          <strong>TF1 Info — Pavel Durov vuelve a ser interrogado por jueces en París (8 de julio de 2026).</strong>
+          <p>
+            Cobertura de la comparecencia de Durov ante los jueces franceses.
+          </p>
+          <a href="https://www.tf1info.fr/justice-faits-divers/le-fondateur-de-telegram-pavel-durov-de-nouveau-interroge-par-des-juges-a-paris-2452112.html" target="_blank" rel="noopener noreferrer">
+            Leer noticia
+          </a>
+        </li>
+
+        <li>
+          <strong>Reuters — Rusia acusa a Pavel Durov de facilitar actividades terroristas (29 de julio de 2026).</strong>
+          <p>
+            Reporte sobre las acusaciones anunciadas por el FSB y la respuesta de Telegram.
+          </p>
+          <a href="https://www.investing.com/news/world-news/russias-fsb-charges-telegram-founder-durov-with-facilitating-terrorism-4818680" target="_blank" rel="noopener noreferrer">
+            Leer reporte
+          </a>
+        </li>
+
+        <li>
+          <strong>Le Monde — Rusia acusa al fundador de Telegram de complicidad en terrorismo (29 de julio de 2026).</strong>
+          <p>
+            Cobertura del procedimiento anunciado por las autoridades rusas y su contexto.
+          </p>
+          <a href="https://www.lemonde.fr/international/article/2026/07/29/la-russie-inculpe-le-fondateur-de-telegram-pavel-durov-pour-complicite-de-terrorisme_6736320_3210.html" target="_blank" rel="noopener noreferrer">
+            Leer reportaje
+          </a>
+        </li>
+
+        <li>
+          <strong>Associated Press — Russia accuses Telegram CEO Pavel Durov of aiding terrorism in its latest digital crackdown (29 de julio de 2026).</strong>
+          <p>
+            Contexto sobre las acusaciones rusas, las restricciones a Telegram y la relación entre la plataforma y el gobierno ruso.
+          </p>
+          <a href="https://apnews.com/article/a6efe4692f3415c2046f0893d114174b" target="_blank" rel="noopener noreferrer">
+            Leer noticia
+          </a>
+        </li>
+
+      </ol>
+
+      <hr>
+
+      <h2>
+        ℹ️ Nota editorial y de responsabilidad informativa
+      </h2>
+
+      <p>
+        Este reportaje fue elaborado con base en documentación institucional, políticas públicas de Telegram y cobertura periodística identificada en las referencias.
+      </p>
+
+      <p>
+        Las acusaciones descritas se atribuyen a las autoridades que las formularon. Las declaraciones de la defensa se presentan como posiciones de sus representantes. Ninguna de ellas debe interpretarse como una sentencia definitiva.
+      </p>
+
+      <p>
+        Los procedimientos francés y ruso son independientes y no deben confundirse. La situación judicial puede cambiar después de la fecha de actualización de este artículo.
+      </p>
+
+      <p>
+        <strong>
+          NEXATA INSIGHT MEDIA STUDIO
+        </strong>
+      </p>
+
+      <p>
+        Tecnología • Conocimiento • Cultura • Entretenimiento • Descubrimiento
+      </p>
+
+      <p>
+        <strong>
+          Autor: Dennis Palma
+        </strong>
+      </p>]]></content:encoded>
+    </item>
     <item>
       <title>🤖 Inteligencia artificial: cómo está cambiando nuestra vida</title>
       <link>https://nexata.site/BLOGS/16.html</link>
